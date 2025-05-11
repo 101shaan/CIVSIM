@@ -33,7 +33,12 @@ class MainMenu:
         
         # Load background image
         try:
-            self.background = pygame.image.load("assets/backgrounds/main_menu_bg.png")
+            # First try the direct path, then try with CIVSIM/ prefix
+            bg_path = "assets/backgrounds/main_menu_bg.png"
+            if not os.path.exists(bg_path):
+                bg_path = os.path.join("CIVSIM", "assets/backgrounds/main_menu_bg.png")
+            
+            self.background = pygame.image.load(bg_path)
             # Scale to match screen size if needed
             if self.background.get_size() != (width, height):
                 self.background = pygame.transform.scale(self.background, (width, height))
@@ -171,7 +176,7 @@ class MainMenu:
         self.screen.blit(self.background, (0, 0))
         
         # draw title with shadow effect for better visibility
-        title_text = "Civilization Simulator"
+        title_text = "Welcome to CIVSIM"
         title_x = self.screen.get_width() // 2 - 150
         title_y = 100
         
@@ -464,7 +469,16 @@ def main():
     # set up display with larger dimensions
     width, height = 1400, 900  # increased from 1200x800
     screen = pygame.display.set_mode((width, height))
-    pygame.display.set_caption("CIVSim")
+    pygame.display.set_caption("CIVSIM")
+    try:
+        pygame_icon = pygame.image.load('assets/CIVSIM.png')
+        pygame.display.set_icon(pygame_icon)
+    except Exception as e:
+        try:
+            pygame.display.set_icon(pygame.image.load('CIVSIM/assets/CIVSIM.png'))
+        except Exception as e:
+            print(f"Failed to load icon: {e}")
+
     
     # show menu
     menu_result = run_menu(screen)

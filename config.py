@@ -8,7 +8,7 @@ config settings for civ simulator
 OPENAI_API_KEY =""  # empty string will use fallback templates
 
 # game settings
-GAME_TITLE = "Civilization Simulator"
+GAME_TITLE = "Welcome to CIVSIM"
 DEFAULT_WORLD_SIZE = (100, 100)
 DEFAULT_WINDOW_SIZE = (1400, 900)
 

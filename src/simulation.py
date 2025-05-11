@@ -167,55 +167,119 @@ class Simulation:
         radius = random.randint(3, 8)  # affected area radius
         
         # find affected civilizations
-        affected_civs = []
-        for civ in self.world.civilizations:
-            for pos in civ.territory:
+        affected_civs_initial = []
+        for civ_candidate in self.world.civilizations:
+            for pos in civ_candidate.territory:
                 dx = abs(pos[0] - x)
                 dy = abs(pos[1] - y)
                 if (dx*dx + dy*dy) <= radius*radius:  # within circle
-                    affected_civs.append(civ)
+                    affected_civs_initial.append(civ_candidate)
                     break
         
-        # no need to continue if no one is affected
-        if not affected_civs:
+        if not affected_civs_initial:
             return
-        
-        # apply disaster effects
+
         disaster_name = disaster.replace("_", " ").title()
         event_desc = f"Natural Disaster: {disaster_name} in region around ({x}, {y})"
         self.event_logger.add_event(self.year, event_desc)
-        
-        # add to major events list for potential auto-pause and notification
+
+        # Calculate effects and prepare major event message
+        processed_affected_civs = []
+        total_population_loss_for_single_civ_message = 0
+
+        # Temporarily calculate loss for the first civ if only one is affected, for the message
+        # The actual effects are applied in the main loop below
+        if len(affected_civs_initial) == 1:
+            civ = affected_civs_initial[0]
+            temp_affected_territory = 0
+            temp_affected_cities_in_radius = []
+            for pos in civ.territory:
+                dx_pos = abs(pos[0] - x)
+                dy_pos = abs(pos[1] - y)
+                if (dx_pos*dx_pos + dy_pos*dy_pos) <= radius*radius:
+                    temp_affected_territory += 1
+                    if pos in civ.cities:
+                        temp_affected_cities_in_radius.append(pos)
+            
+            if temp_affected_territory > 0: # Civ must have territory in the disaster zone
+                temp_impact_ratio = temp_affected_territory / max(1, len(civ.territory))
+                if disaster == "earthquake" or disaster == "volcanic_eruption":
+                    temp_city_pop_loss = 0
+                    for city_pos in temp_affected_cities_in_radius:
+                        city_pop = civ.cities[city_pos]["population"]
+                        loss = int(city_pop * 0.05)
+                        temp_city_pop_loss += loss
+                    non_city_population = civ.population - sum(c["population"] for c in civ.cities.values())
+                    temp_general_pop_loss = int(non_city_population * temp_impact_ratio * random.uniform(0.01, 0.05))
+                    total_population_loss_for_single_civ_message = temp_city_pop_loss + temp_general_pop_loss
+                elif disaster == "disease":
+                    tech_factor = max(0.1, 1 - (civ.technology / 150.0))
+                    base_disease_impact = random.uniform(0.15, 0.45)
+                    final_disease_impact = base_disease_impact * tech_factor
+                    total_population_loss_for_single_civ_message = int(civ.population * final_disease_impact * temp_impact_ratio)
+                # Drought doesn't directly cause population loss in this calculation, so message remains generic or indicates 0 loss.
+                # For message accuracy, explicitly set to 0 if it's a drought for the single civ message part.
+                elif disaster == "drought":
+                    total_population_loss_for_single_civ_message = 0
+
+
+        # Construct major event message
+        major_event_message = ""
+        if len(affected_civs_initial) == 1 and total_population_loss_for_single_civ_message > 0 :
+             # If it was a drought and loss is 0, it will fall to the 'else' generic message
+            civ_name_for_message = affected_civs_initial[0].name
+            major_event_message = f"A {disaster_name.lower()} has struck near ({x}, {y}), killing {total_population_loss_for_single_civ_message} people in {civ_name_for_message}."
+        elif len(affected_civs_initial) == 1 and disaster == "drought": # Specific message for drought affecting one civ
+            civ_name_for_message = affected_civs_initial[0].name
+            major_event_message = f"A {disaster_name.lower()} (drought) has struck near ({x}, {y}), affecting {civ_name_for_message}."
+        else: # Multiple civs or single civ with no direct population loss reported (e.g. flood if not implemented for pop loss)
+            major_event_message = f"A {disaster_name.lower()} has struck near ({x}, {y}), affecting {len(affected_civs_initial)} civilizations."
+
         self.major_events.append({
             "title": f"Natural Disaster: {disaster_name}",
-            "message": f"A {disaster_name.lower()} has struck near ({x}, {y}), affecting {len(affected_civs)} civilizations.",
-            "civ": affected_civs[0] if affected_civs else None
+            "message": major_event_message,
+            "civ": affected_civs_initial[0] if affected_civs_initial else None
         })
         
-        for civ in affected_civs:
-            # calculate impact based on territory overlap with disaster area
+        # Apply actual disaster effects
+        for civ in affected_civs_initial: # Iterate over the originally identified list
             affected_territory = 0
+            affected_cities_in_radius = []
             for pos in civ.territory:
                 dx = abs(pos[0] - x)
                 dy = abs(pos[1] - y)
                 if (dx*dx + dy*dy) <= radius*radius:
                     affected_territory += 1
+                    if pos in civ.cities:
+                        affected_cities_in_radius.append(pos)
             
             impact_ratio = affected_territory / max(1, len(civ.territory))
+            total_population_loss_from_disaster = 0 # Reset for each civ
             
             # apply impact based on disaster type
-            if disaster == "earthquake" or disaster == "flood":
-                # lose population
-                population_loss = int(civ.population * impact_ratio * random.uniform(0.05, 0.2))
-                civ.population = max(10, civ.population - population_loss)
+            if disaster == "earthquake" or disaster == "volcanic_eruption":
+                # Kill 5% of population for each city in range
+                city_population_loss = 0
+                for city_pos in affected_cities_in_radius:
+                    city_pop = civ.cities[city_pos]["population"]
+                    loss = int(city_pop * 0.05)
+                    civ.cities[city_pos]["population"] = max(0, city_pop - loss)
+                    city_population_loss += loss
                 
-                # lose resources
+                # Also apply some general territory-based population loss outside of cities
+                # but ensure not to double-count city losses
+                non_city_population = civ.population - sum(c["population"] for c in civ.cities.values())
+                general_pop_loss = int(non_city_population * impact_ratio * random.uniform(0.01, 0.05)) # Smaller impact outside cities
+                total_population_loss_from_disaster = city_population_loss + general_pop_loss
+                civ.population = max(10, civ.population - total_population_loss_from_disaster)
+                
+                # Resources are also affected, especially in cities
                 for resource in civ.resources:
                     civ.resources[resource] *= (1 - impact_ratio * random.uniform(0.1, 0.3))
                 
                 self.event_logger.add_event(
                     self.year, 
-                    f"{civ.name} lost {population_loss} population to {disaster_name}"
+                    f"{civ.name} lost {total_population_loss_from_disaster} population to {disaster_name}. Cities heavily affected."
                 )
             
             elif disaster == "drought":
@@ -228,24 +292,21 @@ class Simulation:
                     f"{civ.name} lost {food_loss:.1f} food to {disaster_name}"
                 )
             
-            elif disaster == "volcanic_eruption":
-                # severe but localized impact
-                population_loss = int(civ.population * impact_ratio * random.uniform(0.1, 0.4))
-                civ.population = max(10, civ.population - population_loss)
-                
-                self.event_logger.add_event(
-                    self.year, 
-                    f"{civ.name} lost {population_loss} population to {disaster_name}"
-                )
-            
             elif disaster == "disease":
-                # affects population primarily
-                population_loss = int(civ.population * impact_ratio * random.uniform(0.15, 0.35))
-                civ.population = max(10, civ.population - population_loss)
+                # Disease impact is inversely proportional to technology
+                # Higher tech level means better healthcare, sanitation, and response
+                tech_factor = max(0.1, 1 - (civ.technology / 150.0)) # Scale so high tech (e.g. 150+) greatly reduces impact
+                # Base impact of disease, further modified by tech
+                base_disease_impact = random.uniform(0.15, 0.45) 
+                final_disease_impact = base_disease_impact * tech_factor
+                
+                population_loss = int(civ.population * final_disease_impact * impact_ratio) # impact_ratio for regional effect
+                total_population_loss_from_disaster = population_loss
+                civ.population = max(10, civ.population - total_population_loss_from_disaster)
                 
                 self.event_logger.add_event(
                     self.year, 
-                    f"{civ.name} lost {population_loss} population to {disaster_name}"
+                    f"{civ.name} lost {total_population_loss_from_disaster} population to {disaster_name}. Tech level {civ.technology:.1f} influenced severity."
                 )
     
     def _check_civilization_collapse(self):
@@ -261,10 +322,30 @@ class Simulation:
                     print(f"  * {civ.name} is protected for {years_left} more years")
                 continue
             
-            # civilization collapses if population too low or no more food
-            if civ.population < 10 or civ.resources["food"] < 5:
-                # record collapse
-                reason = "low population" if civ.population < 10 else "starvation"
+            # More realistic civilization collapse conditions
+            # Historical settlements could survive with very small populations
+            # Only truly unsustainable conditions should cause collapse
+            
+            # Extreme starvation (virtually no food left)
+            extreme_starvation = civ.resources["food"] < 2
+            
+            # Insufficient population for genetic diversity (~10 people is a minimum viable population)
+            critical_population = civ.population < 8
+            
+            # Combination of low population and food issues
+            combined_issues = civ.population < 15 and civ.resources["food"] < 10
+            
+            # Check for collapse conditions
+            if extreme_starvation or critical_population or combined_issues:
+                # Determine collapse reason
+                if extreme_starvation:
+                    reason = "starvation"
+                elif critical_population:
+                    reason = "critically low population"
+                else:
+                    reason = "unsustainable resources and population"
+                
+                # Record collapse
                 collapse_event = f"{civ.name} has collapsed due to {reason}!"
                 self.event_logger.add_event(self.year, collapse_event)
                 print(collapse_event)
@@ -339,7 +420,7 @@ class Simulation:
                     "width": self.world.width,
                     "height": self.world.height,
                     "terrain": self.world.terrain,
-                    "resource_map": self.world.resource_map,
+                    "resources": self.world.resources,
                 },
                 "simulation_name": self.name if hasattr(self, 'name') else "Unnamed Simulation",
                 "civilizations": [],
@@ -425,7 +506,7 @@ class Simulation:
                 world_data = save_data["world_data"]
                 if world_data["width"] == self.world.width and world_data["height"] == self.world.height:
                     self.world.terrain = world_data["terrain"]
-                    self.world.resource_map = world_data["resource_map"]
+                    self.world.resources = world_data["resources"]
                 else:
                     print("Warning: World dimensions in save file do not match current world. Using current terrain.")
             
@@ -508,91 +589,60 @@ class Simulation:
                                random.randint(0, self.world.height-1))
             
             # Apply disaster at position
-            radius = int(3 * magnitude)
+            radius = int(max(1,3 * magnitude)) # Ensure radius is at least 1
             x, y = position
+            disaster_name_formatted = specific_disaster.replace('_', ' ').title()
             
             self.event_logger.add_event(
                 self.year, 
-                f"GOD EVENT: {specific_disaster.replace('_', ' ').title()} at ({x}, {y})"
+                f"GOD EVENT: {disaster_name_formatted} at ({x}, {y}) by divine intervention!"
             )
-            
-            # Find affected civilizations
-            for civ in self.world.civilizations:
-                affected = False
+
+            affected_civs_for_notification = []
+            total_pop_loss_for_notification = 0
+
+            # Apply effects to civilizations in the radius
+            for civ in list(self.world.civilizations): # Iterate over a copy in case a civ collapses
+                # Calculate distance from civ's core to disaster center
+                # Or check overlap with territory for more accuracy
                 affected_territory_count = 0
+                if not civ.territory: # Skip if civ has no territory (e.g. just created)
+                    continue
                 
-                for pos in civ.territory:
-                    dx = abs(pos[0] - x)
-                    dy = abs(pos[1] - y)
-                    if (dx*dx + dy*dy) <= radius*radius:  # Within circle
-                        affected = True
+                for tile_pos in civ.territory:
+                    dist_sq = (tile_pos[0] - x)**2 + (tile_pos[1] - y)**2
+                    if dist_sq <= radius**2:
                         affected_territory_count += 1
                 
-                if affected:
-                    # Calculate baseline damage based on disaster type
-                    base_damage_rate = 0
+                if affected_territory_count > 0:
+                    # This civ is affected
+                    if civ not in affected_civs_for_notification:
+                        affected_civs_for_notification.append(civ)
+
+                    damage_rate = random.uniform(0.1, 0.3) * magnitude * (affected_territory_count / max(1,len(civ.territory)))
+                    damage_rate = min(damage_rate, 0.9) # Cap damage at 90%
                     
-                    # Different disaster types have different impacts
-                    if specific_disaster == "earthquake":
-                        base_damage_rate = random.uniform(0.15, 0.30)  # Earthquakes can be very deadly
-                    elif specific_disaster == "flood":
-                        base_damage_rate = random.uniform(0.10, 0.25)  # Floods are also serious
-                    elif specific_disaster == "drought":
-                        base_damage_rate = random.uniform(0.05, 0.15)  # Droughts kill over time through starvation
-                    elif specific_disaster == "volcanic_eruption":
-                        base_damage_rate = random.uniform(0.20, 0.40)  # Volcanic eruptions are catastrophic
-                    elif specific_disaster == "disease":
-                        base_damage_rate = random.uniform(0.10, 0.35)  # Disease spread varies widely
-                    
-                    # Technology reduces impact - more advanced civilizations can mitigate disasters
-                    # Log scaling for diminishing returns on tech benefit
-                    tech_mitigation = min(0.9, math.log(max(1, civ.technology)) / 10)  
-                    
-                    # Civilization size affects impact percentage (smaller civs can be hit harder)
-                    # Adjust for scale - percentage impact is higher for smaller civs
-                    size_factor = min(1.0, 1000 / max(100, civ.population))
-                    
-                    # Calculate impact based on how much of territory is affected
-                    territory_impact_ratio = affected_territory_count / max(1, len(civ.territory))
-                    
-                    # Scale the disaster with proportion of territory affected
-                    final_damage_rate = base_damage_rate * (1.0 - tech_mitigation) * size_factor * territory_impact_ratio * magnitude
-                    
-                    # Ensure minimum impact is realistic
-                    # For very small populations, impact could be 100%
-                    if civ.population < 50:
-                        # Small populations can be completely wiped out
-                        final_damage_rate = min(1.0, final_damage_rate * 2) 
-                    
-                    # Calculate casualties - at least 1 person if affected (or all if very small)
-                    population_loss = max(1, int(civ.population * final_damage_rate))
-                    
-                    # For very large civs, ensure the disaster still has meaningful impact
-                    if civ.population > 10000 and population_loss < 10:
-                        population_loss = int(10 + (civ.population - 10000) * 0.001)
-                    
-                    # Apply population loss (ensure it doesn't exceed population)
-                    population_loss = min(civ.population - 1, population_loss)
+                    population_loss = int(civ.population * damage_rate)
                     civ.population = max(1, civ.population - population_loss)
+                    total_pop_loss_for_notification += population_loss
                     
-                    # Also damage resources
-                    resource_damage = final_damage_rate * 1.5  # Resources are damaged more than population
+                    resource_damage = damage_rate * random.uniform(0.3, 0.7)
                     for resource in civ.resources:
-                        civ.resources[resource] *= (1 - resource_damage * 0.5)
+                        civ.resources[resource] *= (1 - resource_damage)
+                        civ.resources[resource] = max(0, civ.resources[resource])
                     
-                    # Log detailed event
                     self.event_logger.add_event(
                         self.year, 
-                        f"{civ.name} lost {population_loss} people ({int(final_damage_rate*100)}% of population) to {specific_disaster.replace('_', ' ')}"
+                        f"{civ.name} lost {population_loss} people and resources to divine {specific_disaster.replace('_', ' ')}."
                     )
-                    
-                    # Add to major events for notification if significant impact
-                    if final_damage_rate > 0.05 or population_loss > 100:
-                        self.major_events.append({
-                            "title": f"Disaster: {specific_disaster.replace('_', ' ').title()} hits {civ.name}",
-                            "message": f"{population_loss} people died ({int(final_damage_rate*100)}% of population). Resources damaged by {int(resource_damage*100)}%.",
-                            "civ": civ
-                        })
+            
+            # Always add to major events for God Mode triggered disasters
+            affected_civ_names = ", ".join([c.name for c in affected_civs_for_notification]) if affected_civs_for_notification else "No civilizations"
+            self.major_events.append({
+                "title": f"Divine Disaster: {disaster_name_formatted}",
+                "message": f"A divinely invoked {specific_disaster.lower()} struck near ({x},{y}). {affected_civ_names} affected. Total population lost: {total_pop_loss_for_notification}.",
+                "civ": affected_civs_for_notification[0] if affected_civs_for_notification else None # Primary civ for highlight
+            })
         
         elif event_type == "blessing":
             if target_civ:
@@ -614,67 +664,77 @@ class Simulation:
         
         elif event_type == "tech_boost":
             if target_civ:
-                boost = magnitude * random.uniform(10, 25)
-                target_civ.technology = min(100, target_civ.technology + boost)
+                current_tech = target_civ.technology
+                # Boost is 20% of current tech + 10, scaled by magnitude
+                percentage_boost = current_tech * 0.20 * magnitude
+                flat_boost = 10 * magnitude
+                
+                new_tech = current_tech + percentage_boost + flat_boost
+                target_civ.technology = min(50000, new_tech)  # Cap at 50k
                 
                 self.event_logger.add_event(
                     self.year, 
-                    f"GOD EVENT: Technology boost for {target_civ.name}, tech level increased to {target_civ.technology:.1f}"
+                    f"GOD EVENT: Technology boost for {target_civ.name}, tech level increased from {current_tech:.1f} to {target_civ.technology:.1f}"
                 )
         
         elif event_type == "shift_ideology":
             if target_civ:
-                from src.civilization import generate_random_belief_system
+                from src.civilization import BeliefSystem # Assuming BeliefSystem() is the random generator
+                from src.civilization import CivilizationTrait # Import for re-rolling traits
                 
-                # Generate a completely new belief system
                 old_belief_name = target_civ.belief_system.name
-                new_belief_system = generate_random_belief_system()
+                old_traits = list(target_civ.traits) # Save for the message
+
+                # 1. Generate a completely new belief system
+                target_civ.belief_system = BeliefSystem() 
                 
-                # Apply the new belief system to the civilization
-                target_civ.belief_system = new_belief_system
+                # 2. Completely re-roll civilization traits
+                target_civ.traits = CivilizationTrait.get_random_traits()
+
+                # 3. Reset relations with all other civilizations to neutral or slightly random
+                for other_civ_id in list(target_civ.relations.keys()): # Iterate over a copy of keys
+                    target_civ.relations[other_civ_id] = random.uniform(-0.1, 0.1) # Reset to near neutral
+                    # Also update the other civ's relation towards this civ
+                    other_civ_obj = next((c for c in self.world.civilizations if c.id == other_civ_id), None)
+                    if other_civ_obj:
+                        other_civ_obj.relations[target_civ.id] = target_civ.relations[other_civ_id]
                 
                 # Log the event
                 self.event_logger.add_event(
                     self.year, 
-                    f"GOD EVENT: {target_civ.name} shifted ideology from {old_belief_name} to {new_belief_system.name}"
+                    f"GOD EVENT: {target_civ.name} underwent a profound ideological and cultural transformation from '{old_belief_name}' (Traits: {', '.join(old_traits)}) to '{target_civ.belief_system.name}' (New Traits: {', '.join(target_civ.traits)}). Relations reset."
                 )
-                
-                # Update civ's traits based on new belief system
-                # Values and traits should influence each other
-                if "industrious" in target_civ.belief_system.values and target_civ.belief_system.values["industrious"] > 0.5:
-                    if "lazy" in target_civ.traits:
-                        target_civ.traits.remove("lazy")
-                    if "industrious" not in target_civ.traits:
-                        target_civ.traits.append("industrious")
-                
-                if "aggressive" in target_civ.belief_system.values and target_civ.belief_system.values["aggressive"] > 0.5:
-                    if "peaceful" in target_civ.traits:
-                        target_civ.traits.remove("peaceful")
-                    if "aggressive" not in target_civ.traits:
-                        target_civ.traits.append("aggressive")
                 
                 # Add a notification for the user
                 self.major_events.append({
-                    "title": f"Ideological Revolution in {target_civ.name}",
-                    "message": f"{target_civ.name} has undergone an ideological shift from {old_belief_name} to {new_belief_system.name}",
+                    "title": f"Total Metamorphosis in {target_civ.name}",
+                    "message": f"{target_civ.name} has been entirely reshaped: New Belief is '{target_civ.belief_system.name}', new traits: {', '.join(target_civ.traits)}. All diplomatic ties reset.",
                     "civ": target_civ
                 })
         
         elif event_type == "war_influence":
-            if target_civ and len(self.world.civilizations) > 1:
-                # Choose another civilization to go to war with
-                other_civs = [c for c in self.world.civilizations if c.id != target_civ.id]
-                if other_civs:
-                    other_civ = random.choice(other_civs)
-                    
-                    # Set relations to negative
-                    target_civ.relations[other_civ.id] = -0.9
-                    other_civ.relations[target_civ.id] = -0.9
-                    
-                    self.event_logger.add_event(
-                        self.year, 
-                        f"GOD EVENT: War sentiment inflamed between {target_civ.name} and {other_civ.name}"
-                    )
+            if target_civ:
+                target_civ.permanently_hostile_to_all = True
+                # Also make their current relations very poor to kickstart conflicts
+                for other_civ_id in list(target_civ.relations.keys()):
+                    target_civ.relations[other_civ_id] = -0.9
+                    other_civ_obj = next((c for c in self.world.civilizations if c.id == other_civ_id), None)
+                    if other_civ_obj:
+                        other_civ_obj.relations[target_civ.id] = -0.9
+                
+                self.event_logger.add_event(
+                    self.year, 
+                    f"GOD EVENT: {target_civ.name} has been divinely influenced to be permanently hostile and seek war with all other civilizations!"
+                )
+                self.major_events.append({
+                    "title": f"{target_civ.name} Doomed to Eternal War!",
+                    "message": f"{target_civ.name} is now compelled by divine will to wage war on any civilization it encounters.",
+                    "civ": target_civ
+                })
+            else:
+                 # If no target_civ, this event might not make sense or could pick a random one.
+                 # For now, we'll assume it requires a target.
+                 pass # Or log an error/feedback that a target is needed.
     
     def get_event_history(self):
         """Get the complete event history"""

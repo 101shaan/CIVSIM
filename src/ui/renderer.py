@@ -7,6 +7,7 @@ import pygame
 import pygame.freetype
 import math
 from src.world import TerrainType
+import random
 
 class Renderer:
     def __init__(self, screen, world):
@@ -96,15 +97,85 @@ class Renderer:
         self.detail_surface = None
         self.detail_rect = None
         self.detail_close_button = None
-        self.detail_scroll_y = 0
+        self.detail_scroll_y = 0  # Current scroll position (y-offset)
         self.detail_max_scroll_y = 0 # max scrollable amount
         self.detail_content_height = 0 # actual height of all content
         self.scroll_bar_rect = None
         self.scroll_thumb_rect = None
         self.dragging_scrollbar = False
+        self.drag_offset_y = 0  # Added for scroll dragging
         
         # reference to the simulation object for lore generation
         self.simulation = None
+
+        # Starfield properties
+        self.stars = []
+        self._initialize_stars()
+
+    def _initialize_stars(self):
+        """Initialize star properties for the background starfield."""
+        self.stars = []
+        num_stars = 150  # Adjust for density
+        for _ in range(num_stars):
+            star = {
+                'x': random.randint(0, self.width),
+                'y': random.randint(0, self.height),
+                'size': random.uniform(0.5, 2.0), # More variation in size
+                'brightness': random.uniform(0.3, 1.0), # Base brightness (0.0 to 1.0)
+                'twinkle_speed': random.uniform(0.01, 0.05), # How fast it twinkles
+                'twinkle_phase': random.uniform(0, 2 * math.pi), # Initial phase for twinkling
+                'dx': random.uniform(-0.05, 0.05), # Slow horizontal drift
+                'dy': random.uniform(-0.05, 0.05)  # Slow vertical drift
+            }
+            self.stars.append(star)
+
+    def _update_and_draw_stars(self):
+        """Update star positions and brightness, then draw them."""
+        map_rect = pygame.Rect(
+            self.offset_x, 
+            self.offset_y, 
+            self.world.width * self.grid_cell_size,
+            self.world.height * self.grid_cell_size
+        )
+
+        for star in self.stars:
+            # Update position
+            star['x'] += star['dx']
+            star['y'] += star['dy']
+
+            # Wrap stars around the screen
+            if star['x'] < 0: star['x'] = self.width
+            if star['x'] > self.width: star['x'] = 0
+            if star['y'] < 0: star['y'] = self.height
+            if star['y'] > self.height: star['y'] = 0
+            
+            # Update twinkle
+            star['twinkle_phase'] += star['twinkle_speed']
+            if star['twinkle_phase'] > 2 * math.pi:
+                star['twinkle_phase'] -= 2 * math.pi
+            
+            # Calculate current brightness based on sin wave
+            current_brightness_factor = (math.sin(star['twinkle_phase']) + 1) / 2 # Range 0 to 1
+            # Modulate base brightness with twinkle factor
+            final_brightness = star['brightness'] * (0.5 + current_brightness_factor * 0.5) # Ensure stars don't get too dim
+
+            # Create star color (white-ish with varying brightness)
+            color_val = int(final_brightness * 200) + 55 # Range 55 to 255
+            star_color = (min(255,color_val), min(255,color_val + 10), min(255,color_val + 20))
+
+            # Only draw stars in the background areas (not over map or panels)
+            star_pos = (int(star['x']), int(star['y']))
+            if not map_rect.collidepoint(star_pos) and \
+               not (star_pos[0] < self.left_panel_width or \
+                    star_pos[0] > self.width - self.side_panel_width or \
+                    (self.show_bottom_panel and star_pos[1] > self.height - self.bottom_panel_height and \
+                     star_pos[0] > self.left_panel_width and star_pos[0] < self.width - self.side_panel_width)):
+                
+                current_size = star['size'] * (0.7 + current_brightness_factor * 0.3) # Size also varies with twinkle
+                if current_size >= 1: # Draw circles for larger stars
+                    pygame.draw.circle(self.screen, star_color, star_pos, int(current_size))
+                else: # Draw single pixels for very small/dim stars
+                     self.screen.set_at(star_pos, star_color)
 
     def _prerender_terrain(self):
         """pre-render the terrain to a surface for performance"""
@@ -212,8 +283,20 @@ class Renderer:
 
     def render(self):
         """Render the entire simulation"""
-        # Clear screen
-        self.screen.fill((0, 0, 0))
+        # Create a background similar to main menu
+        map_bg_color_top = (10, 20, 50)
+        map_bg_color_bottom = (30, 40, 80)
+        
+        # Fill the whole screen with gradient background
+        for y in range(self.height):
+            # Calculate gradient colors
+            r = int(map_bg_color_top[0] + (map_bg_color_bottom[0] - map_bg_color_top[0]) * (y / self.height))
+            g = int(map_bg_color_top[1] + (map_bg_color_bottom[1] - map_bg_color_top[1]) * (y / self.height))
+            b = int(map_bg_color_top[2] + (map_bg_color_bottom[2] - map_bg_color_top[2]) * (y / self.height))
+            pygame.draw.line(self.screen, (r, g, b), (0, y), (self.width, y))
+        
+        # Update and draw the starfield
+        self._update_and_draw_stars()
         
         # Render the world grid
         self._render_world_grid()
@@ -366,16 +449,36 @@ class Renderer:
 
     def _render_left_panel(self):
         """Render left panel with buttons and controls"""
-        # Draw left panel background
+        # Draw left panel background with gradient similar to main menu
         panel_rect = pygame.Rect(0, 0, self.left_panel_width, self.height)
-        pygame.draw.rect(self.screen, (30, 30, 30), panel_rect)
-        pygame.draw.rect(self.screen, (100, 100, 100), panel_rect, 2)
         
-        # Title
+        # Create gradient background
+        panel_surface = pygame.Surface((self.left_panel_width, self.height))
+        for y in range(self.height):
+            r = int(10 + (y / self.height) * 15)
+            g = int(20 + (y / self.height) * 20)
+            b = int(50 + (y / self.height) * 30)
+            pygame.draw.line(panel_surface, (r, g, b), (0, y), (self.left_panel_width, y))
+        
+        # Blit the gradient background
+        self.screen.blit(panel_surface, (0, 0))
+        
+        # Add border with glow effect
+        pygame.draw.rect(self.screen, (100, 150, 250, 150), panel_rect, 1)
+        
+        # Title with shadow
+        title_shadow_pos = (11, 11)
+        title_pos = (10, 10)
         self.font_large.render_to(
             self.screen, 
-            (10, 10),
-            "Controls",
+            title_shadow_pos,
+            "",
+            (0, 0, 0)
+        )
+        self.font_large.render_to(
+            self.screen, 
+            title_pos,
+            "",
             (255, 255, 255)
         )
         
@@ -384,16 +487,36 @@ class Renderer:
 
     def _render_side_panel(self):
         """Render side panel with civilization list and controls"""
-        # Draw side panel background
+        # Draw side panel background with gradient similar to main menu
         panel_rect = pygame.Rect(self.width - self.side_panel_width, 0, 
                                 self.side_panel_width, self.height)
-        pygame.draw.rect(self.screen, (30, 30, 30), panel_rect)
-        pygame.draw.rect(self.screen, (100, 100, 100), panel_rect, 2)
         
-        # Draw title
+        # Create gradient background
+        panel_surface = pygame.Surface((self.side_panel_width, self.height))
+        for y in range(self.height):
+            r = int(15 + (y / self.height) * 15)
+            g = int(25 + (y / self.height) * 20)
+            b = int(60 + (y / self.height) * 30)
+            pygame.draw.line(panel_surface, (r, g, b), (0, y), (self.side_panel_width, y))
+        
+        # Blit the gradient background
+        self.screen.blit(panel_surface, (self.width - self.side_panel_width, 0))
+        
+        # Add border with glow effect
+        pygame.draw.rect(self.screen, (100, 150, 250, 150), panel_rect, 1)
+        
+        # Draw title with shadow
+        title_shadow_pos = (self.width - self.side_panel_width + 11, 11)
+        title_pos = (self.width - self.side_panel_width + 10, 10)
         self.font_large.render_to(
             self.screen, 
-            (self.width - self.side_panel_width + 10, 10),
+            title_shadow_pos,
+            "Civilization Info",
+            (0, 0, 0)
+        )
+        self.font_large.render_to(
+            self.screen, 
+            title_pos,
             "Civilization Info",
             (255, 255, 255)
         )
@@ -412,28 +535,40 @@ class Renderer:
                 self.screen,
                 (self.width - self.side_panel_width + 10, 50),
                 "Click on the map to select",
-                (200, 200, 200)
+                (220, 220, 255)
             )
             self.font.render_to(
                 self.screen,
                 (self.width - self.side_panel_width + 10, 70),
                 "a civilization or press C",
-                (200, 200, 200)
+                (220, 220, 255)
             )
             self.font.render_to(
                 self.screen,
                 (self.width - self.side_panel_width + 10, 90),
                 "to show civilization list.",
-                (200, 200, 200)
+                (220, 220, 255)
             )
-
+            
     def _render_bottom_panel(self):
         """Render bottom panel with position information"""
-        # Draw bottom panel background
+        # Draw bottom panel background with gradient similar to main menu
         panel_rect = pygame.Rect(self.left_panel_width, self.height - self.bottom_panel_height, 
                                 self.width - self.left_panel_width - self.side_panel_width, self.bottom_panel_height)
-        pygame.draw.rect(self.screen, (30, 30, 30), panel_rect)
-        pygame.draw.rect(self.screen, (100, 100, 100), panel_rect, 2)
+        
+        # Create gradient background
+        panel_surface = pygame.Surface((panel_rect.width, panel_rect.height))
+        for y in range(panel_rect.height):
+            r = int(15 + (y / panel_rect.height) * 15)
+            g = int(25 + (y / panel_rect.height) * 20)
+            b = int(60 + (y / panel_rect.height) * 30)
+            pygame.draw.line(panel_surface, (r, g, b), (0, y), (panel_rect.width, y))
+        
+        # Blit the gradient background
+        self.screen.blit(panel_surface, (panel_rect.x, panel_rect.y))
+        
+        # Add border with glow effect
+        pygame.draw.rect(self.screen, (100, 150, 250, 150), panel_rect, 1)
         
         # If a position is selected, show info about it
         if self.selected_position:
@@ -444,7 +579,7 @@ class Renderer:
                 self.screen,
                 (self.left_panel_width + 10, self.height - self.bottom_panel_height + 10),
                 "Click on the map to select a tile or civilization",
-                (200, 200, 200)
+                (220, 220, 255)
             )
 
     def _render_civilization_label(self, civ, civ_index):
@@ -1080,37 +1215,73 @@ class Renderer:
         return False 
 
     def handle_civ_detail_scroll(self, event):
-        """Handle mouse wheel scroll for the civ details popup."""
-        if not self.showing_civ_details or not self.detail_surface:
-            return
+        """Handle mouse wheel scroll and scrollbar interaction for the civ details popup."""
+        if not self.showing_civ_details or not self.detail_surface or not self.detail_rect:
+            return False
 
-        scroll_direction = 0
-        if event.type == pygame.MOUSEWHEEL:
-            scroll_direction = -event.y # Invert y for natural scrolling, event.y is 1 up, -1 down
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-            if self.scroll_bar_rect and self.scroll_bar_rect.collidepoint(event.pos):
-                self.dragging_scrollbar = True
-                # Clicking on scrollbar track could also move thumb, simplified for now
-        elif event.type == pygame.MOUSEBUTTONUP:
-            self.dragging_scrollbar = False
-        elif event.type == pygame.MOUSEMOTION and self.dragging_scrollbar:
-            if self.scroll_bar_rect and self.detail_content_height > self.detail_surface.get_height():
-                popup_height = self.detail_surface.get_height()
-                thumb_height = max(20, popup_height * (popup_height / self.detail_content_height))
-                # Relative mouse y within the scrollbar track
-                relative_y = event.pos[1] - self.detail_rect.top - self.scroll_bar_rect.top
-                # Percentage of scrollbar clicked
-                scroll_percentage = relative_y / (self.scroll_bar_rect.height - thumb_height)
-                self.detail_scroll_y = scroll_percentage * self.detail_max_scroll_y
+        mouse_pos = pygame.mouse.get_pos()
+        # Convert mouse_pos to be relative to the detail_surface for easier calculations
+        relative_mouse_pos = (mouse_pos[0] - self.detail_rect.left, mouse_pos[1] - self.detail_rect.top)
+
+        # Check if the mouse is even within the bounds of the popup
+        # Otherwise, wheel events outside shouldn't scroll it.
+        mouse_over_popup = self.detail_rect.collidepoint(mouse_pos)
+
+        # Mouse Wheel Scrolling
+        if event.type == pygame.MOUSEWHEEL and mouse_over_popup:
+            if self.detail_content_height > self.detail_surface.get_height(): # Only scroll if content exceeds view
+                scroll_amount = -event.y * 40  # event.y is 1 for up, -1 for down; 40px per tick
+                self.detail_scroll_y += scroll_amount
+                self.detail_scroll_y = max(0, min(self.detail_scroll_y, self.detail_max_scroll_y))
+                return True # Event handled
+
+        # Scrollbar Interaction
+        if self.scroll_bar_rect and self.scroll_thumb_rect: # Ensure scrollbar elements exist
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                if self.scroll_thumb_rect.collidepoint(relative_mouse_pos):
+                    self.dragging_scrollbar = True
+                    self.drag_offset_y = relative_mouse_pos[1] - self.scroll_thumb_rect.top
+                    return True # Event handled
+                elif self.scroll_bar_rect.collidepoint(relative_mouse_pos):
+                    # Clicked on the track, not the thumb
+                    popup_view_height = self.detail_surface.get_height()
+                    content_height = self.detail_content_height
+                    thumb_h = max(40, int(self.scroll_bar_rect.height * (popup_view_height / content_height)))
+                    track_clickable_height = self.scroll_bar_rect.height - thumb_h
+                    
+                    # Position of click relative to the top of the scrollbar track
+                    click_on_track_y = relative_mouse_pos[1] - self.scroll_bar_rect.top
+                    
+                    if track_clickable_height > 0:
+                        scroll_ratio = (click_on_track_y - thumb_h / 2) / track_clickable_height
+                        scroll_ratio = max(0, min(1, scroll_ratio))
+                        self.detail_scroll_y = scroll_ratio * self.detail_max_scroll_y
+                    return True # Event handled
+
+            elif event.type == pygame.MOUSEBUTTONUP and event.button == 1:
+                if self.dragging_scrollbar:
+                    self.dragging_scrollbar = False
+                    return True # Event handled
+
+            elif event.type == pygame.MOUSEMOTION and self.dragging_scrollbar:
+                popup_view_height = self.detail_surface.get_height()
+                content_height = self.detail_content_height
+                thumb_h = max(40, int(self.scroll_bar_rect.height * (popup_view_height / content_height)))
+                track_clickable_height = self.scroll_bar_rect.height - thumb_h
+
+                if track_clickable_height > 0:
+                    # Mouse position relative to the scrollbar track's top
+                    mouse_y_on_track = relative_mouse_pos[1] - self.scroll_bar_rect.top - self.drag_offset_y
+                    scroll_ratio = mouse_y_on_track / track_clickable_height
+                    scroll_ratio = max(0, min(1, scroll_ratio))
+                    self.detail_scroll_y = scroll_ratio * self.detail_max_scroll_y
+                return True # Event handled
         
-        if event.type == pygame.MOUSEWHEEL:
-            scroll_amount = scroll_direction * 30  # Adjust scroll speed here (30 pixels per wheel tick)
-            self.detail_scroll_y += scroll_amount
-        
-        # Clamp scroll_y
-        popup_view_height = self.detail_surface.get_height() if self.detail_surface else 0
-        self.detail_max_scroll_y = max(0, self.detail_content_height - popup_view_height)
-        self.detail_scroll_y = max(0, min(self.detail_scroll_y, self.detail_max_scroll_y))
+        # If the event was a click within the popup but not handled by scroll elements, still consume it
+        if event.type == pygame.MOUSEBUTTONDOWN and mouse_over_popup:
+            return True
+            
+        return False # Event not handled by this function
 
     def _draw_civ_details(self):
         """Draw detailed information about selected civilization with scrolling."""
@@ -1155,46 +1326,127 @@ class Renderer:
             )
             
             # Reset scroll position
-            self.detail_scroll_pos = 0
+            self.detail_scroll_y = 0
         
-        # Fill detail surface
-        self.detail_surface.fill((30, 30, 40))
+        # Fill with solid deep blue background (no transparency)
+        primary_bg_color = (20, 35, 65)
+        self.detail_surface.fill(primary_bg_color)
         
-        # Draw close button (X)
-        pygame.draw.rect(self.detail_surface, (100, 100, 120), self.detail_close_button)
+        # Add subtle gradient at the top
+        for y in range(40):
+            gradient_strength = 40 - y
+            if gradient_strength > 0:
+                gradient_color = (
+                    min(255, primary_bg_color[0] + gradient_strength),
+                    min(255, primary_bg_color[1] + gradient_strength),
+                    min(255, primary_bg_color[2] + gradient_strength*2)
+                )
+                pygame.draw.line(self.detail_surface, gradient_color,
+                               (0, y), (self.detail_surface.get_width(), y))
+        
+        # Draw an elegant border
+        border_color = (80, 120, 200)
+        pygame.draw.rect(self.detail_surface, border_color,
+                       (0, 0, self.detail_surface.get_width(), self.detail_surface.get_height()),
+                       2, border_radius=12)
+        
+        # Draw stylish close button
+        close_button_color = (40, 60, 100)
+        close_hover_color = (60, 100, 180)
+        
+        # Check if mouse is over close button
+        mouse_pos = pygame.mouse.get_pos()
+        rel_mouse_pos = (mouse_pos[0] - self.detail_rect.x, mouse_pos[1] - self.detail_rect.y)
+        close_button_hovered = self.detail_close_button.collidepoint(rel_mouse_pos)
+        
+        # Draw close button background with glow effect when hovered
+        pygame.draw.rect(self.detail_surface, 
+                       close_hover_color if close_button_hovered else close_button_color,
+                       self.detail_close_button, border_radius=8)
+        
+        # Add subtle highlight to close button
+        if close_button_hovered:
+            # Add glow effect
+            for i in range(2):
+                glow_rect = self.detail_close_button.inflate(i*2, i*2)
+                pygame.draw.rect(self.detail_surface, (100, 180, 255),
+                               glow_rect, 1, border_radius=8)
+        
+        # Draw X with shadow for close button
+        x_color = (240, 240, 255)
+        x_shadow = (0, 0, 0)
+        
+        # Shadow for X
         pygame.draw.line(
             self.detail_surface,
-            (200, 200, 220),
+            x_shadow,
+            (self.detail_close_button.left + 6, self.detail_close_button.top + 6),
+            (self.detail_close_button.right - 6, self.detail_close_button.bottom - 6),
+            3
+        )
+        pygame.draw.line(
+            self.detail_surface,
+            x_shadow,
+            (self.detail_close_button.right - 6, self.detail_close_button.top + 6),
+            (self.detail_close_button.left + 6, self.detail_close_button.bottom - 6),
+            3
+        )
+        
+        # Main X
+        pygame.draw.line(
+            self.detail_surface,
+            x_color,
             (self.detail_close_button.left + 5, self.detail_close_button.top + 5),
             (self.detail_close_button.right - 5, self.detail_close_button.bottom - 5),
-            3
+            2
         )
         pygame.draw.line(
             self.detail_surface,
-            (200, 200, 220),
+            x_color,
             (self.detail_close_button.right - 5, self.detail_close_button.top + 5),
             (self.detail_close_button.left + 5, self.detail_close_button.bottom - 5),
-            3
+            2
         )
         
-        # Set up fonts
-        title_font = pygame.freetype.SysFont("Arial", 32)
-        header_font = pygame.freetype.SysFont("Arial", 24)
-        text_font = pygame.freetype.SysFont("Arial", 16)
+        # Set up fonts - using more modern fonts
+        title_font = pygame.freetype.SysFont("Segoe UI", 32, bold=True)
+        header_font = pygame.freetype.SysFont("Segoe UI", 22, bold=True)
+        text_font = pygame.freetype.SysFont("Segoe UI", 16)
         
-        # Draw title
-        title_surface, _ = title_font.render(f"{self.detail_civ.name}", (255, 255, 255))
-        self.detail_surface.blit(title_surface, (20, 20))
+        # Draw title with shadow and underline
+        title_shadow, _ = title_font.render(f"{self.detail_civ.name}", (0, 0, 0, 100))
+        title_text, _ = title_font.render(f"{self.detail_civ.name}", (255, 255, 255))
+        
+        # Add shadow effect
+        self.detail_surface.blit(title_shadow, (22, 22))
+        self.detail_surface.blit(title_text, (20, 20))
+        
+        # Add decorative underline
+        pygame.draw.line(
+            self.detail_surface,
+            (100, 180, 255, 180),
+            (20, 60),
+            (min(300, 20 + title_text.get_width() + 20), 60),
+            2
+        )
         
         # Draw basic info section
         y_pos = 70  # Start position for content
         
-        # Draw basic statistics
-        header_surface, _ = header_font.render("Basic Information", (230, 230, 255))
-        self.detail_surface.blit(header_surface, (20, y_pos))
-        y_pos += header_surface.get_height() + 10
+        # Draw basic statistics with an enhanced look
+        header_shadow, _ = header_font.render("Basic Information", (0, 0, 0, 80))
+        header_text, _ = header_font.render("Basic Information", (200, 220, 255))
         
-        basic_info = [
+        self.detail_surface.blit(header_shadow, (22, y_pos - self.detail_scroll_y + 2))
+        self.detail_surface.blit(header_text, (20, y_pos - self.detail_scroll_y))
+        y_pos += header_text.get_height() + 10
+        
+        # Create a subtle background box for basic info
+        # We'll calculate the height of this box dynamically based on wrapped text content
+        info_box_content_start_y = y_pos + 10 # 10px padding inside the box
+        current_info_box_y = info_box_content_start_y
+        
+        basic_info_items = [
             f"Age: {self.detail_civ.age} years",
             f"Population: {self.detail_civ.population:,}",
             f"Territory: {len(self.detail_civ.territory)} tiles",
@@ -1204,12 +1456,49 @@ class Renderer:
             f"Belief System: {self.detail_civ.belief_system.name} ({self.detail_civ.belief_system.foreign_stance})",
         ]
         
-        for info in basic_info:
-            text_surface, _ = text_font.render(info, (220, 220, 220))
-            self.detail_surface.blit(text_surface, (40, y_pos - self.detail_scroll_pos))
-            y_pos += text_surface.get_height() + 5
+        max_info_width = self.detail_surface.get_width() - 80 # 40px padding on each side of the info text itself
         
-        y_pos += 20  # Add spacing
+        for item_text in basic_info_items:
+            wrapped_lines = self._wrap_text(item_text, text_font, max_info_width)
+            for line in wrapped_lines:
+                text_shadow, _ = text_font.render(line, (0, 0, 0, 60))
+                text_surface, line_rect = text_font.render(line, (220, 240, 255))
+                
+                # Check if the line is visible before blitting
+                if current_info_box_y - self.detail_scroll_y > 0 and \
+                   current_info_box_y - self.detail_scroll_y < self.detail_surface.get_height() - header_text.get_height(): # ensure not drawing over footer/next section
+                    self.detail_surface.blit(text_shadow, (42, current_info_box_y - self.detail_scroll_y + 1))
+                    self.detail_surface.blit(text_surface, (40, current_info_box_y - self.detail_scroll_y))
+                
+                current_info_box_y += line_rect.height + 3 # Small spacing between lines
+            current_info_box_y += 2 # Extra spacing between items
+        
+        info_box_height = current_info_box_y - info_box_content_start_y + 10 # Add bottom padding
+        info_box_rect = pygame.Rect(20, info_box_content_start_y -10 , self.detail_surface.get_width() - 40, info_box_height)
+        pygame.draw.rect(self.detail_surface, (30, 45, 75, 160), info_box_rect, border_radius=8)
+        pygame.draw.rect(self.detail_surface, (60, 100, 180, 100), info_box_rect, 1, border_radius=8)
+        
+        # Redraw the text on top of the now-drawn box (if visible)
+        current_info_box_y = info_box_content_start_y # Reset y for redrawing text
+        for item_text in basic_info_items:
+            wrapped_lines = self._wrap_text(item_text, text_font, max_info_width)
+            for line in wrapped_lines:
+                text_shadow, _ = text_font.render(line, (0, 0, 0, 60))
+                text_surface, line_rect = text_font.render(line, (220, 240, 255))
+                
+                # Check if the line is visible before blitting
+                # Adjusted visibility check relative to the drawn info_box_rect top and bottom
+                line_abs_y_on_surface = current_info_box_y - self.detail_scroll_y
+                if line_abs_y_on_surface + line_rect.height > info_box_rect.top - self.detail_scroll_y and \
+                   line_abs_y_on_surface < info_box_rect.bottom - self.detail_scroll_y and \
+                   line_abs_y_on_surface > 0 and line_abs_y_on_surface < self.detail_surface.get_height() - text_font.get_sized_height():
+                    self.detail_surface.blit(text_shadow, (42, line_abs_y_on_surface + 1))
+                    self.detail_surface.blit(text_surface, (40, line_abs_y_on_surface))
+                
+                current_info_box_y += line_rect.height + 3
+            current_info_box_y += 2
+        
+        y_pos = info_box_rect.bottom + 20 # Update y_pos to be after the info box + padding
         
         # Generate lore content if available
         lore_content = {}
@@ -1222,131 +1511,187 @@ class Renderer:
                 "error": f"Could not generate lore: {str(e)[:100]}..."
             }
         
-        # Draw lore content
+        # Draw lore content with enhanced styling
         if lore_content:
+            # Function to render a section with consistent styling
+            def render_section(title, content, y_position):
+                # Render section header with shadow
+                header_shadow, _ = header_font.render(title, (0, 0, 0, 80))
+                header_text, _ = header_font.render(title, (200, 220, 255))
+                
+                if y_position - self.detail_scroll_y > -header_text.get_height() and y_position - self.detail_scroll_y < self.detail_surface.get_height():
+                    self.detail_surface.blit(header_shadow, (22, y_position - self.detail_scroll_y + 2))
+                    self.detail_surface.blit(header_text, (20, y_position - self.detail_scroll_y))
+                
+                section_y = y_position + header_text.get_height() + 5
+                
+                # Draw section underline
+                if section_y - self.detail_scroll_y > 0 and section_y - self.detail_scroll_y < self.detail_surface.get_height():
+                    pygame.draw.line(
+                        self.detail_surface,
+                        (100, 180, 255, 100),
+                        (20, section_y - self.detail_scroll_y),
+                        (min(280, 20 + header_text.get_width() + 40), section_y - self.detail_scroll_y),
+                        1
+                    )
+                
+                section_y += 10
+                
+                # Wrap and draw the text with shadow
+                wrapped_text = self._wrap_text(content, text_font, self.detail_surface.get_width() - 60)
+                for line in wrapped_text:
+                    # Only render if would be visible
+                    if section_y - self.detail_scroll_y > -text_font.get_sized_height() and section_y - self.detail_scroll_y < self.detail_surface.get_height():
+                        shadow_surf, _ = text_font.render(line, (0, 0, 0, 60))
+                        text_surf, _ = text_font.render(line, (220, 240, 255))
+                        
+                        self.detail_surface.blit(shadow_surf, (42, section_y - self.detail_scroll_y + 1))
+                        self.detail_surface.blit(text_surf, (40, section_y - self.detail_scroll_y))
+                    
+                    section_y += text_surf.get_height() + 2
+                
+                return section_y + 20  # Return updated y position with spacing
+            
             # Draw general lore
             if "general_lore" in lore_content:
-                header_surface, _ = header_font.render("Civilization History & Culture", (230, 230, 255))
-                self.detail_surface.blit(header_surface, (20, y_pos - self.detail_scroll_pos))
-                y_pos += header_surface.get_height() + 10
-                
-                # Wrap and draw the general lore text
-                wrapped_text = self._wrap_text(lore_content["general_lore"], text_font, self.detail_surface.get_width() - 60)
-                for line in wrapped_text:
-                    text_surface, _ = text_font.render(line, (220, 220, 220))
-                    if y_pos - self.detail_scroll_pos > 0 and y_pos - self.detail_scroll_pos < self.detail_surface.get_height():
-                        self.detail_surface.blit(text_surface, (40, y_pos - self.detail_scroll_pos))
-                    y_pos += text_surface.get_height() + 2
-                
-                y_pos += 20  # Add spacing
+                y_pos = render_section("Civilization History & Culture", lore_content["general_lore"], y_pos)
             
             # Draw leaders section
             if "leaders" in lore_content:
-                header_surface, _ = header_font.render("Notable Leaders", (230, 230, 255))
-                self.detail_surface.blit(header_surface, (20, y_pos - self.detail_scroll_pos))
-                y_pos += header_surface.get_height() + 10
-                
-                # Wrap and draw the leaders text
-                wrapped_text = self._wrap_text(lore_content["leaders"], text_font, self.detail_surface.get_width() - 60)
-                for line in wrapped_text:
-                    text_surface, _ = text_font.render(line, (220, 220, 220))
-                    if y_pos - self.detail_scroll_pos > 0 and y_pos - self.detail_scroll_pos < self.detail_surface.get_height():
-                        self.detail_surface.blit(text_surface, (40, y_pos - self.detail_scroll_pos))
-                    y_pos += text_surface.get_height() + 2
-                
-                y_pos += 20  # Add spacing
+                y_pos = render_section("Notable Leaders", lore_content["leaders"], y_pos)
             
             # Draw cultural facts
             if "cultural_facts" in lore_content:
-                header_surface, _ = header_font.render("Cultural Practices & Innovations", (230, 230, 255))
-                self.detail_surface.blit(header_surface, (20, y_pos - self.detail_scroll_pos))
-                y_pos += header_surface.get_height() + 10
-                
-                # Wrap and draw the cultural facts text
-                wrapped_text = self._wrap_text(lore_content["cultural_facts"], text_font, self.detail_surface.get_width() - 60)
-                for line in wrapped_text:
-                    text_surface, _ = text_font.render(line, (220, 220, 220))
-                    if y_pos - self.detail_scroll_pos > 0 and y_pos - self.detail_scroll_pos < self.detail_surface.get_height():
-                        self.detail_surface.blit(text_surface, (40, y_pos - self.detail_scroll_pos))
-                    y_pos += text_surface.get_height() + 2
-                
-                y_pos += 20  # Add spacing
+                y_pos = render_section("Cultural Practices & Innovations", lore_content["cultural_facts"], y_pos)
             
             # Draw cities section
             if "cities" in lore_content and lore_content["cities"]:
-                header_surface, _ = header_font.render("Major Cities", (230, 230, 255))
-                self.detail_surface.blit(header_surface, (20, y_pos - self.detail_scroll_pos))
-                y_pos += header_surface.get_height() + 10
+                # Section header
+                header_shadow, _ = header_font.render("Major Cities", (0, 0, 0, 80))
+                header_text, _ = header_font.render("Major Cities", (200, 220, 255))
+                
+                if y_pos - self.detail_scroll_y > -header_text.get_height() and y_pos - self.detail_scroll_y < self.detail_surface.get_height():
+                    self.detail_surface.blit(header_shadow, (22, y_pos - self.detail_scroll_y + 2))
+                    self.detail_surface.blit(header_text, (20, y_pos - self.detail_scroll_y))
+                y_pos += header_text.get_height() + 15
                 
                 for city_name, city_description in lore_content["cities"].items():
-                    city_header, _ = text_font.render(f"{city_name}:", (240, 240, 180))
-                    if y_pos - self.detail_scroll_pos > 0 and y_pos - self.detail_scroll_pos < self.detail_surface.get_height():
-                        self.detail_surface.blit(city_header, (40, y_pos - self.detail_scroll_pos))
-                    y_pos += city_header.get_height() + 5
-                    
-                    wrapped_text = self._wrap_text(city_description, text_font, self.detail_surface.get_width() - 80)
-                    for line in wrapped_text:
-                        text_surface, _ = text_font.render(line, (220, 220, 220))
-                        if y_pos - self.detail_scroll_pos > 0 and y_pos - self.detail_scroll_pos < self.detail_surface.get_height():
-                            self.detail_surface.blit(text_surface, (60, y_pos - self.detail_scroll_pos))
-                        y_pos += text_surface.get_height() + 2
-                    
-                    y_pos += 10  # Add spacing between cities
-                
-                y_pos += 20  # Add spacing
-            
-            # Draw belief system info
-            if "belief_lore" in lore_content:
-                header_surface, _ = header_font.render(f"Belief System: {self.detail_civ.belief_system.name}", (230, 230, 255))
-                self.detail_surface.blit(header_surface, (20, y_pos - self.detail_scroll_pos))
-                y_pos += header_surface.get_height() + 10
-                
-                wrapped_text = self._wrap_text(lore_content["belief_lore"], text_font, self.detail_surface.get_width() - 60)
-                for line in wrapped_text:
-                    text_surface, _ = text_font.render(line, (220, 220, 220))
-                    if y_pos - self.detail_scroll_pos > 0 and y_pos - self.detail_scroll_pos < self.detail_surface.get_height():
-                        self.detail_surface.blit(text_surface, (40, y_pos - self.detail_scroll_pos))
-                    y_pos += text_surface.get_height() + 2
-                
-                y_pos += 20  # Add spacing
-            
-            # Draw error if present
-            if "error" in lore_content:
-                error_text, _ = text_font.render(lore_content["error"], (255, 100, 100))
-                self.detail_surface.blit(error_text, (40, y_pos - self.detail_scroll_pos))
-                y_pos += error_text.get_height() + 20
-        else:
-            # No lore content available
-            no_lore_text, _ = text_font.render("Lore generation is not available", (220, 220, 220))
-            self.detail_surface.blit(no_lore_text, (40, y_pos - self.detail_scroll_pos))
-            y_pos += no_lore_text.get_height() + 20
+                    # Check if city section would be visible before rendering
+                    if y_pos - self.detail_scroll_y < self.detail_surface.get_height():
+                        # Create a subtle box for each city
+                        city_box_start = y_pos
+                        
+                        # Calculate city box height
+                        city_text_height = text_font.get_sized_height() + 5
+                        wrapped_city = self._wrap_text(city_description, text_font, self.detail_surface.get_width() - 80)
+                        city_box_height = city_text_height + len(wrapped_city) * (text_font.get_sized_height() + 2) + 15
+                        
+                        # Draw city box if it would be visible
+                        if (y_pos - self.detail_scroll_y + city_box_height > 0):
+                            city_box = pygame.Rect(40, y_pos - self.detail_scroll_y, 
+                                                  self.detail_surface.get_width() - 80, city_box_height)
+                            pygame.draw.rect(self.detail_surface, (30, 45, 75, 120), city_box, border_radius=8)
+                            pygame.draw.rect(self.detail_surface, (60, 100, 180, 80), city_box, 1, border_radius=8)
+                            
+                            # Add 5px padding
+                            y_pos += 10
+                            
+                            # City name with shadow and slight emphasis
+                            city_name_shadow, _ = text_font.render(f"{city_name}:", (0, 0, 0, 60))
+                            city_name_text, _ = text_font.render(f"{city_name}:", (240, 250, 190))
+                            
+                            self.detail_surface.blit(city_name_shadow, (52, y_pos - self.detail_scroll_y + 1))
+                            self.detail_surface.blit(city_name_text, (50, y_pos - self.detail_scroll_y))
+                            y_pos += city_name_text.get_height() + 5
+                            
+                            # City description
+                            for line in wrapped_city:
+                                text_shadow, _ = text_font.render(line, (0, 0, 0, 60))
+                                text_surface, _ = text_font.render(line, (210, 230, 255))
+                                
+                                self.detail_surface.blit(text_shadow, (62, y_pos - self.detail_scroll_y + 1))
+                                self.detail_surface.blit(text_surface, (60, y_pos - self.detail_scroll_y))
+                                y_pos += text_surface.get_height() + 2
+                            
+                            # Add padding at bottom
+                            y_pos += 10
+                        else:
+                            # Skip this city if it wouldn't be visible
+                            y_pos += city_box_height
+                    else:
+                        # Calculate approximate height and skip
+                        y_pos += 100  # Approximate height for invisible city
         
-        # Total content height for scrolling
-        self.detail_content_height = y_pos
+        # Create a fading effect at the top and bottom to indicate scrolling
+        if self.detail_scroll_y > 0:
+            # Top fade when scrolled down
+            for i in range(20):
+                alpha = min(180, i * 9)
+                fade_color = (*primary_bg_color[:3], alpha)
+                pygame.draw.rect(self.detail_surface, fade_color, (0, i, self.detail_surface.get_width(), 1))
         
-        # Draw scroll indicator if content exceeds view
-        if self.detail_content_height > self.detail_surface.get_height():
-            scroll_ratio = self.detail_surface.get_height() / self.detail_content_height
-            scroll_pos_ratio = self.detail_scroll_pos / self.detail_content_height
-            
-            # Draw scrollbar track
-            pygame.draw.rect(
-                self.detail_surface,
-                (60, 60, 70),
-                (self.detail_surface.get_width() - 15, 10, 10, self.detail_surface.get_height() - 20)
-            )
-            
-            # Draw scrollbar handle
-            scroll_handle_height = max(30, self.detail_surface.get_height() * scroll_ratio)
-            scroll_handle_pos = 10 + scroll_pos_ratio * (self.detail_surface.get_height() - 20 - scroll_handle_height)
-            
-            pygame.draw.rect(
-                self.detail_surface,
-                (120, 120, 140),
-                (self.detail_surface.get_width() - 15, scroll_handle_pos, 10, scroll_handle_height)
-            )
+        if self.detail_scroll_y < self.detail_max_scroll_y:
+            # Bottom fade when more content below
+            for i in range(20):
+                alpha = min(180, i * 9)
+                fade_color = (*primary_bg_color[:3], alpha)
+                bottom_y = self.detail_surface.get_height() - i - 1
+                pygame.draw.rect(self.detail_surface, fade_color, 
+                               (0, bottom_y, self.detail_surface.get_width(), 1))
         
-        # Draw to screen
+        # Draw styled scroll bar if needed
+        popup_height = self.detail_surface.get_height()
+        if self.detail_content_height > popup_height:
+            # Calculate the total height of the content
+            self.detail_content_height = y_pos
+            self.detail_max_scroll_y = max(0, self.detail_content_height - popup_height)
+            
+            # Calculate scrollbar track dimensions
+            scrollbar_width = 8
+            scrollbar_height = popup_height - 40  # 20px padding top and bottom
+            scrollbar_x = self.detail_surface.get_width() - scrollbar_width - 15  # 15px from right edge
+            scrollbar_y = 20  # 20px from top
+            
+            # Store the scroll bar rect for interaction
+            self.scroll_bar_rect = pygame.Rect(scrollbar_x, scrollbar_y, scrollbar_width, scrollbar_height)
+            
+            # Draw scrollbar track (subtle background)
+            pygame.draw.rect(self.detail_surface, (40, 60, 100, 100), 
+                           self.scroll_bar_rect, border_radius=4)
+            
+            # Calculate thumb dimensions
+            thumb_height_ratio = min(1.0, popup_height / self.detail_content_height)
+            thumb_height = max(40, int(scrollbar_height * thumb_height_ratio))
+            
+            # Calculate thumb position
+            scroll_ratio = self.detail_scroll_y / max(1, self.detail_max_scroll_y)
+            thumb_y = scrollbar_y + int((scrollbar_height - thumb_height) * scroll_ratio)
+            
+            # Store the scroll thumb rect
+            self.scroll_thumb_rect = pygame.Rect(scrollbar_x, thumb_y, scrollbar_width, thumb_height)
+            
+            # Check if mouse is over the scrollbar thumb
+            mouse_pos = pygame.mouse.get_pos()
+            rel_mouse_pos = (mouse_pos[0] - self.detail_rect.x, mouse_pos[1] - self.detail_rect.y)
+            scrollbar_hovered = self.scroll_thumb_rect.collidepoint(rel_mouse_pos) or self.dragging_scrollbar
+            
+            # Draw thumb with appropriate style
+            if scrollbar_hovered:
+                # Glowing effect when hovered
+                for i in range(2):
+                    glow_rect = self.scroll_thumb_rect.inflate(i*2, i*2)
+                    pygame.draw.rect(self.detail_surface, (100, 180, 255),
+                                   glow_rect, border_radius=4)
+                
+                thumb_color = (100, 180, 255, 220)
+            else:
+                thumb_color = (80, 140, 220, 180)
+            
+            # Draw the actual thumb
+            pygame.draw.rect(self.detail_surface, thumb_color, 
+                           self.scroll_thumb_rect, border_radius=4)
+        
+        # Blit detail surface to screen
         self.screen.blit(self.detail_surface, self.detail_rect)
 
     def _wrap_text(self, text, font, max_width):

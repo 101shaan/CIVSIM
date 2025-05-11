@@ -126,13 +126,16 @@ class Civilization:
         
         # relations with other civilizations
         self.relations = {}  # maps civ_id -> relation_value (-1 to 1)
+        self.permanently_hostile_to_all = False # For God Mode war influence
         
         # technology level (0-50000) - much higher cap now
         self.technology = random.randint(10, 30)
         
         # resources and production
+        # Increase starting food reserves to be more proportional to population
+        # This ensures even large starting populations have enough food to survive
         self.resources = {
-            "food": 100,
+            "food": max(300, self.population * 3.0),  # Increased food reserves (at least 300, or 3x population)
             "metal": 50,
             "gold": 20,
             "stone": 50
@@ -151,6 +154,11 @@ class Civilization:
         # battle victories and territory gains
         self.battle_victories = 0
         self.territory_last_tick = set()  # initialize as an empty set instead of an integer
+        
+        # Enhanced early protection - civilization is protected for first 20 years
+        # This is semi-realistic as early settlements typically had accumulated food stores
+        # and knowledge of local food sources before establishing permanent settlements
+        self.protected_until_tick = 20
         
         # add founding event
         self._add_event(f"Founded at {self.position}")
@@ -253,23 +261,27 @@ class Civilization:
         
         # Otherwise use realistic demographic patterns based on food availability
         elif food_per_person >= 1.5:  # Abundant food
-            base_growth_rate = random.uniform(0.01, 0.015)  # 1-1.5% annual growth (realistic pre-industrial rate)
+            base_growth_rate = random.uniform(0.01, 0.02)  # Increased from 0.01-0.015 to 0.01-0.02
         elif food_per_person >= 1.0:  # Plenty of food
-            base_growth_rate = random.uniform(0.005, 0.01)  # 0.5-1% growth
+            base_growth_rate = random.uniform(0.005, 0.015)  # Increased from 0.005-0.01 to 0.005-0.015
         elif food_per_person >= 0.75:  # Sufficient food
-            base_growth_rate = random.uniform(0.002, 0.005)  # 0.2-0.5% growth (subsistence level)
+            base_growth_rate = random.uniform(0.003, 0.008)  # Increased from 0.002-0.005 to 0.003-0.008
         elif food_per_person >= 0.5:  # Minimal food
-            base_growth_rate = random.uniform(-0.002, 0.002)  # -0.2% to 0.2% (stagnation)
+            base_growth_rate = random.uniform(-0.001, 0.003)  # Increased from -0.002-0.002 to -0.001-0.003
         else:  # Food shortage
-            base_growth_rate = random.uniform(-0.02, -0.01)  # -1% to -2% (decline)
+            base_growth_rate = random.uniform(-0.015, -0.005)  # Less severe decline: -0.02--0.01 to -0.015--0.005
         
         # Capacity-based modifiers
         if capacity_ratio > 0.9:  # Approaching capacity
             base_growth_rate = base_growth_rate * (1.0 - capacity_ratio)  # Reduce growth as we approach capacity
         
         # Size-dependent growth: natural demographic transition
+        # Modified for smaller populations to ensure they don't get stuck
         size_factor = 1.0
-        if self.population > 10000:
+        if self.population < 100:
+            # Boost growth rates for very small populations (the ones getting stuck)
+            size_factor = 1.3  # 30% boost to help them grow beyond the stuck range
+        elif self.population > 10000:
             size_factor = 0.8  # Slower growth for developing civilizations
         elif self.population > 50000:
             size_factor = 0.6  # Industrial transition
@@ -292,13 +304,34 @@ class Civilization:
             if len(self.territory) > 50:
                 trait_factor *= 1.05
         
-        # Protected civilizations get a growth boost
+        # Enhanced protection for young civilizations
         protection_factor = 1.0
-        if hasattr(self, 'protected_until_tick') and self.age < self.protected_until_tick:
+        if self.age < self.protected_until_tick:
             protection_factor = 1.2  # 20% growth bonus while protected
+            # Additionally, ensure no decline during the protected period
+            if base_growth_rate < 0 and food_per_person >= 0.4:
+                base_growth_rate = 0.001  # Small but positive growth even with food shortages
+        
+        # NEW: Territory expansion bonus - growing civilizations should see population growth
+        expansion_factor = 1.0
+        if hasattr(self, 'territory_last_tick') and self.territory_last_tick:
+            # Check if territory has expanded since last tick
+            # This ensures expanding civilizations see population growth
+            territory_growth = len(self.territory) - len(self.territory_last_tick)
+            if territory_growth > 0:
+                # Apply a growth bonus based on territorial expansion
+                expansion_factor = 1.0 + min(0.5, territory_growth * 0.05)  # Cap at 50% bonus
+                # Ensure a minimum positive growth rate for expanding civilizations
+                if base_growth_rate < 0.002 and food_per_person >= 0.4:
+                    base_growth_rate = 0.002  # Minimum growth rate when expanding (if food is adequate)
         
         # Apply all factors to calculate final growth rate
-        growth_rate = base_growth_rate * size_factor * tech_factor * trait_factor * protection_factor
+        growth_rate = base_growth_rate * size_factor * tech_factor * trait_factor * protection_factor * expansion_factor
+        
+        # Ensure a minimum positive growth rate for small populations with adequate food
+        # This prevents small civs from getting stuck in the 40-60 range
+        if self.population < 100 and food_per_person >= 0.6 and growth_rate < 0.005:
+            growth_rate = 0.005  # Minimum growth rate for small populations with adequate food
         
         # Calculate growth with absolute values for larger populations
         old_population = self.population
@@ -333,9 +366,11 @@ class Civilization:
         # Efficiency increases with technology (logarithmic scaling for diminishing returns)
         food_efficiency = 1.0 - (math.log(self.technology + 1) / 20)  
         
-        # Young civilizations get help with food consumption
-        if self.age < 20:
-            food_efficiency *= 0.8  # 20% more efficient for young civilizations
+        # Improved early-game food efficiency for realistic survival
+        young_age_factor = max(0, (20 - self.age) / 20)  # Scales from 1.0 to 0.0 over the first 20 years
+        if young_age_factor > 0:
+            # Progressive improvement to food efficiency for young civilizations
+            food_efficiency *= (1.0 - young_age_factor * 0.3)  # Up to 30% more efficient food use
         
         # Protected civilizations get additional help
         if hasattr(self, 'protected_until_tick') and self.age < self.protected_until_tick:
@@ -355,8 +390,16 @@ class Civilization:
         """Gather resources from controlled territory"""
         self.production = {resource: 0 for resource in self.resources.keys()}
         
-        # If this is a very young civilization, boost resource gathering to help it survive
-        young_bonus = max(0, (10 - self.age) / 10) if self.age < 10 else 0  # Bonus for first 10 years
+        # Enhanced early civilization bonus - more realistic as it represents
+        # initial food stores, hunting/gathering knowledge, and settler preparation
+        young_bonus = 0
+        if self.age < 20:  # Extended early bonus period
+            young_bonus = max(0, (20 - self.age) / 20)  # Scales from 1.0 to 0.0 over first 20 years
+        
+        # Enhanced food gathering for smaller, younger civilizations
+        # This simulates hunting-gathering efficiency and local knowledge being stronger
+        # in small groups, which is historically accurate
+        small_size_bonus = max(0, (500 - self.population) / 500) * 0.5  # Up to 50% bonus for very small civilizations
         
         for position in self.territory:
             if position in self.world.resources:
@@ -364,8 +407,14 @@ class Civilization:
                     # Base gathering rate depends on population and technology
                     base_rate = (self.population / 100) * (self.technology / 50)
                     
-                    # Apply young civilization bonus
-                    base_rate *= (1 + young_bonus * 2)  # Up to 3x gathering rate for new civs
+                    # Apply young civilization bonus - stronger for food (realistic)
+                    if resource == "food":
+                        # Food gathering gets a stronger early bonus (up to 4x for new civs)
+                        # This represents initial survival adaptations to local food sources
+                        base_rate *= (1 + young_bonus * 3 + small_size_bonus)
+                    else:
+                        # Other resources get the standard bonus
+                        base_rate *= (1 + young_bonus * 2)
                     
                     # Traits affect resource gathering
                     rate_modifier = 1.0
@@ -378,8 +427,19 @@ class Civilization:
                     self.production[resource] += gathered
         
         # Ensure minimum food production for young civilizations to prevent immediate starvation
-        if self.age < 10 and self.production["food"] < self.population * 0.6:
-            bonus_food = self.population * 0.6 - self.production["food"]
+        # Improved calculation that better scales with population
+        min_food_requirement = self.population * 0.7  # Increased from 0.6 to 0.7
+        
+        if self.age < 20 and self.production["food"] < min_food_requirement:
+            # This represents emergency food sources (hunting, gathering from outside claimed territory)
+            # which is realistic for early settlements that would utilize wider areas for food
+            bonus_food = min_food_requirement - self.production["food"]
+            
+            # Apply a gradual scale-down of emergency food as civilization ages
+            # to represent gradually depleting nearby unclaimed food sources
+            age_factor = (20 - self.age) / 20
+            bonus_food *= age_factor
+            
             self.resources["food"] += bonus_food
             self.production["food"] += bonus_food
     
@@ -644,9 +704,28 @@ class Civilization:
     
     def _consider_diplomacy(self, other_civ):
         """Consider diplomatic actions with another civilization"""
-        # Don't interact with collapsed civilizations
-        if hasattr(other_civ, 'has_collapsed') and other_civ.has_collapsed:
-            return
+        # If this civ is permanently hostile, always try to declare war if not already at war
+        if self.permanently_hostile_to_all:
+            if not hasattr(self, 'at_war_with') or other_civ.id not in self.at_war_with:
+                self._declare_war(other_civ)
+                return # No further diplomacy needed if war is declared
+            else:
+                return # Already at war, no other diplomacy
+
+        # If other_civ is permanently hostile, this civ might react by also declaring war or maintaining distance
+        if hasattr(other_civ, 'permanently_hostile_to_all') and other_civ.permanently_hostile_to_all:
+            if not hasattr(self, 'at_war_with') or other_civ.id not in self.at_war_with:
+                # High chance to declare war in defense or pre-emptively
+                if random.random() < 0.75:
+                    self._declare_war(other_civ)
+                    return
+                else: # Or just keep relations terrible
+                    self.relations[other_civ.id] = -1.0
+                    return
+            else:
+                return # Already at war
+
+        current_relation = self.relations.get(other_civ.id, 0)
         
         # First contact case
         if other_civ.id not in self.relations:
@@ -756,6 +835,18 @@ class Civilization:
 
     def _evaluate_first_contact(self, other_civ, initial_relation):
         """Evaluate what happens on first contact between civilizations"""
+        # If this civ is permanently hostile, it declares war on first contact
+        if self.permanently_hostile_to_all:
+            self._declare_war(other_civ)
+            self._add_event(f"First contact with {other_civ.name} immediately led to war due to divine influence!")
+            return
+
+        # If the other civ is permanently hostile, this civ reacts
+        if hasattr(other_civ, 'permanently_hostile_to_all') and other_civ.permanently_hostile_to_all:
+            self._declare_war(other_civ) # This civ is forced into war
+            self._add_event(f"Forced into war upon first contact with the divinely hostile {other_civ.name}!")
+            return
+
         # This is a major event - could be peaceful, hostile, or neutral
         
         # Check aggressive traits - much higher chance of immediate conflict

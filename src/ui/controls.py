@@ -8,25 +8,91 @@ import pygame.freetype
 import random
 
 class Button:
-    def __init__(self, rect, text, action=None, color=(80, 80, 80), hover_color=(120, 120, 120)):
+    def __init__(self, rect, text, action=None, color=(40, 60, 100), hover_color=(60, 100, 160)):
         self.rect = pygame.Rect(rect)
         self.text = text
         self.action = action
         self.color = color
         self.hover_color = hover_color
         self.is_hovered = False
-        self.font = pygame.freetype.SysFont("Arial", 14)
+        self.font = pygame.freetype.SysFont("Segoe UI", 14)
+        
+        # Animation state for glow effect
+        self.animation_state = 0  # 0-100 for glow effect
+        self.animation_direction = 1  # 1 = increasing, -1 = decreasing
     
     def draw(self, screen):
-        # draw button background
-        color = self.hover_color if self.is_hovered else self.color
-        pygame.draw.rect(screen, color, self.rect)
-        pygame.draw.rect(screen, (200, 200, 200), self.rect, 2)
+        # Create a surface with per-pixel alpha for better transparency effects
+        button_surface = pygame.Surface((self.rect.width, self.rect.height), pygame.SRCALPHA)
         
-        # draw text
-        text_surf, text_rect = self.font.render(self.text, (255, 255, 255))
-        text_rect.center = self.rect.center
-        screen.blit(text_surf, text_rect)
+        # Calculate color with animation
+        base_alpha = 180  # Semi-transparent
+        if self.is_hovered:
+            # Update animation state
+            self.animation_state += self.animation_direction * 5
+            if self.animation_state > 100:
+                self.animation_state = 100
+                self.animation_direction = -1
+            elif self.animation_state < 0:
+                self.animation_state = 0
+                self.animation_direction = 1
+                
+            # Enhanced glow when hovered
+            glow_strength = self.animation_state / 100
+            base_color = self.color + (base_alpha,)
+            glow_color = self.hover_color + (base_alpha,)
+            r = int(base_color[0] + (glow_color[0] - base_color[0]) * glow_strength)
+            g = int(base_color[1] + (glow_color[1] - base_color[1]) * glow_strength)
+            b = int(base_color[2] + (glow_color[2] - base_color[2]) * glow_strength)
+            color = (r, g, b, base_alpha)
+        else:
+            # Reset animation when not hovered
+            self.animation_state = 0
+            color = self.color + (base_alpha,)
+        
+        # Draw button background with rounded corners
+        pygame.draw.rect(button_surface, color, (0, 0, self.rect.width, self.rect.height), 
+                        border_radius=8)
+        
+        # Add subtle gradient effect
+        for y in range(0, self.rect.height//3):
+            highlight_alpha = 30 - y
+            if highlight_alpha > 0:
+                highlight_color = (255, 255, 255, highlight_alpha)
+                pygame.draw.rect(button_surface, highlight_color, 
+                                (2, 2 + y, self.rect.width - 4, 1), 
+                                border_radius=6)
+        
+        # Add button border with subtle glow
+        if self.is_hovered:
+            # Glowing border when hovered
+            border_color = (100, 180, 255, 200)
+            pygame.draw.rect(button_surface, border_color, 
+                            (0, 0, self.rect.width, self.rect.height), 
+                            2, border_radius=8)
+        else:
+            # Subtle border when not hovered
+            border_color = (100, 140, 200, 150)
+            pygame.draw.rect(button_surface, border_color, 
+                            (0, 0, self.rect.width, self.rect.height), 
+                            1, border_radius=8)
+        
+        # Draw text with shadow for better visibility
+        text_color = (240, 240, 255)
+        shadow_color = (0, 0, 0, 100)
+        
+        # Draw text shadow
+        text_surf, text_rect = self.font.render(self.text, shadow_color)
+        text_rect.center = (self.rect.width // 2 + 1, self.rect.height // 2 + 1)
+        button_surface.blit(text_surf, text_rect)
+        
+        # Draw main text
+        text_surf, text_rect = self.font.render(self.text, text_color)
+        text_rect.center = (self.rect.width // 2, self.rect.height // 2)
+        button_surface.blit(text_surf, text_rect)
+        
+        # Draw the button surface to the screen
+        screen.blit(button_surface, self.rect)
     
     def is_over(self, pos):
         return self.rect.collidepoint(pos)
@@ -86,10 +152,9 @@ class Controls:
         self.god_mode_buttons = [
             Button((10, 330, 180, 30), "Add Civilization", self._add_civilization),
             Button((10, 370, 180, 30), "Trigger Disaster", self._trigger_disaster),
-            Button((10, 410, 180, 30), "Grant Blessing", self._grant_blessing),
-            Button((10, 450, 180, 30), "Tech Boost", self._tech_boost),
-            Button((10, 490, 180, 30), "Shift Ideology", self._shift_ideology),
-            Button((10, 530, 180, 30), "Influence War", self._influence_war)
+            Button((10, 410, 180, 30), "Tech Boost", self._tech_boost),
+            Button((10, 450, 180, 30), "Shift Ideology", self._shift_ideology),
+            Button((10, 490, 180, 30), "Influence War", self._influence_war)
         ]
         
         # feedback message variables
@@ -126,27 +191,72 @@ class Controls:
                 button.draw(screen)
         
         if self.show_feedback and self.feedback_timer > 0:
-            font = pygame.freetype.SysFont("Arial", 14)
-            panel_width = 200 
-            msg_background = pygame.Surface((panel_width - 20, 30), pygame.SRCALPHA)
-            msg_background.fill((50, 50, 50, 220))
-            screen.blit(msg_background, (10, self.buttons[-1].rect.bottom + 10 if self.buttons else 550))
+            # Match the width of the standard buttons on the left panel (e.g., 180px)
+            panel_width = 180 
+            feedback_font = pygame.freetype.SysFont("Segoe UI", 13) # Slightly smaller font for feedback
             
-            words = self.feedback_message.split()
+            # Word wrap the feedback message
+            words = self.feedback_message.split(' ')
             lines = []
-            current_line = words[0] if words else ""
-            for word in words[1:]:
-                test_line = current_line + " " + word
-                width, _ = font.get_rect(test_line)[2:4]
-                if width < panel_width - 30:
-                    current_line = test_line
-                else:
-                    lines.append(current_line)
-                    current_line = word
-            lines.append(current_line)
+            current_line = ""
+            if words:
+                current_line = words[0]
+                for word in words[1:]:
+                    test_line = current_line + " " + word
+                    text_width, _ = feedback_font.get_rect(test_line)[2:4]
+                    if text_width < panel_width - 20: # 10px padding on each side
+                        current_line = test_line
+                    else:
+                        lines.append(current_line)
+                        current_line = word
+                lines.append(current_line)
+            else:
+                lines.append("") # Handle empty message
             
+            # Calculate panel dimensions based on text content
+            line_height = feedback_font.get_sized_height() + 2 # Small spacing between lines
+            text_block_height = len(lines) * line_height
+            panel_height = text_block_height + 20  # 10px padding top and bottom
+            
+            # Create a stylish panel with rounded corners
+            msg_background_surface = pygame.Surface((panel_width, panel_height), pygame.SRCALPHA)
+            
+            # Main background - semi-transparent dark blue
+            pygame.draw.rect(msg_background_surface, (30, 50, 90, 230), 
+                           (0, 0, panel_width, panel_height), 
+                           border_radius=8)
+            
+            # Add subtle highlight at the top
+            for y_offset in range(8):
+                highlight_alpha = 20 - y_offset * 2
+                if highlight_alpha > 0:
+                    pygame.draw.rect(msg_background_surface, (100, 150, 250, highlight_alpha), 
+                                   (2, 2 + y_offset, panel_width - 4, 1), 
+                                   border_radius=6)
+            
+            # Add border
+            pygame.draw.rect(msg_background_surface, (80, 120, 200, 190), 
+                           (0, 0, panel_width, panel_height), 
+                           1, border_radius=8)
+            
+            # Position the panel like other buttons in the left column
+            panel_x = 10 # Same x as other buttons
+            panel_y = self.buttons[-1].rect.bottom + 10 if self.buttons else 10 # Below the last button or at top
+            screen.blit(msg_background_surface, (panel_x, panel_y))
+            
+            # Display text with shadow for better visibility, centered or nicely padded
+            text_start_y = panel_y + 10 # 10px top padding for text
             for i, line in enumerate(lines):
-                font.render_to(screen, (15, (self.buttons[-1].rect.bottom + 15 if self.buttons else 555) + i*20), line, (255, 255, 100))
+                line_surface_shadow, line_rect_shadow = feedback_font.render(line, (0, 0, 0, 100))
+                line_surface, line_rect = feedback_font.render(line, (220, 255, 180))
+                
+                # Center text horizontally within the panel
+                line_x_shadow = panel_x + (panel_width - line_rect_shadow.width) // 2 +1
+                line_x = panel_x + (panel_width - line_rect.width) // 2
+                current_text_y = text_start_y + i * line_height
+                
+                screen.blit(line_surface_shadow, (line_x_shadow, current_text_y + 1))
+                screen.blit(line_surface, (line_x, current_text_y))
             
             self.feedback_timer -= 1
             if self.feedback_timer <= 0:
@@ -156,11 +266,25 @@ class Controls:
         if self.selected_civ and self.more_info_button_active and self.renderer:
             # position at the bottom of the right-side panel
             right_panel_x = screen.get_width() - self.renderer.side_panel_width
-            button_x_pos = right_panel_x + (self.renderer.side_panel_width - 100) // 2 # centered in side panel
+            button_x_pos = right_panel_x + (self.renderer.side_panel_width - 120) // 2 # centered in side panel
             button_y_pos = screen.get_height() - 40 # 40px from the bottom of the screen
             
-            self.more_info_button.rect = pygame.Rect(button_x_pos, button_y_pos, 100, 30)
+            # Use a special highlight color for the More Info button
+            self.more_info_button.rect = pygame.Rect(button_x_pos, button_y_pos, 120, 30)
+            
+            # Customize More Info button to stand out
+            original_color = self.more_info_button.color
+            original_hover = self.more_info_button.hover_color
+            
+            # Use a more noticeable blue color for this important button
+            self.more_info_button.color = (40, 80, 130)
+            self.more_info_button.hover_color = (60, 120, 200)
+            
             self.more_info_button.draw(screen)
+            
+            # Restore original colors
+            self.more_info_button.color = original_color
+            self.more_info_button.hover_color = original_hover
     
     def _handle_mouse_click(self, pos):
         """handle mouse click at position. returns true if a button was actioned, or a string for special actions."""
@@ -300,21 +424,6 @@ class Controls:
             
         self.simulation.trigger_god_event("disaster", target_civ, position)
     
-    def _grant_blessing(self):
-        """Grant a blessing to a civilization (God mode)"""
-        # Need a selected civilization
-        if self.selected_civ:
-            self.simulation.trigger_god_event("blessing", self.selected_civ)
-            self._show_feedback(f"Blessing granted to {self.selected_civ.name}!")
-        else:
-            # If no civilization is selected, choose a random one
-            if self.world.civilizations:
-                random_civ = random.choice(self.world.civilizations)
-                self.simulation.trigger_god_event("blessing", random_civ)
-                self._show_feedback(f"Blessing granted to random civilization: {random_civ.name}!")
-            else:
-                self._show_feedback("No civilizations exist to bless!")
-    
     def _tech_boost(self):
         """Boost a civilization's technology (God mode)"""
         # Need a selected civilization
@@ -379,7 +488,15 @@ class Controls:
         """Show detailed civilization information if a civ is selected."""
         if self.selected_civ and self.renderer:
             self.renderer.show_civ_details(self.selected_civ)
-            self._show_feedback(f"Showing details for {self.selected_civ.name}")
+            # Unconditionally pause the simulation when showing details
+            if not self.simulation.paused:
+                self.simulation.paused = True
+                # Optionally, store the previous state if you want to unpause only if it was running
+                # self.was_running_before_details = True 
+                self._show_feedback(f"Showing details for {self.selected_civ.name}. (Simulation paused)")
+            else:
+                # self.was_running_before_details = False
+                self._show_feedback(f"Showing details for {self.selected_civ.name}.")
         elif not self.selected_civ:
             self._show_feedback("Select a civilization to see more info.")
         else:

@@ -67,25 +67,46 @@ class LoreGenerator:
         """load fallback templates for when api is unavailable"""
         self.templates = {
             "belief_system": [
-                "The {name} believes in harmony with nature and the worship of ancestral spirits.",
-                "The {name} follows a strict hierarchical religion with complex rituals.",
-                "The {name} practices a philosophy of self-improvement and technological advancement.",
-                "The {name} worships celestial bodies and believes in astronomical prophecies.",
-                "The {name} follows a monotheistic faith with emphasis on personal salvation.",
+                "The {name} believes in harmony with nature and the worship of ancestral spirits. Rituals are performed at sacred groves and near bodies of water to honor the cycle of life.",
+                "The {name} follows a strict hierarchical religion with complex rituals. Priests hold significant political power and serve as intermediaries between the people and the divine.",
+                "The {name} practices a philosophy of self-improvement and technological advancement. They believe the path to enlightenment lies in understanding the material world through scientific inquiry.",
+                "The {name} worships celestial bodies and believes in astronomical prophecies. Their temples are built to align with solar and lunar events, and their calendar is highly accurate.",
+                "The {name} follows a monotheistic faith with emphasis on personal salvation. They believe in an afterlife where one's actions in life determine eternal reward or punishment.",
+                "The {name} practices ancestor worship, believing the deceased continue to influence the living. Family shrines are maintained in every household, and elaborate funerals ensure proper passage to the next world.",
+                "The {name} follows an animistic belief system, seeing spirits in all natural elements. Shamans communicate with these spirits through trance rituals, often using sacred plants as intermediaries.",
+                "The {name} adheres to a dualistic cosmology where forces of light and darkness are in constant struggle. They see moral choices as participating in this cosmic battle.",
+                "The {name} practices a mystery religion with secret initiations and revealed wisdom. Devotees progress through levels of understanding, gaining deeper insights with each ritual passage.",
+                "The {name} follows a philosophical tradition emphasizing logic, ethics, and the pursuit of knowledge. Their schools of thought have produced many renowned scholars and debaters.",
+                "The {name} embraces polytheism with a vast pantheon representing natural forces and human virtues. Their mythology contains elaborate stories explaining the world's origin and natural phenomena.",
+                "The {name} practices a syncretic faith, incorporating elements from multiple traditions they've encountered through trade and conquest. This adaptability has allowed their beliefs to spread widely.",
             ],
             "city_description": [
-                "A bustling hub of commerce nestled between {terrain_feature}.",
-                "A fortified settlement known for its {specialty} and strategic location.",
-                "A sprawling city with grand architecture and vibrant markets.",
-                "A modest town where traditions are preserved through generations.",
-                "A center of learning and culture surrounded by {terrain_feature}.",
+                "A bustling hub of commerce nestled between {terrain_feature}, with markets filled with exotic goods and street performers entertaining the crowds. {city_name} is known for its intricate canal system that both aids transportation and provides defense.",
+                "A fortified settlement known for its {specialty} and strategic location. The massive walls of {city_name} have withstood numerous sieges, and its central fortress is considered impregnable by many.",
+                "A sprawling city with grand architecture and vibrant markets. The skyline of {city_name} is dominated by towering spires and massive domes that reflect the prosperity of its merchant class.",
+                "A modest town where traditions are preserved through generations. In {city_name}, ancient crafts are still practiced exactly as they were centuries ago, and yearly festivals maintain cultural continuity.",
+                "A center of learning and culture surrounded by {terrain_feature}. The libraries and academies of {city_name} attract scholars from far and wide, and its theaters showcase the finest artistic expressions.",
+                "A coastal port city with a magnificent harbor filled with ships from distant lands. {city_name}'s lighthouse guides vessels safely to shore, and its shipyards produce the finest vessels in the region.",
+                "A mountain citadel carved directly into the rockface, with buildings rising in terraced levels. {city_name} controls important mountain passes and is renowned for its defensive capabilities.",
+                "A garden city where buildings and nature exist in harmony. The hanging gardens of {city_name} are considered one of the great wonders of the world, sustained by an ingenious irrigation system.",
+                "A desert oasis city that thrives against all odds, with ingenious water management systems. {city_name} is known for its underground aqueducts that bring fresh water from distant mountains.",
+                "A holy city built around sacred sites, drawing pilgrims from across the lands. The temples of {city_name} are architectural marvels, and religious ceremonies occur daily in its sacred plazas.",
+                "A cosmopolitan trading hub where different cultures blend together. In {city_name}, you can hear dozens of languages spoken in its markets, and its cuisine reflects influences from many traditions.",
+                "A frontier settlement that represents the edge of civilization, protecting against wilderness threats. The watchtowers of {city_name} are always manned, and its militia is exceptionally well-trained.",
             ],
             "historical_event": [
-                "A devastating plague that reshaped the society's approach to medicine.",
-                "A golden age of art and science that produced remarkable achievements.",
-                "A period of political reform that established new governing institutions.",
-                "A series of natural disasters that tested the civilization's resilience.",
-                "A cultural revolution that transformed social structures and beliefs.",
+                "A devastating plague that reshaped the society's approach to medicine. As the population dwindled, survivors developed new hygienic practices and hospitals were established for the first time.",
+                "A golden age of art and science that produced remarkable achievements. Great libraries were built, and scholars made discoveries that would influence thought for centuries to come.",
+                "A period of political reform that established new governing institutions. The old order was peacefully transformed, creating a more representative system that has endured to this day.",
+                "A series of natural disasters that tested the civilization's resilience. After earthquakes, floods, and fires, they rebuilt stronger than before, with new architectural techniques designed to withstand future calamities.",
+                "A cultural revolution that transformed social structures and beliefs. Old traditions were questioned and sometimes abandoned, leading to a more dynamic and progressive society.",
+                "A great migration that brought new peoples and ideas into the civilization. This diversity eventually strengthened the culture, though initial conflicts had to be overcome through compromise.",
+                "A technological breakthrough that revolutionized everyday life. The innovation spread rapidly and created new industries, dramatically improving living standards for many citizens.",
+                "A succession crisis that threatened to tear the civilization apart. Different factions supported rival claimants to leadership, and only after years of tension was stability restored.",
+                "An economic transformation that changed the basis of wealth and power. New resources were discovered or new methods of production developed, shifting the balance between social classes.",
+                "A religious reformation that challenged established spiritual authorities. New interpretations of sacred texts led to the formation of splinter groups, some of which gained significant followings.",
+                "A period of exploration that expanded knowledge of the world. Brave adventurers ventured into unknown territories, returning with maps, specimens, and stories that captivated public imagination.",
+                "A legendary leader's rule that became the standard by which all subsequent governance was judged. Their wisdom and vision established principles that would guide the civilization for generations.",
             ],
             "war_description": [
                 "A bitter conflict over resources that left both sides weakened.",
@@ -93,6 +114,48 @@ class LoreGenerator:
                 "A long series of border skirmishes that eventually erupted into full war.",
                 "A defensive struggle against an aggressive neighbor.",
                 "A war of succession after disputed leadership claims.",
+            ],
+            "civilization_lore": [
+                "The {name} civilization is known for their sophisticated agricultural techniques, having developed irrigation systems that transform arid lands into fertile fields. Their architectural style features stepped pyramids that serve both religious and administrative functions.",
+                "The {name} people are renowned seafarers whose ships have charted distant coastlines and established trading networks across vast waters. Their society is organized around a council of captains who make decisions collectively.",
+                "The {name} civilization has mastered metallurgy to an extraordinary degree, creating alloys unknown to their neighbors. Their cities are protected by concentric walls, and their weapons are sought after by allies and feared by enemies.",
+                "The {name} are known for their mathematical and astronomical knowledge, having developed a calendar of remarkable accuracy and complex systems of notation. Their cities are planned in alignment with celestial bodies.",
+                "The {name} civilization has developed a complex system of writing used to record history, laws, and poetry. Their literature is rich with epics detailing the exploits of heroes and the intervention of divine beings in mortal affairs.",
+                "The {name} have perfected the art of defensive warfare, building sophisticated fortifications and training disciplined infantry. They rarely expand through conquest, preferring to establish tributary relationships with neighboring peoples.",
+                "The {name} civilization is organized around a caste system, with each person's role determined by birth. Despite this rigid social structure, they have produced remarkable achievements in art, particularly sculpture and music.",
+                "The {name} are master horticulturists who have domesticated numerous plant species for food, medicine, and beauty. Their cities feature extensive botanical gardens, and their healers are sought after for their knowledge of herbal remedies.",
+                "The {name} civilization has developed a complex bureaucracy governed by meritocratic principles. Officials must pass rigorous examinations testing their knowledge of history, ethics, and administration before taking office.",
+                "The {name} people have a nomadic heritage that influences their culture even as they build permanent settlements. Their architecture uses lightweight materials and incorporates elements reminiscent of traditional portable dwellings.",
+                "The {name} civilization has a highly developed legal system with courts and codified laws dating back centuries. Their concept of justice emphasizes restoration and rehabilitation rather than punishment.",
+                "The {name} are known for their diplomatic skill, maintaining peace through a network of alliances and marriages between ruling families. Their emissaries are respected for their ability to resolve conflicts without resorting to violence.",
+            ],
+            "leader_templates": [
+                "{name}, the Visionary, who led the civilization through a period of unprecedented expansion, establishing new settlements and forging crucial alliances with neighboring peoples.",
+                "{name}, the Reformer, whose sweeping changes to governance created more equitable institutions that have stood the test of time and become central to the civilization's identity.",
+                "{name}, the Defender, who successfully repelled multiple invasions and strengthened the civilization's defenses, ensuring decades of security and peaceful development.",
+                "{name}, the Scholar-Ruler, whose patronage of learning established great centers of knowledge and attracted brilliant minds from far and wide to contribute to cultural advancement.",
+                "{name}, the Unifier, who brought together previously warring factions under a single banner, creating a sense of shared identity that transcended old tribal loyalties.",
+                "{name}, the Navigator, whose expeditions discovered new lands and resources, greatly expanding the civilization's understanding of the world and access to valuable trade goods.",
+                "{name}, the Lawgiver, whose legal code established clear rights and responsibilities for all citizens, creating a framework for justice that outlived their reign by centuries.",
+                "{name}, the Builder, under whose direction monumental architecture transformed the urban landscape and created enduring symbols of the civilization's greatness.",
+                "{name}, the Benevolent, whose concern for the common people led to policies that improved living conditions and provided support during times of hardship.",
+                "{name}, the Conqueror, whose military campaigns expanded territorial control and brought new peoples and resources under the civilization's influence.",
+                "{name}, the Diplomat, whose skill at negotiation prevented numerous conflicts and established beneficial relationships with potential rivals and allies alike.",
+                "{name}, the Innovator, whose encouragement of new techniques and technologies gave the civilization advantages in agriculture, craftsmanship, and warfare.",
+            ],
+            "cultural_facts": [
+                "The people of {name} practice a unique form of martial arts that combines combat techniques with dance-like movements, performed during festivals and used for self-defense. Their distinctive weaponry includes a curved blade that can be used both as a tool and for fighting.",
+                "In {name} society, coming-of-age rituals involve a period of solitary survival in the wilderness, during which young people must demonstrate self-reliance and return with an item symbolizing their personal strength.",
+                "The {name} have developed a sophisticated written language using pictographs that evolved into an elegant script. Their poets are highly respected, and literary competitions are major social events attended by people of all classes.",
+                "Architecture in {name} settlements follows strict geometric principles believed to channel cosmic energy. Buildings are oriented according to astronomical alignments, and proportions follow mathematical ratios thought to be divinely inspired.",
+                "The {name} practice elaborate funeral rituals where the deceased are accompanied by symbolic objects representing their achievements in life. Ancestors are regularly honored through ceremonies that include offerings of food and symbolic items.",
+                "Music plays a central role in {name} culture, with different melodic modes prescribed for various occasions and seasons. Their unique instruments include resonant stone chimes and multi-chambered wind instruments capable of playing chords.",
+                "{name} governance includes a unique practice where leaders must periodically undergo public rituals of renewal, during which their fitness to rule is assessed based on physical challenges and tests of wisdom.",
+                "Cuisine in {name} society is characterized by elaborate preparation techniques and specific combinations of flavors believed to balance bodily energies. Communal meals are important social occasions that strengthen community bonds.",
+                "The {name} have perfected techniques for working with a local material in ways unknown to other peoples. Their artisans create objects of remarkable beauty and utility, which have become valuable trade goods.",
+                "Gender roles in {name} society differ from many neighboring cultures, with responsibilities divided based on aptitude rather than strict gender lines. Their historical records mention notable leaders of all genders who made significant contributions.",
+                "The calendar system developed by the {name} tracks multiple astronomical cycles and influences when important activities are undertaken. Certain days are considered auspicious for specific actions, from planting crops to beginning journeys.",
+                "The {name} have a tradition of oral history where specialized memorizers can recount centuries of events with remarkable accuracy. These knowledge-keepers undergo years of training to develop their mnemonic abilities.",
             ],
         }
     
@@ -224,10 +287,13 @@ class LoreGenerator:
         template = random.choice(self.templates["city_description"])
         lore = template.format(
             terrain_feature=terrain_features.get(terrain, "varied landscapes"),
-            specialty=specialty
+            specialty=specialty,
+            city_name=city_name
         )
         
-        lore += f" {city_name} is known throughout the region for its {random.choice(['unique architecture', 'cultural festivals', 'defensive walls', 'trading markets', 'religious monuments'])}."
+        # We don't need to add the city name again since it's now included in the template
+        if "{city_name}" not in template:
+            lore += f" {city_name} is known throughout the region for its {random.choice(['unique architecture', 'cultural festivals', 'defensive walls', 'trading markets', 'religious monuments'])}."
         
         self.lore_cache[cache_key] = lore
         return lore
@@ -343,7 +409,7 @@ class LoreGenerator:
 
     def generate_civilization_lore(self, civ_name, civ_traits, belief_system, history_events):
         """Generate rich lore for a civilization"""
-        cache_key = f"civ_{civ_name}_{','.join(civ_traits)}_{belief_system.name}"
+        cache_key = f"civ_{civ_name}_{'-'.join(sorted(civ_traits))}"
         
         if cache_key in self.lore_cache:
             return self.lore_cache[cache_key]
@@ -396,10 +462,19 @@ class LoreGenerator:
             except Exception as e:
                 print(f"OpenAI API error in civilization lore: {e}")
         
-        # fallback
-        lore = f"The {civ_name} civilization is known for their {', '.join(civ_traits)} nature. "
-        lore += f"They follow the {belief_system.name} belief system and are {belief_system.foreign_stance} toward outsiders. "
-        lore += "Their history is filled with " + random.choice(["conquest", "innovation", "cultural achievements", "religious devotions"]) + "."
+        # fallback to improved templates
+        template = random.choice(self.templates["civilization_lore"])
+        lore = template.format(name=civ_name)
+        
+        # Add some traits information
+        if civ_traits:
+            lore += f" Their society particularly values {', '.join(civ_traits[:-1])}" 
+            if len(civ_traits) > 1:
+                lore += f" and {civ_traits[-1]}"
+            lore += "."
+        
+        # Add belief system info
+        lore += f" They follow the {belief_system.name} belief system and are {belief_system.foreign_stance} toward outsiders."
         
         self.lore_cache[cache_key] = lore
         return lore
@@ -412,7 +487,6 @@ class LoreGenerator:
         if cache_key in self.lore_cache:
             return self.lore_cache[cache_key]
         
-        # If API is available, use it
         if self.initialized and self.client:
             try:
                 # Create the prompt
@@ -454,37 +528,52 @@ class LoreGenerator:
                 print(f"Error generating leader profiles: {e}")
                 # Fall through to template-based generation
         
-        # Fall back to template-based generation
-        # Generate 2-3 leaders using templates
-        num_leaders = random.randint(2, 3)
-        leader_descriptions = []
+        # Fallback to template based generation with our new leader templates
+        # Choose number of leaders based on civilization age
+        num_leaders = min(3, max(1, years_of_history // 100))
         
-        titles = ["Emperor", "Queen", "High Priest", "Warlord", "Chieftain", "Sage", "Prophet", "Chancellor"]
-        achievements = ["expanded territory by conquest", "brought an age of peace", "reformed the legal system", 
-                      "built great monuments", "advanced technology", "survived a catastrophe"]
-        quirks = ["had six fingers on each hand", "never slept more than 4 hours", "adopted 100 children", 
-                 "wrote poetry in secret", "was afraid of water", "collected unusual pets"]
+        # Get templates and generate leader names
+        leader_templates = random.sample(self.templates["leader_templates"], num_leaders)
+        leader_prefix = random.choice(["Emperor", "Queen", "King", "Chief", "Lord", "Lady", "Chancellor", "High Priest", "Warlord", "Matriarch", "Patriarch", "Sovereign"])
+        leader_names = []
+        
+        # Create phonetically consistent names for the civilization
+        vowels = "aeiou"
+        consonants = "bcdfghjklmnpqrstvwxyz"
+        
+        # Extract first letter of civ name to influence leader names
+        first_letter = civ_name[0].lower() if civ_name else random.choice(consonants)
         
         for i in range(num_leaders):
-            # Generate leader info
-            name = self._generate_name()
-            title = random.choice(titles)
+            # Generate a name with similar phonetic patterns to the civilization name
+            name_length = random.randint(4, 8)
+            if first_letter in vowels:
+                pattern = [0, 1, 0, 1, 0, 1, 0, 1]  # vowel-consonant pattern
+            else:
+                pattern = [1, 0, 1, 0, 1, 0, 1, 0]  # consonant-vowel pattern
+                
+            name = first_letter
+            for j in range(1, name_length):
+                if pattern[j % len(pattern)] == 0:
+                    name += random.choice(vowels)
+                else:
+                    name += random.choice(consonants)
             
-            # When they lived - distribute across civilization history
-            period_start = int((i / num_leaders) * years_of_history)
-            period_end = int(((i + 1) / num_leaders) * years_of_history)
-            period = f"ruled {period_start}-{period_end} years ago"
-            
-            # Achievements and quirks
-            achievement = random.choice(achievements)
-            quirk = random.choice(quirks)
-            
-            leader_desc = f"{name} the {title} ({period}): {achievement}. Notably, {quirk}."
-            leader_descriptions.append(leader_desc)
+            name = name.capitalize()
+            leader_names.append(f"{leader_prefix} {name}")
         
-        leaders_text = "\n\n".join(leader_descriptions)
-        self.lore_cache[cache_key] = leaders_text
-        return leaders_text
+        # Format the leader descriptions
+        descriptions = []
+        for i in range(num_leaders):
+            description = leader_templates[i].format(name=leader_names[i])
+            descriptions.append(description)
+        
+        # Combine descriptions
+        lore = "Throughout their history, several notable leaders have shaped the destiny of this civilization:\n\n"
+        lore += "\n\n".join(descriptions)
+        
+        self.lore_cache[cache_key] = lore
+        return lore
 
     def generate_cultural_facts(self, civ_name, civ_traits, belief_system, territory_size):
         """Generate unique cultural facts about a civilization"""
@@ -540,13 +629,29 @@ class LoreGenerator:
             except Exception as e:
                 print(f"OpenAI API error in cultural facts: {e}")
         
-        # Fallback
-        lore = f"## Cultural Facts: {civ_name}\n\n"
-        lore += "- They have a unique tradition of " + random.choice(["seasonal festivals", "ancestor worship", "communal meals", "artistic competitions"]) + ".\n"
-        lore += "- They are known for their skill in " + random.choice(["metalworking", "pottery", "textile arts", "astronomy", "medicine"]) + ".\n"
+        # Fallback to template based generation with our new cultural templates
+        template = random.choice(self.templates["cultural_facts"])
+        cultural_lore = template.format(name=civ_name)
         
-        self.lore_cache[cache_key] = lore
-        return lore
+        # Add some additional info based on civilization traits
+        if civ_traits:
+            trait = random.choice(civ_traits)
+            if trait == "aggressive":
+                cultural_lore += f" The {civ_name} are known for their intimidating war dances and elaborate armor design that strikes fear into their enemies."
+            elif trait == "diplomatic":
+                cultural_lore += f" The {civ_name} have a tradition of resolving conflicts through formal debates where both sides present their case before neutral mediators."
+            elif trait == "innovative":
+                cultural_lore += f" The {civ_name} hold regular competitions where inventors showcase new tools and devices, with the best being awarded special status in society."
+            elif trait == "traditional":
+                cultural_lore += f" The {civ_name} maintain ancient ceremonies unchanged for generations, believing their precise performance ensures cosmic harmony."
+            elif trait == "expansionist":
+                cultural_lore += f" The {civ_name} conduct elaborate rituals when claiming new territory, with monuments erected to mark the boundaries of their expanding realm."
+        
+        # Add belief system influence
+        cultural_lore += f" Their {belief_system.name} belief system influences daily life through {random.choice(['prayer rituals', 'dietary restrictions', 'special garments', 'regular festivals', 'symbolic decorations'])}."
+        
+        self.lore_cache[cache_key] = cultural_lore
+        return cultural_lore
 
     def _generate_name(self, prefix=""):
         """Generate a random name for belief systems, cities, etc."""
