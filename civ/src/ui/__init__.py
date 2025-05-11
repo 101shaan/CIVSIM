@@ -1,3 +1,0 @@
-"""
-civilization simulator - ui package
-""" 
