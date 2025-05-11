@@ -1,4 +1,4 @@
-# CIVSIM: A Complex Civilization Simulation Engine
+# CIVSIM: Watch societies evolve, compete and collapse
 
 ## Project Overview
 
