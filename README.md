@@ -1,4 +1,4 @@
-# Civilization Simulator
+# The CIVSIM
 
 A Python/Pygame civilization simulation that models the growth and interaction of civilizations.
 
