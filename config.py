@@ -5,7 +5,7 @@ config settings for civ simulator
 # openai api key for lore generation
 # replace this with your actual api key or set it as an environment variable
 # named OPENAI_API_KEY
-OPENAI_API_KEY ="sk-mnop5678mnop5678mnop5678mnop5678mnop5678"  # empty string will use fallback templates
+OPENAI_API_KEY =""  # empty string will use fallback templates
 
 # game settings
 GAME_TITLE = "Civilization Simulator"
