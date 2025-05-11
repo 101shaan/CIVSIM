@@ -1,0 +1,3 @@
+"""
+civilization simulator - main package
+""" 
