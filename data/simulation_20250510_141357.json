@@ -1,0 +1,847 @@
+{
+  "year": 2677,
+  "tick_count": 2677,
+  "world_size": [
+    100,
+    100
+  ],
+  "active_civilizations": [],
+  "event_history": [
+    {
+      "year": 0,
+      "description": "Civilization Sacred Empire founded",
+      "type": "general",
+      "timestamp": 1746882768.4919887
+    },
+    {
+      "year": 0,
+      "description": "Civilization Terran Realm founded",
+      "type": "general",
+      "timestamp": 1746882768.492367
+    },
+    {
+      "year": 0,
+      "description": "Civilization Aetheria Republic founded",
+      "type": "general",
+      "timestamp": 1746882768.492615
+    },
+    {
+      "year": 0,
+      "description": "Civilization Nimbus Empire founded",
+      "type": "general",
+      "timestamp": 1746882768.492657
+    },
+    {
+      "year": 0,
+      "description": "Civilization Rising Federation founded",
+      "type": "general",
+      "timestamp": 1746882768.4929404
+    },
+    {
+      "year": 1,
+      "description": "Terran Realm: Expanded territory to (24, 1)",
+      "type": "general",
+      "timestamp": 1746882768.5056486
+    },
+    {
+      "year": 1,
+      "description": "Nimbus Empire: Expanded territory to (91, 94)",
+      "type": "general",
+      "timestamp": 1746882768.5056958
+    },
+    {
+      "year": 2,
+      "description": "Terran Realm: Expanded territory to (23, 2)",
+      "type": "general",
+      "timestamp": 1746882768.5321429
+    },
+    {
+      "year": 2,
+      "description": "Nimbus Empire: Established new city Nimbus Empire B at (92, 94)",
+      "type": "general",
+      "timestamp": 1746882768.5321758
+    },
+    {
+      "year": 3,
+      "description": "Terran Realm: Expanded territory to (22, 1)",
+      "type": "general",
+      "timestamp": 1746882768.560795
+    },
+    {
+      "year": 3,
+      "description": "Nimbus Empire: Expanded territory to (91, 96)",
+      "type": "general",
+      "timestamp": 1746882768.5608377
+    },
+    {
+      "year": 4,
+      "description": "Terran Realm: Expanded territory to (24, 1)",
+      "type": "general",
+      "timestamp": 1746882768.5905628
+    },
+    {
+      "year": 4,
+      "description": "Nimbus Empire: Expanded territory to (91, 94)",
+      "type": "general",
+      "timestamp": 1746882768.5906088
+    },
+    {
+      "year": 5,
+      "description": "Terran Realm: Expanded territory to (23, 2)",
+      "type": "general",
+      "timestamp": 1746882768.6131973
+    },
+    {
+      "year": 5,
+      "description": "Nimbus Empire: Expanded territory to (91, 95)",
+      "type": "general",
+      "timestamp": 1746882768.6132455
+    },
+    {
+      "year": 6,
+      "description": "Terran Realm: Expanded territory to (24, 0)",
+      "type": "general",
+      "timestamp": 1746882768.6425257
+    },
+    {
+      "year": 6,
+      "description": "Nimbus Empire: Expanded territory to (91, 95)",
+      "type": "general",
+      "timestamp": 1746882768.6425664
+    },
+    {
+      "year": 7,
+      "description": "Terran Realm: Expanded territory to (23, 1)",
+      "type": "general",
+      "timestamp": 1746882768.668269
+    },
+    {
+      "year": 7,
+      "description": "Nimbus Empire: Expanded territory to (91, 95)",
+      "type": "general",
+      "timestamp": 1746882768.6683123
+    },
+    {
+      "year": 8,
+      "description": "Terran Realm: Expanded territory to (23, 1)",
+      "type": "general",
+      "timestamp": 1746882768.696205
+    },
+    {
+      "year": 8,
+      "description": "Nimbus Empire: Established new city Nimbus Empire C at (93, 94)",
+      "type": "general",
+      "timestamp": 1746882768.6962936
+    },
+    {
+      "year": 9,
+      "description": "Terran Realm: Expanded territory to (23, 1)",
+      "type": "general",
+      "timestamp": 1746882768.7190151
+    },
+    {
+      "year": 9,
+      "description": "Nimbus Empire: Established new city Nimbus Empire D at (91, 94)",
+      "type": "general",
+      "timestamp": 1746882768.7190626
+    },
+    {
+      "year": 10,
+      "description": "Terran Realm: Expanded territory to (24, 1)",
+      "type": "general",
+      "timestamp": 1746882768.746485
+    },
+    {
+      "year": 10,
+      "description": "Nimbus Empire: Expanded territory to (91, 94)",
+      "type": "general",
+      "timestamp": 1746882768.7465312
+    },
+    {
+      "year": 10,
+      "description": "Civilization Sacred Empire collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746882768.7465432
+    },
+    {
+      "year": 10,
+      "description": "Civilization Terran Realm collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746882768.746545
+    },
+    {
+      "year": 10,
+      "description": "Civilization Aetheria Republic collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746882768.7465463
+    },
+    {
+      "year": 10,
+      "description": "Civilization Nimbus Empire collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746882768.7465467
+    },
+    {
+      "year": 10,
+      "description": "Civilization Rising Federation collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746882768.7465599
+    },
+    {
+      "year": 663,
+      "description": "New civilization Zephyr Empire appeared",
+      "type": "general",
+      "timestamp": 1746882783.2506514
+    },
+    {
+      "year": 664,
+      "description": "Zephyr Empire: Expanded territory to (53, 68)",
+      "type": "general",
+      "timestamp": 1746882783.2508335
+    },
+    {
+      "year": 665,
+      "description": "Zephyr Empire: Expanded territory to (52, 69)",
+      "type": "general",
+      "timestamp": 1746882783.2822044
+    },
+    {
+      "year": 666,
+      "description": "Zephyr Empire: Expanded territory to (53, 69)",
+      "type": "general",
+      "timestamp": 1746882783.3146288
+    },
+    {
+      "year": 667,
+      "description": "Zephyr Empire: Expanded territory to (52, 70)",
+      "type": "general",
+      "timestamp": 1746882783.3437283
+    },
+    {
+      "year": 668,
+      "description": "Zephyr Empire: Established new city Zephyr Empire B at (51, 70)",
+      "type": "general",
+      "timestamp": 1746882783.3720598
+    },
+    {
+      "year": 669,
+      "description": "Zephyr Empire: Expanded territory to (51, 69)",
+      "type": "general",
+      "timestamp": 1746882783.3966408
+    },
+    {
+      "year": 670,
+      "description": "Zephyr Empire: Expanded territory to (52, 69)",
+      "type": "general",
+      "timestamp": 1746882783.4215276
+    },
+    {
+      "year": 670,
+      "description": "Civilization Zephyr Empire collapsed due to starvation after 7 years",
+      "type": "general",
+      "timestamp": 1746882783.4215307
+    },
+    {
+      "year": 1181,
+      "description": "New civilization Solara appeared",
+      "type": "general",
+      "timestamp": 1746882796.7408226
+    },
+    {
+      "year": 1190,
+      "description": "Civilization Solara collapsed due to starvation after 9 years",
+      "type": "general",
+      "timestamp": 1746882796.9621482
+    }
+  ],
+  "civilization_history": [
+    {
+      "year": 0,
+      "civilizations": [
+        {
+          "id": "b5aa0863-a445-46e8-bb08-a36d3b883366",
+          "name": "Sacred Empire",
+          "population": 141,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "isolationist",
+            "tech_savvy",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Ideology of Golden Sun",
+            "values": {
+              "peace": 0.18614854438609152,
+              "war": 0.2059132417256208,
+              "knowledge": 0.007456332684829203,
+              "tradition": 0.19810769604089856,
+              "wealth": 0.19205269855865423,
+              "spirituality": 0.21032148660390573
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 15,
+          "resources": {
+            "food": 0.20877523512060497,
+            "metal": 51.56488469338209,
+            "gold": 21.572458260156708,
+            "stone": 51.82381653498075
+          }
+        },
+        {
+          "id": "56e1c454-8a07-44a8-8f39-07152e515f4e",
+          "name": "Terran Realm",
+          "population": 114,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "trading",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Flowing Water",
+            "values": {
+              "peace": 0.2501133591993321,
+              "war": 0.06674960360478391,
+              "knowledge": 0.2228743619429493,
+              "tradition": 0.0911678678914049,
+              "wealth": 0.2695981580283044,
+              "spirituality": 0.09949664933322537
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 18,
+          "resources": {
+            "food": 0.9382392084783806,
+            "metal": 57.70430314545023,
+            "gold": 26.713676355387108,
+            "stone": 57.35329187262184
+          }
+        },
+        {
+          "id": "7fbb2a09-9f29-46aa-a38f-6a9f72686ff3",
+          "name": "Aetheria Republic",
+          "population": 64,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "isolationist",
+            "tech_savvy",
+            "trading"
+          ],
+          "belief_system": {
+            "name": "Ideology of Eternal Light",
+            "values": {
+              "peace": 0.05546711422285516,
+              "war": 0.13147436745339078,
+              "knowledge": 0.010617931754965261,
+              "tradition": 0.3726049300710423,
+              "wealth": 0.16494658818547858,
+              "spirituality": 0.26488906831226794
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 29,
+          "resources": {
+            "food": 0.22879626426966376,
+            "metal": 52.43944464174547,
+            "gold": 22.334807743944005,
+            "stone": 52.14202862928901
+          }
+        },
+        {
+          "id": "9166b956-c1fc-4520-9c93-1d870b29ea8d",
+          "name": "Nimbus Empire",
+          "population": 189,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "expansionist",
+            "tech_savvy",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Believers in Unbounded Nature",
+            "values": {
+              "peace": 0.40911412047788914,
+              "war": 0.04784810083183665,
+              "knowledge": 0.013154481347839668,
+              "tradition": 0.288346353606114,
+              "wealth": 0.07821079019881841,
+              "spirituality": 0.16332615353750204
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 13,
+          "resources": {
+            "food": 0.6019038881182048,
+            "metal": 57.47893723824571,
+            "gold": 25.967729314766483,
+            "stone": 56.727538048928714
+          }
+        },
+        {
+          "id": "f15df34e-ca7e-4ca6-bf76-2ac002dfb5bc",
+          "name": "Rising Federation",
+          "population": 129,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "weird",
+            "isolationist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.10893254182598507,
+              "war": 0.13181048309533233,
+              "knowledge": 0.1216679088258569,
+              "tradition": 0.29015204257367316,
+              "wealth": 0.24866492813305213,
+              "spirituality": 0.09877209554610036
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 29,
+          "resources": {
+            "food": 0.3358727599619234,
+            "metal": 52.710687254505004,
+            "gold": 22.518001261613566,
+            "stone": 52.6965224060858
+          }
+        }
+      ]
+    },
+    {
+      "year": 25,
+      "civilizations": []
+    },
+    {
+      "year": 50,
+      "civilizations": []
+    },
+    {
+      "year": 75,
+      "civilizations": []
+    },
+    {
+      "year": 100,
+      "civilizations": []
+    },
+    {
+      "year": 125,
+      "civilizations": []
+    },
+    {
+      "year": 150,
+      "civilizations": []
+    },
+    {
+      "year": 175,
+      "civilizations": []
+    },
+    {
+      "year": 200,
+      "civilizations": []
+    },
+    {
+      "year": 225,
+      "civilizations": []
+    },
+    {
+      "year": 250,
+      "civilizations": []
+    },
+    {
+      "year": 275,
+      "civilizations": []
+    },
+    {
+      "year": 300,
+      "civilizations": []
+    },
+    {
+      "year": 325,
+      "civilizations": []
+    },
+    {
+      "year": 350,
+      "civilizations": []
+    },
+    {
+      "year": 375,
+      "civilizations": []
+    },
+    {
+      "year": 400,
+      "civilizations": []
+    },
+    {
+      "year": 425,
+      "civilizations": []
+    },
+    {
+      "year": 450,
+      "civilizations": []
+    },
+    {
+      "year": 475,
+      "civilizations": []
+    },
+    {
+      "year": 500,
+      "civilizations": []
+    },
+    {
+      "year": 525,
+      "civilizations": []
+    },
+    {
+      "year": 550,
+      "civilizations": []
+    },
+    {
+      "year": 575,
+      "civilizations": []
+    },
+    {
+      "year": 600,
+      "civilizations": []
+    },
+    {
+      "year": 625,
+      "civilizations": []
+    },
+    {
+      "year": 650,
+      "civilizations": []
+    },
+    {
+      "year": 675,
+      "civilizations": []
+    },
+    {
+      "year": 700,
+      "civilizations": []
+    },
+    {
+      "year": 725,
+      "civilizations": []
+    },
+    {
+      "year": 750,
+      "civilizations": []
+    },
+    {
+      "year": 775,
+      "civilizations": []
+    },
+    {
+      "year": 800,
+      "civilizations": []
+    },
+    {
+      "year": 825,
+      "civilizations": []
+    },
+    {
+      "year": 850,
+      "civilizations": []
+    },
+    {
+      "year": 875,
+      "civilizations": []
+    },
+    {
+      "year": 900,
+      "civilizations": []
+    },
+    {
+      "year": 925,
+      "civilizations": []
+    },
+    {
+      "year": 950,
+      "civilizations": []
+    },
+    {
+      "year": 975,
+      "civilizations": []
+    },
+    {
+      "year": 1000,
+      "civilizations": []
+    },
+    {
+      "year": 1025,
+      "civilizations": []
+    },
+    {
+      "year": 1050,
+      "civilizations": []
+    },
+    {
+      "year": 1075,
+      "civilizations": []
+    },
+    {
+      "year": 1100,
+      "civilizations": []
+    },
+    {
+      "year": 1125,
+      "civilizations": []
+    },
+    {
+      "year": 1150,
+      "civilizations": []
+    },
+    {
+      "year": 1175,
+      "civilizations": []
+    },
+    {
+      "year": 1200,
+      "civilizations": []
+    },
+    {
+      "year": 1225,
+      "civilizations": []
+    },
+    {
+      "year": 1250,
+      "civilizations": []
+    },
+    {
+      "year": 1275,
+      "civilizations": []
+    },
+    {
+      "year": 1300,
+      "civilizations": []
+    },
+    {
+      "year": 1325,
+      "civilizations": []
+    },
+    {
+      "year": 1350,
+      "civilizations": []
+    },
+    {
+      "year": 1375,
+      "civilizations": []
+    },
+    {
+      "year": 1400,
+      "civilizations": []
+    },
+    {
+      "year": 1425,
+      "civilizations": []
+    },
+    {
+      "year": 1450,
+      "civilizations": []
+    },
+    {
+      "year": 1475,
+      "civilizations": []
+    },
+    {
+      "year": 1500,
+      "civilizations": []
+    },
+    {
+      "year": 1525,
+      "civilizations": []
+    },
+    {
+      "year": 1550,
+      "civilizations": []
+    },
+    {
+      "year": 1575,
+      "civilizations": []
+    },
+    {
+      "year": 1600,
+      "civilizations": []
+    },
+    {
+      "year": 1625,
+      "civilizations": []
+    },
+    {
+      "year": 1650,
+      "civilizations": []
+    },
+    {
+      "year": 1675,
+      "civilizations": []
+    },
+    {
+      "year": 1700,
+      "civilizations": []
+    },
+    {
+      "year": 1725,
+      "civilizations": []
+    },
+    {
+      "year": 1750,
+      "civilizations": []
+    },
+    {
+      "year": 1775,
+      "civilizations": []
+    },
+    {
+      "year": 1800,
+      "civilizations": []
+    },
+    {
+      "year": 1825,
+      "civilizations": []
+    },
+    {
+      "year": 1850,
+      "civilizations": []
+    },
+    {
+      "year": 1875,
+      "civilizations": []
+    },
+    {
+      "year": 1900,
+      "civilizations": []
+    },
+    {
+      "year": 1925,
+      "civilizations": []
+    },
+    {
+      "year": 1950,
+      "civilizations": []
+    },
+    {
+      "year": 1975,
+      "civilizations": []
+    },
+    {
+      "year": 2000,
+      "civilizations": []
+    },
+    {
+      "year": 2025,
+      "civilizations": []
+    },
+    {
+      "year": 2050,
+      "civilizations": []
+    },
+    {
+      "year": 2075,
+      "civilizations": []
+    },
+    {
+      "year": 2100,
+      "civilizations": []
+    },
+    {
+      "year": 2125,
+      "civilizations": []
+    },
+    {
+      "year": 2150,
+      "civilizations": []
+    },
+    {
+      "year": 2175,
+      "civilizations": []
+    },
+    {
+      "year": 2200,
+      "civilizations": []
+    },
+    {
+      "year": 2225,
+      "civilizations": []
+    },
+    {
+      "year": 2250,
+      "civilizations": []
+    },
+    {
+      "year": 2275,
+      "civilizations": []
+    },
+    {
+      "year": 2300,
+      "civilizations": []
+    },
+    {
+      "year": 2325,
+      "civilizations": []
+    },
+    {
+      "year": 2350,
+      "civilizations": []
+    },
+    {
+      "year": 2375,
+      "civilizations": []
+    },
+    {
+      "year": 2400,
+      "civilizations": []
+    },
+    {
+      "year": 2425,
+      "civilizations": []
+    },
+    {
+      "year": 2450,
+      "civilizations": []
+    },
+    {
+      "year": 2475,
+      "civilizations": []
+    },
+    {
+      "year": 2500,
+      "civilizations": []
+    },
+    {
+      "year": 2525,
+      "civilizations": []
+    },
+    {
+      "year": 2550,
+      "civilizations": []
+    },
+    {
+      "year": 2575,
+      "civilizations": []
+    },
+    {
+      "year": 2600,
+      "civilizations": []
+    },
+    {
+      "year": 2625,
+      "civilizations": []
+    },
+    {
+      "year": 2650,
+      "civilizations": []
+    },
+    {
+      "year": 2675,
+      "civilizations": []
+    }
+  ]
+}

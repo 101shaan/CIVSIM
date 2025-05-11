@@ -1,0 +1,1736 @@
+[
+  {
+    "year": 0,
+    "description": "Civilization Drakon Alliance founded",
+    "type": "general",
+    "timestamp": 1746918437.580836
+  },
+  {
+    "year": 0,
+    "description": "Civilization Nimbus Kingdom founded",
+    "type": "general",
+    "timestamp": 1746918437.5829866
+  },
+  {
+    "year": 0,
+    "description": "Civilization Glorious Republic founded",
+    "type": "general",
+    "timestamp": 1746918437.583908
+  },
+  {
+    "year": 0,
+    "description": "Civilization Eternal Dominion founded",
+    "type": "general",
+    "timestamp": 1746918437.5848
+  },
+  {
+    "year": 0,
+    "description": "Civilization Zephyr founded",
+    "type": "general",
+    "timestamp": 1746918437.5922244
+  },
+  {
+    "year": 18,
+    "description": "Drakon Alliance: Established new city Green Heights at (96, 88)",
+    "type": "general",
+    "timestamp": 1746918438.1324527
+  },
+  {
+    "year": 35,
+    "description": "Glorious Republic: Established new city Fort City at (0, 83)",
+    "type": "general",
+    "timestamp": 1746918447.5381892
+  },
+  {
+    "year": 48,
+    "description": "Drakon Alliance: Abandoned small settlement Green Heights",
+    "type": "general",
+    "timestamp": 1746918451.482953
+  },
+  {
+    "year": 60,
+    "description": "Nimbus Kingdom has collapsed due to starvation!",
+    "type": "general",
+    "timestamp": 1746918451.775312
+  },
+  {
+    "year": 70,
+    "description": "Glorious Republic: Abandoned small settlement Fort City",
+    "type": "general",
+    "timestamp": 1746918452.0404136
+  },
+  {
+    "year": 86,
+    "description": "Eternal Dominion: Established new city New Settlement at (88, 71)",
+    "type": "general",
+    "timestamp": 1746918452.4792988
+  },
+  {
+    "year": 102,
+    "description": "Drakon Alliance: Expanded territory to 70 tiles",
+    "type": "general",
+    "timestamp": 1746918452.849105
+  },
+  {
+    "year": 112,
+    "description": "Glorious Republic: Expanded territory to 90 tiles",
+    "type": "general",
+    "timestamp": 1746918453.0523465
+  },
+  {
+    "year": 128,
+    "description": "Eternal Dominion: Abandoned small settlement New Settlement",
+    "type": "general",
+    "timestamp": 1746918453.378817
+  },
+  {
+    "year": 197,
+    "description": "Eternal Dominion: Expanded territory to 90 tiles",
+    "type": "general",
+    "timestamp": 1746918454.8153203
+  },
+  {
+    "year": 268,
+    "description": "Glorious Republic: Expanded territory to 100 tiles",
+    "type": "general",
+    "timestamp": 1746918456.263706
+  },
+  {
+    "year": 297,
+    "description": "Drakon Alliance: Expanded territory to 80 tiles",
+    "type": "general",
+    "timestamp": 1746918456.8469875
+  },
+  {
+    "year": 329,
+    "description": "Eternal Dominion: Expanded territory to 100 tiles",
+    "type": "general",
+    "timestamp": 1746918457.498926
+  },
+  {
+    "year": 384,
+    "description": "Drakon Alliance: Expanded territory to 90 tiles",
+    "type": "general",
+    "timestamp": 1746918458.6275043
+  },
+  {
+    "year": 397,
+    "description": "Glorious Republic: Expanded territory to 110 tiles",
+    "type": "general",
+    "timestamp": 1746918458.89379
+  },
+  {
+    "year": 407,
+    "description": "Eternal Dominion: Expanded territory to 110 tiles",
+    "type": "general",
+    "timestamp": 1746918459.1040711
+  },
+  {
+    "year": 487,
+    "description": "Glorious Republic: Expanded territory to 120 tiles",
+    "type": "general",
+    "timestamp": 1746918460.7650084
+  },
+  {
+    "year": 510,
+    "description": "Drakon Alliance: Expanded territory to 100 tiles",
+    "type": "general",
+    "timestamp": 1746918461.257524
+  },
+  {
+    "year": 542,
+    "description": "Eternal Dominion: Expanded territory to 120 tiles",
+    "type": "general",
+    "timestamp": 1746918461.9336658
+  },
+  {
+    "year": 580,
+    "description": "Natural Disaster: Volcanic Eruption in region around (88, 94)",
+    "type": "general",
+    "timestamp": 1746918462.77007
+  },
+  {
+    "year": 580,
+    "description": "Drakon Alliance lost 3 population to Volcanic Eruption",
+    "type": "general",
+    "timestamp": 1746918462.7700913
+  },
+  {
+    "year": 595,
+    "description": "Glorious Republic: Expanded territory to 130 tiles",
+    "type": "general",
+    "timestamp": 1746918463.2341726
+  },
+  {
+    "year": 650,
+    "description": "Natural Disaster: Earthquake in region around (98, 80)",
+    "type": "general",
+    "timestamp": 1746918464.6274111
+  },
+  {
+    "year": 650,
+    "description": "Drakon Alliance lost 0 population to Earthquake",
+    "type": "general",
+    "timestamp": 1746918464.6274428
+  },
+  {
+    "year": 650,
+    "description": "Eternal Dominion lost 0 population to Earthquake",
+    "type": "general",
+    "timestamp": 1746918464.6274638
+  },
+  {
+    "year": 683,
+    "description": "Eternal Dominion: Expanded territory to 130 tiles",
+    "type": "general",
+    "timestamp": 1746918465.4837425
+  },
+  {
+    "year": 696,
+    "description": "Drakon Alliance: Expanded territory to 110 tiles",
+    "type": "general",
+    "timestamp": 1746918465.7615113
+  },
+  {
+    "year": 748,
+    "description": "Glorious Republic: Expanded territory to 140 tiles",
+    "type": "general",
+    "timestamp": 1746918466.9727335
+  },
+  {
+    "year": 760,
+    "description": "Natural Disaster: Earthquake in region around (85, 94)",
+    "type": "general",
+    "timestamp": 1746918467.2970593
+  },
+  {
+    "year": 760,
+    "description": "Drakon Alliance lost 0 population to Earthquake",
+    "type": "general",
+    "timestamp": 1746918467.2970858
+  },
+  {
+    "year": 837,
+    "description": "Drakon Alliance: Expanded territory to 120 tiles",
+    "type": "general",
+    "timestamp": 1746918469.2896936
+  },
+  {
+    "year": 878,
+    "description": "Eternal Dominion: Expanded territory to 140 tiles",
+    "type": "general",
+    "timestamp": 1746918470.2017899
+  },
+  {
+    "year": 883,
+    "description": "Glorious Republic: Expanded territory to 150 tiles",
+    "type": "general",
+    "timestamp": 1746918470.3171072
+  },
+  {
+    "year": 927,
+    "description": "Drakon Alliance: Expanded territory to 130 tiles",
+    "type": "general",
+    "timestamp": 1746918471.308926
+  },
+  {
+    "year": 936,
+    "description": "Drakon Alliance: Established new city Fort City at (91, 87)",
+    "type": "general",
+    "timestamp": 1746918471.5127687
+  },
+  {
+    "year": 957,
+    "description": "Drakon Alliance: Expanded territory to 140 tiles",
+    "type": "general",
+    "timestamp": 1746918472.1238184
+  },
+  {
+    "year": 977,
+    "description": "Eternal Dominion: Expanded territory to 150 tiles",
+    "type": "general",
+    "timestamp": 1746918472.5978734
+  },
+  {
+    "year": 987,
+    "description": "Drakon Alliance: Expanded territory to 150 tiles",
+    "type": "general",
+    "timestamp": 1746918472.829979
+  },
+  {
+    "year": 1017,
+    "description": "Drakon Alliance: Expanded territory to 160 tiles",
+    "type": "general",
+    "timestamp": 1746918473.5416796
+  },
+  {
+    "year": 1020,
+    "description": "Drakon Alliance: Established new city Dune Camp at (80, 94)",
+    "type": "general",
+    "timestamp": 1746918473.61461
+  },
+  {
+    "year": 1023,
+    "description": "Drakon Alliance: Established new city Port D-7 at (84, 88)",
+    "type": "general",
+    "timestamp": 1746918473.7071202
+  },
+  {
+    "year": 1047,
+    "description": "Drakon Alliance: Expanded territory to 170 tiles",
+    "type": "general",
+    "timestamp": 1746918474.3560674
+  },
+  {
+    "year": 1071,
+    "description": "Drakon Alliance: Established new city Serene Camp at (86, 91)",
+    "type": "general",
+    "timestamp": 1746918474.95318
+  },
+  {
+    "year": 1077,
+    "description": "Drakon Alliance: Expanded territory to 180 tiles",
+    "type": "general",
+    "timestamp": 1746918475.1250653
+  },
+  {
+    "year": 1099,
+    "description": "Glorious Republic: Expanded territory to 160 tiles",
+    "type": "general",
+    "timestamp": 1746918475.6715658
+  },
+  {
+    "year": 1107,
+    "description": "Drakon Alliance: Expanded territory to 190 tiles",
+    "type": "general",
+    "timestamp": 1746918475.8752558
+  },
+  {
+    "year": 1137,
+    "description": "Drakon Alliance: Expanded territory to 200 tiles",
+    "type": "general",
+    "timestamp": 1746918476.6455808
+  },
+  {
+    "year": 1145,
+    "description": "Eternal Dominion: Expanded territory to 160 tiles",
+    "type": "general",
+    "timestamp": 1746918476.8502467
+  },
+  {
+    "year": 1161,
+    "description": "Drakon Alliance: Established new city Fort F-3 at (78, 93)",
+    "type": "general",
+    "timestamp": 1746918477.2715974
+  },
+  {
+    "year": 1167,
+    "description": "Drakon Alliance: Expanded territory to 210 tiles",
+    "type": "general",
+    "timestamp": 1746918477.4452684
+  },
+  {
+    "year": 1191,
+    "description": "Drakon Alliance: Established new city Wood Alliance Settlement at (84, 87)",
+    "type": "general",
+    "timestamp": 1746918478.0556388
+  },
+  {
+    "year": 1197,
+    "description": "Drakon Alliance: Expanded territory to 220 tiles",
+    "type": "general",
+    "timestamp": 1746918478.2486272
+  },
+  {
+    "year": 1198,
+    "description": "Glorious Republic: Expanded territory to 170 tiles",
+    "type": "general",
+    "timestamp": 1746918478.2761846
+  },
+  {
+    "year": 1212,
+    "description": "Drakon Alliance: Established new city New H-7 at (88, 82)",
+    "type": "general",
+    "timestamp": 1746918478.6420832
+  },
+  {
+    "year": 1218,
+    "description": "Drakon Alliance: Established new city Serene Town at (86, 80)",
+    "type": "general",
+    "timestamp": 1746918478.82972
+  },
+  {
+    "year": 1227,
+    "description": "Drakon Alliance: Expanded territory to 230 tiles",
+    "type": "general",
+    "timestamp": 1746918479.1206057
+  },
+  {
+    "year": 1242,
+    "description": "Drakon Alliance: Established new city Wood Alliance Town at (80, 86)",
+    "type": "general",
+    "timestamp": 1746918479.5131378
+  },
+  {
+    "year": 1248,
+    "description": "Drakon Alliance: Established new city K-2 at (88, 83)",
+    "type": "general",
+    "timestamp": 1746918479.7113676
+  },
+  {
+    "year": 1257,
+    "description": "Drakon Alliance: Expanded territory to 240 tiles",
+    "type": "general",
+    "timestamp": 1746918479.9774952
+  },
+  {
+    "year": 1275,
+    "description": "Drakon Alliance: Established new city Green Drakon Heights at (84, 99)",
+    "type": "general",
+    "timestamp": 1746918480.463796
+  },
+  {
+    "year": 1287,
+    "description": "Drakon Alliance: Expanded territory to 250 tiles",
+    "type": "general",
+    "timestamp": 1746918480.8282044
+  },
+  {
+    "year": 1293,
+    "description": "Drakon Alliance: Established new city High Settlement at (80, 92)",
+    "type": "general",
+    "timestamp": 1746918480.9874618
+  },
+  {
+    "year": 1296,
+    "description": "Drakon Alliance: Established new city Green Alliance Town at (78, 96)",
+    "type": "general",
+    "timestamp": 1746918481.0868413
+  },
+  {
+    "year": 1305,
+    "description": "Drakon Alliance: Established new city Peace Heights at (99, 79)",
+    "type": "general",
+    "timestamp": 1746918481.3493412
+  },
+  {
+    "year": 1317,
+    "description": "Drakon Alliance: Expanded territory to 260 tiles",
+    "type": "general",
+    "timestamp": 1746918481.7093947
+  },
+  {
+    "year": 1347,
+    "description": "Drakon Alliance: Expanded territory to 270 tiles",
+    "type": "general",
+    "timestamp": 1746918482.511396
+  },
+  {
+    "year": 1353,
+    "description": "Drakon Alliance: First contact with Eternal Dominion",
+    "type": "general",
+    "timestamp": 1746918482.683265
+  },
+  {
+    "year": 1356,
+    "description": "Drakon Alliance: Established new city Serene Post at (78, 84)",
+    "type": "general",
+    "timestamp": 1746918482.7755013
+  },
+  {
+    "year": 1377,
+    "description": "Drakon Alliance: Expanded territory to 280 tiles",
+    "type": "general",
+    "timestamp": 1746918483.4251292
+  },
+  {
+    "year": 1407,
+    "description": "Drakon Alliance: Expanded territory to 290 tiles",
+    "type": "general",
+    "timestamp": 1746918484.2338254
+  },
+  {
+    "year": 1411,
+    "description": "Glorious Republic: Expanded territory to 180 tiles",
+    "type": "general",
+    "timestamp": 1746918484.3425193
+  },
+  {
+    "year": 1413,
+    "description": "Drakon Alliance: Established new city Mount Station at (80, 88)",
+    "type": "general",
+    "timestamp": 1746918484.394313
+  },
+  {
+    "year": 1436,
+    "description": "Eternal Dominion: Expanded territory to 170 tiles",
+    "type": "general",
+    "timestamp": 1746918485.0305722
+  },
+  {
+    "year": 1437,
+    "description": "Drakon Alliance: Expanded territory to 300 tiles",
+    "type": "general",
+    "timestamp": 1746918485.059699
+  },
+  {
+    "year": 1467,
+    "description": "Drakon Alliance: Expanded territory to 310 tiles",
+    "type": "general",
+    "timestamp": 1746918485.8768258
+  },
+  {
+    "year": 1497,
+    "description": "Drakon Alliance: Expanded territory to 320 tiles",
+    "type": "general",
+    "timestamp": 1746918486.6938598
+  },
+  {
+    "year": 1515,
+    "description": "Drakon Alliance: Established new city Fort Alliance Camp at (75, 98)",
+    "type": "general",
+    "timestamp": 1746918487.175001
+  },
+  {
+    "year": 1527,
+    "description": "Drakon Alliance: Expanded territory to 330 tiles",
+    "type": "general",
+    "timestamp": 1746918487.5165136
+  },
+  {
+    "year": 1557,
+    "description": "Drakon Alliance: Expanded territory to 340 tiles",
+    "type": "general",
+    "timestamp": 1746918488.331715
+  },
+  {
+    "year": 1583,
+    "description": "Eternal Dominion: Expanded territory to 180 tiles",
+    "type": "general",
+    "timestamp": 1746918489.035117
+  },
+  {
+    "year": 1587,
+    "description": "Drakon Alliance: Expanded territory to 350 tiles",
+    "type": "general",
+    "timestamp": 1746918489.1459272
+  },
+  {
+    "year": 1617,
+    "description": "Drakon Alliance: Expanded territory to 360 tiles",
+    "type": "general",
+    "timestamp": 1746918489.9656816
+  },
+  {
+    "year": 1618,
+    "description": "Glorious Republic: Expanded territory to 190 tiles",
+    "type": "general",
+    "timestamp": 1746918489.9933803
+  },
+  {
+    "year": 1647,
+    "description": "Drakon Alliance: Expanded territory to 370 tiles",
+    "type": "general",
+    "timestamp": 1746918490.8206732
+  },
+  {
+    "year": 1667,
+    "description": "Eternal Dominion: War declared between Eternal Dominion and Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918491.426869
+  },
+  {
+    "year": 1671,
+    "description": "Drakon Alliance: Established new city Serene City at (71, 90)",
+    "type": "general",
+    "timestamp": 1746918491.616123
+  },
+  {
+    "year": 1689,
+    "description": "Drakon Alliance: Established new city Port Settlement at (83, 77)",
+    "type": "general",
+    "timestamp": 1746918492.5109167
+  },
+  {
+    "year": 1691,
+    "description": "Eternal Dominion: War declared between Eternal Dominion and Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918492.5866756
+  },
+  {
+    "year": 1700,
+    "description": "Eternal Dominion: War declared between Eternal Dominion and Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918493.0126598
+  },
+  {
+    "year": 1709,
+    "description": "Eternal Dominion: War declared between Eternal Dominion and Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918493.4383366
+  },
+  {
+    "year": 1711,
+    "description": "Civilization Eternal Dominion has collapsed",
+    "type": "general",
+    "timestamp": 1746918493.52136
+  },
+  {
+    "year": 1716,
+    "description": "Drakon Alliance: Established new city Green Drakon Heights at (77, 79)",
+    "type": "general",
+    "timestamp": 1746918493.7654219
+  },
+  {
+    "year": 1721,
+    "description": "Zephyr: Expanded territory to 60 tiles",
+    "type": "general",
+    "timestamp": 1746918493.9531403
+  },
+  {
+    "year": 1725,
+    "description": "Drakon Alliance: Expanded territory to 580 tiles",
+    "type": "general",
+    "timestamp": 1746918494.103689
+  },
+  {
+    "year": 1751,
+    "description": "Zephyr: Established new city Ethereal Post at (88, 42)",
+    "type": "general",
+    "timestamp": 1746918495.0429523
+  },
+  {
+    "year": 1752,
+    "description": "Drakon Alliance: Established new city Fort Drakon City at (74, 84)",
+    "type": "general",
+    "timestamp": 1746918495.085422
+  },
+  {
+    "year": 1755,
+    "description": "Drakon Alliance: Expanded territory to 590 tiles",
+    "type": "general",
+    "timestamp": 1746918495.2004466
+  },
+  {
+    "year": 1758,
+    "description": "Drakon Alliance: Established new city Mount City at (92, 59)",
+    "type": "general",
+    "timestamp": 1746918495.314181
+  },
+  {
+    "year": 1777,
+    "description": "Glorious Republic: Expanded territory to 200 tiles",
+    "type": "general",
+    "timestamp": 1746918496.0189147
+  },
+  {
+    "year": 1781,
+    "description": "Zephyr: Expanded territory to 80 tiles",
+    "type": "general",
+    "timestamp": 1746918496.1618543
+  },
+  {
+    "year": 1785,
+    "description": "Drakon Alliance: Expanded territory to 600 tiles",
+    "type": "general",
+    "timestamp": 1746918496.3166492
+  },
+  {
+    "year": 1802,
+    "description": "Zephyr: Established new city Port Point at (87, 39)",
+    "type": "general",
+    "timestamp": 1746918496.9934406
+  },
+  {
+    "year": 1811,
+    "description": "Zephyr: Expanded territory to 90 tiles",
+    "type": "general",
+    "timestamp": 1746918497.2934334
+  },
+  {
+    "year": 1815,
+    "description": "Drakon Alliance: Expanded territory to 610 tiles",
+    "type": "general",
+    "timestamp": 1746918497.4264898
+  },
+  {
+    "year": 1817,
+    "description": "Zephyr: Established new city Void Point at (80, 47)",
+    "type": "general",
+    "timestamp": 1746918497.4857645
+  },
+  {
+    "year": 1841,
+    "description": "Zephyr: Expanded territory to 100 tiles",
+    "type": "general",
+    "timestamp": 1746918498.3703735
+  },
+  {
+    "year": 1845,
+    "description": "Drakon Alliance: Expanded territory to 620 tiles",
+    "type": "general",
+    "timestamp": 1746918498.5191054
+  },
+  {
+    "year": 1862,
+    "description": "Zephyr: Established new city Green Settlement at (91, 48)",
+    "type": "general",
+    "timestamp": 1746918499.1470304
+  },
+  {
+    "year": 1871,
+    "description": "Zephyr: Expanded territory to 110 tiles",
+    "type": "general",
+    "timestamp": 1746918499.4857533
+  },
+  {
+    "year": 1875,
+    "description": "Drakon Alliance: Expanded territory to 630 tiles",
+    "type": "general",
+    "timestamp": 1746918499.640505
+  },
+  {
+    "year": 1891,
+    "description": "Glorious Republic: Expanded territory to 210 tiles",
+    "type": "general",
+    "timestamp": 1746918500.1947598
+  },
+  {
+    "year": 1901,
+    "description": "Zephyr: Established new city Green Town at (77, 52)",
+    "type": "general",
+    "timestamp": 1746918500.5131052
+  },
+  {
+    "year": 1905,
+    "description": "Drakon Alliance: Expanded territory to 640 tiles",
+    "type": "general",
+    "timestamp": 1746918500.6698427
+  },
+  {
+    "year": 1908,
+    "description": "Drakon Alliance: First contact with Zephyr",
+    "type": "general",
+    "timestamp": 1746918500.7843716
+  },
+  {
+    "year": 1910,
+    "description": "Zephyr: Established new city Desert Station at (95, 57)",
+    "type": "general",
+    "timestamp": 1746918500.8542464
+  },
+  {
+    "year": 1910,
+    "description": "Zephyr: Traded 10.0 food for 10.0 gold with Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918500.8542535
+  },
+  {
+    "year": 1913,
+    "description": "Zephyr: Traded 10.0 metal for 10.0 stone with Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918500.9680507
+  },
+  {
+    "year": 1919,
+    "description": "Zephyr: Traded 10.0 food for 10.0 gold with Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918501.190489
+  },
+  {
+    "year": 1920,
+    "description": "Drakon Alliance: Traded 10.0 food for 10.0 stone with Zephyr",
+    "type": "general",
+    "timestamp": 1746918501.2297454
+  },
+  {
+    "year": 1928,
+    "description": "Zephyr: Traded 10.0 metal for 10.0 stone with Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918501.4917831
+  },
+  {
+    "year": 1930,
+    "description": "Glorious Republic: Established new city Harmony Town at (6, 88)",
+    "type": "general",
+    "timestamp": 1746918501.5570974
+  },
+  {
+    "year": 1931,
+    "description": "Zephyr: Expanded territory to 130 tiles",
+    "type": "general",
+    "timestamp": 1746918501.5887065
+  },
+  {
+    "year": 1931,
+    "description": "Zephyr: Traded 10.0 metal for 10.0 gold with Drakon Alliance",
+    "type": "general",
+    "timestamp": 1746918501.5887146
+  },
+  {
+    "year": 1932,
+    "description": "Drakon Alliance: Zephyr and Drakon Alliance have unified to form United Zephyr",
+    "type": "general",
+    "timestamp": 1746918501.6283796
+  },
+  {
+    "year": 1933,
+    "description": "Civilization Drakon Alliance has collapsed",
+    "type": "general",
+    "timestamp": 1746918501.6652768
+  },
+  {
+    "year": 1933,
+    "description": "United Zephyr: Population increased significantly: +2184",
+    "type": "general",
+    "timestamp": 1746918501.6777747
+  },
+  {
+    "year": 1933,
+    "description": "United Zephyr: Expanded territory to 780 tiles",
+    "type": "general",
+    "timestamp": 1746918501.6777897
+  },
+  {
+    "year": 1936,
+    "description": "United Zephyr: Population increased significantly: +2204",
+    "type": "general",
+    "timestamp": 1746918501.7890172
+  },
+  {
+    "year": 1939,
+    "description": "United Zephyr: Population increased significantly: +2590",
+    "type": "general",
+    "timestamp": 1746918501.8981729
+  },
+  {
+    "year": 1951,
+    "description": "United Zephyr: Population increased significantly: +2452",
+    "type": "general",
+    "timestamp": 1746918502.3434975
+  },
+  {
+    "year": 1954,
+    "description": "United Zephyr: Population increased significantly: +2185",
+    "type": "general",
+    "timestamp": 1746918502.4515543
+  },
+  {
+    "year": 1957,
+    "description": "United Zephyr: Population increased significantly: +2761",
+    "type": "general",
+    "timestamp": 1746918502.563974
+  },
+  {
+    "year": 1960,
+    "description": "United Zephyr: Population increased significantly: +2791",
+    "type": "general",
+    "timestamp": 1746918502.674841
+  },
+  {
+    "year": 1963,
+    "description": "United Zephyr: Population increased significantly: +2532",
+    "type": "general",
+    "timestamp": 1746918502.7840333
+  },
+  {
+    "year": 1963,
+    "description": "United Zephyr: Expanded territory to 790 tiles",
+    "type": "general",
+    "timestamp": 1746918502.7840407
+  },
+  {
+    "year": 1966,
+    "description": "United Zephyr: Population increased significantly: +2873",
+    "type": "general",
+    "timestamp": 1746918502.8917074
+  },
+  {
+    "year": 1969,
+    "description": "United Zephyr: Population increased significantly: +3049",
+    "type": "general",
+    "timestamp": 1746918502.9994826
+  },
+  {
+    "year": 1972,
+    "description": "United Zephyr: Population increased significantly: +3139",
+    "type": "general",
+    "timestamp": 1746918503.112286
+  },
+  {
+    "year": 1975,
+    "description": "United Zephyr: Population increased significantly: +2442",
+    "type": "general",
+    "timestamp": 1746918503.2225823
+  },
+  {
+    "year": 1978,
+    "description": "United Zephyr: Population increased significantly: +3323",
+    "type": "general",
+    "timestamp": 1746918503.334475
+  },
+  {
+    "year": 1981,
+    "description": "United Zephyr: Population increased significantly: +3469",
+    "type": "general",
+    "timestamp": 1746918503.4469104
+  },
+  {
+    "year": 1984,
+    "description": "United Zephyr: Population increased significantly: +2871",
+    "type": "general",
+    "timestamp": 1746918503.5599227
+  },
+  {
+    "year": 1987,
+    "description": "United Zephyr: Population increased significantly: +3240",
+    "type": "general",
+    "timestamp": 1746918503.6723683
+  },
+  {
+    "year": 1990,
+    "description": "United Zephyr: Population increased significantly: +3429",
+    "type": "general",
+    "timestamp": 1746918503.780377
+  },
+  {
+    "year": 1993,
+    "description": "United Zephyr: Population increased significantly: +3737",
+    "type": "general",
+    "timestamp": 1746918503.8906631
+  },
+  {
+    "year": 1993,
+    "description": "United Zephyr: Expanded territory to 800 tiles",
+    "type": "general",
+    "timestamp": 1746918503.8906705
+  },
+  {
+    "year": 1996,
+    "description": "United Zephyr: Population increased significantly: +3947",
+    "type": "general",
+    "timestamp": 1746918504.0016255
+  },
+  {
+    "year": 1999,
+    "description": "United Zephyr: Population increased significantly: +3744",
+    "type": "general",
+    "timestamp": 1746918504.1110055
+  },
+  {
+    "year": 2002,
+    "description": "United Zephyr: Population increased significantly: +3799",
+    "type": "general",
+    "timestamp": 1746918504.2251387
+  },
+  {
+    "year": 2005,
+    "description": "United Zephyr: Population increased significantly: +3978",
+    "type": "general",
+    "timestamp": 1746918504.3336864
+  },
+  {
+    "year": 2008,
+    "description": "United Zephyr: Population increased significantly: +3168",
+    "type": "general",
+    "timestamp": 1746918504.4426975
+  },
+  {
+    "year": 2011,
+    "description": "United Zephyr: Population increased significantly: +3190",
+    "type": "general",
+    "timestamp": 1746918504.5518575
+  },
+  {
+    "year": 2014,
+    "description": "United Zephyr: Population increased significantly: +4588",
+    "type": "general",
+    "timestamp": 1746918504.6648824
+  },
+  {
+    "year": 2017,
+    "description": "United Zephyr: Population increased significantly: +3671",
+    "type": "general",
+    "timestamp": 1746918504.7755277
+  },
+  {
+    "year": 2020,
+    "description": "United Zephyr: Population increased significantly: +4160",
+    "type": "general",
+    "timestamp": 1746918504.8854315
+  },
+  {
+    "year": 2023,
+    "description": "United Zephyr: Population increased significantly: +3885",
+    "type": "general",
+    "timestamp": 1746918504.9959457
+  },
+  {
+    "year": 2023,
+    "description": "United Zephyr: Expanded territory to 810 tiles",
+    "type": "general",
+    "timestamp": 1746918504.9959826
+  },
+  {
+    "year": 2026,
+    "description": "United Zephyr: Population increased significantly: +5188",
+    "type": "general",
+    "timestamp": 1746918505.0854511
+  },
+  {
+    "year": 2028,
+    "description": "Glorious Republic: Expanded territory to 220 tiles",
+    "type": "general",
+    "timestamp": 1746918505.1407256
+  },
+  {
+    "year": 2029,
+    "description": "United Zephyr: Population increased significantly: +4894",
+    "type": "general",
+    "timestamp": 1746918505.1762867
+  },
+  {
+    "year": 2032,
+    "description": "United Zephyr: Population increased significantly: +4130",
+    "type": "general",
+    "timestamp": 1746918505.2671833
+  },
+  {
+    "year": 2035,
+    "description": "United Zephyr: Population increased significantly: +5105",
+    "type": "general",
+    "timestamp": 1746918505.3553052
+  },
+  {
+    "year": 2038,
+    "description": "United Zephyr: Population increased significantly: +4309",
+    "type": "general",
+    "timestamp": 1746918505.4420664
+  },
+  {
+    "year": 2041,
+    "description": "United Zephyr: Population increased significantly: +4543",
+    "type": "general",
+    "timestamp": 1746918505.5276306
+  },
+  {
+    "year": 2044,
+    "description": "United Zephyr: Population increased significantly: +5918",
+    "type": "general",
+    "timestamp": 1746918505.616928
+  },
+  {
+    "year": 2047,
+    "description": "United Zephyr: Population increased significantly: +5214",
+    "type": "general",
+    "timestamp": 1746918505.7068024
+  },
+  {
+    "year": 2050,
+    "description": "United Zephyr: Population increased significantly: +4591",
+    "type": "general",
+    "timestamp": 1746918505.7983766
+  },
+  {
+    "year": 2053,
+    "description": "United Zephyr: Population increased significantly: +4604",
+    "type": "general",
+    "timestamp": 1746918505.892806
+  },
+  {
+    "year": 2053,
+    "description": "United Zephyr: Expanded territory to 820 tiles",
+    "type": "general",
+    "timestamp": 1746918505.89283
+  },
+  {
+    "year": 2056,
+    "description": "United Zephyr: Population increased significantly: +5386",
+    "type": "general",
+    "timestamp": 1746918505.9825296
+  },
+  {
+    "year": 2058,
+    "description": "Glorious Republic: Expanded territory to 230 tiles",
+    "type": "general",
+    "timestamp": 1746918506.0371912
+  },
+  {
+    "year": 2059,
+    "description": "United Zephyr: Population increased significantly: +5117",
+    "type": "general",
+    "timestamp": 1746918506.0716128
+  },
+  {
+    "year": 2062,
+    "description": "United Zephyr: Population increased significantly: +4795",
+    "type": "general",
+    "timestamp": 1746918506.1639526
+  },
+  {
+    "year": 2065,
+    "description": "United Zephyr: Population increased significantly: +5172",
+    "type": "general",
+    "timestamp": 1746918506.2527487
+  },
+  {
+    "year": 2068,
+    "description": "United Zephyr: Population increased significantly: +5251",
+    "type": "general",
+    "timestamp": 1746918506.3441339
+  },
+  {
+    "year": 2071,
+    "description": "United Zephyr: Population increased significantly: +7507",
+    "type": "general",
+    "timestamp": 1746918506.4401724
+  },
+  {
+    "year": 2074,
+    "description": "United Zephyr: Population increased significantly: +7166",
+    "type": "general",
+    "timestamp": 1746918506.5303903
+  },
+  {
+    "year": 2077,
+    "description": "United Zephyr: Population increased significantly: +5665",
+    "type": "general",
+    "timestamp": 1746918506.6196723
+  },
+  {
+    "year": 2079,
+    "description": "Glorious Republic: Established new city Peace Heights at (16, 70)",
+    "type": "general",
+    "timestamp": 1746918506.679517
+  },
+  {
+    "year": 2080,
+    "description": "United Zephyr: Population increased significantly: +7238",
+    "type": "general",
+    "timestamp": 1746918506.720585
+  },
+  {
+    "year": 2082,
+    "description": "Glorious Republic: Established new city New Settlement at (1, 87)",
+    "type": "general",
+    "timestamp": 1746918506.7896366
+  },
+  {
+    "year": 2083,
+    "description": "United Zephyr: Population increased significantly: +7082",
+    "type": "general",
+    "timestamp": 1746918506.8287945
+  },
+  {
+    "year": 2083,
+    "description": "United Zephyr: Expanded territory to 830 tiles",
+    "type": "general",
+    "timestamp": 1746918506.8288054
+  },
+  {
+    "year": 2085,
+    "description": "Glorious Republic: Abandoned small settlement Harmony Town",
+    "type": "general",
+    "timestamp": 1746918506.9030461
+  },
+  {
+    "year": 2086,
+    "description": "United Zephyr: Population increased significantly: +7058",
+    "type": "general",
+    "timestamp": 1746918506.945487
+  },
+  {
+    "year": 2088,
+    "description": "Glorious Republic: Expanded territory to 240 tiles",
+    "type": "general",
+    "timestamp": 1746918507.0121355
+  },
+  {
+    "year": 2089,
+    "description": "United Zephyr: Population increased significantly: +6156",
+    "type": "general",
+    "timestamp": 1746918507.0507507
+  },
+  {
+    "year": 2092,
+    "description": "United Zephyr: Population increased significantly: +9074",
+    "type": "general",
+    "timestamp": 1746918507.1625698
+  },
+  {
+    "year": 2095,
+    "description": "United Zephyr: Population increased significantly: +8163",
+    "type": "general",
+    "timestamp": 1746918507.2594016
+  },
+  {
+    "year": 2098,
+    "description": "United Zephyr: Population increased significantly: +7118",
+    "type": "general",
+    "timestamp": 1746918507.3503833
+  },
+  {
+    "year": 2101,
+    "description": "United Zephyr: Population increased significantly: +6683",
+    "type": "general",
+    "timestamp": 1746918507.4466362
+  },
+  {
+    "year": 2104,
+    "description": "United Zephyr: Population increased significantly: +8906",
+    "type": "general",
+    "timestamp": 1746918507.5362444
+  },
+  {
+    "year": 2107,
+    "description": "United Zephyr: Population increased significantly: +9996",
+    "type": "general",
+    "timestamp": 1746918507.6269011
+  },
+  {
+    "year": 2110,
+    "description": "United Zephyr: Population increased significantly: +9345",
+    "type": "general",
+    "timestamp": 1746918507.7202566
+  },
+  {
+    "year": 2113,
+    "description": "United Zephyr: Population increased significantly: +9745",
+    "type": "general",
+    "timestamp": 1746918507.8129845
+  },
+  {
+    "year": 2113,
+    "description": "United Zephyr: Expanded territory to 840 tiles",
+    "type": "general",
+    "timestamp": 1746918507.8129923
+  },
+  {
+    "year": 2116,
+    "description": "United Zephyr: Population increased significantly: +10303",
+    "type": "general",
+    "timestamp": 1746918507.9024827
+  },
+  {
+    "year": 2118,
+    "description": "Glorious Republic: Established new city Port Town at (6, 84)",
+    "type": "general",
+    "timestamp": 1746918507.9577727
+  },
+  {
+    "year": 2119,
+    "description": "United Zephyr: Population increased significantly: +11221",
+    "type": "general",
+    "timestamp": 1746918507.9986534
+  },
+  {
+    "year": 2122,
+    "description": "United Zephyr: Population increased significantly: +7825",
+    "type": "general",
+    "timestamp": 1746918508.108157
+  },
+  {
+    "year": 2125,
+    "description": "United Zephyr: Population increased significantly: +8705",
+    "type": "general",
+    "timestamp": 1746918508.2192147
+  },
+  {
+    "year": 2128,
+    "description": "United Zephyr: Population increased significantly: +9057",
+    "type": "general",
+    "timestamp": 1746918508.3291855
+  },
+  {
+    "year": 2131,
+    "description": "United Zephyr: Population increased significantly: +10805",
+    "type": "general",
+    "timestamp": 1746918508.4397824
+  },
+  {
+    "year": 2134,
+    "description": "United Zephyr: Population increased significantly: +8746",
+    "type": "general",
+    "timestamp": 1746918508.550112
+  },
+  {
+    "year": 2137,
+    "description": "United Zephyr: Population increased significantly: +12095",
+    "type": "general",
+    "timestamp": 1746918508.6640306
+  },
+  {
+    "year": 2140,
+    "description": "United Zephyr: Population increased significantly: +11676",
+    "type": "general",
+    "timestamp": 1746918508.7739909
+  },
+  {
+    "year": 2143,
+    "description": "United Zephyr: Population increased significantly: +13518",
+    "type": "general",
+    "timestamp": 1746918508.885805
+  },
+  {
+    "year": 2143,
+    "description": "United Zephyr: Expanded territory to 850 tiles",
+    "type": "general",
+    "timestamp": 1746918508.885818
+  },
+  {
+    "year": 2146,
+    "description": "United Zephyr: Population increased significantly: +10093",
+    "type": "general",
+    "timestamp": 1746918508.9942997
+  },
+  {
+    "year": 2148,
+    "description": "Glorious Republic: Expanded territory to 260 tiles",
+    "type": "general",
+    "timestamp": 1746918509.0638072
+  },
+  {
+    "year": 2149,
+    "description": "United Zephyr: Population increased significantly: +12085",
+    "type": "general",
+    "timestamp": 1746918509.1051404
+  },
+  {
+    "year": 2152,
+    "description": "United Zephyr: Population increased significantly: +14496",
+    "type": "general",
+    "timestamp": 1746918509.2164788
+  },
+  {
+    "year": 2155,
+    "description": "United Zephyr: Population increased significantly: +13770",
+    "type": "general",
+    "timestamp": 1746918509.309196
+  },
+  {
+    "year": 2173,
+    "description": "United Zephyr: Expanded territory to 860 tiles",
+    "type": "general",
+    "timestamp": 1746918509.8676083
+  },
+  {
+    "year": 2178,
+    "description": "Glorious Republic: Expanded territory to 270 tiles",
+    "type": "general",
+    "timestamp": 1746918510.0211236
+  },
+  {
+    "year": 2196,
+    "description": "Glorious Republic: Established new city Wood Town at (6, 63)",
+    "type": "general",
+    "timestamp": 1746918510.5979125
+  },
+  {
+    "year": 2203,
+    "description": "United Zephyr: Expanded territory to 870 tiles",
+    "type": "general",
+    "timestamp": 1746918510.8732417
+  },
+  {
+    "year": 2205,
+    "description": "Glorious Republic: Established new city Mount Station at (13, 68)",
+    "type": "general",
+    "timestamp": 1746918510.9466834
+  },
+  {
+    "year": 2208,
+    "description": "Glorious Republic: Expanded territory to 280 tiles",
+    "type": "general",
+    "timestamp": 1746918511.0615118
+  },
+  {
+    "year": 2233,
+    "description": "United Zephyr: Expanded territory to 880 tiles",
+    "type": "general",
+    "timestamp": 1746918512.0249417
+  },
+  {
+    "year": 2238,
+    "description": "Glorious Republic: Expanded territory to 290 tiles",
+    "type": "general",
+    "timestamp": 1746918512.2115483
+  },
+  {
+    "year": 2263,
+    "description": "United Zephyr: Expanded territory to 890 tiles",
+    "type": "general",
+    "timestamp": 1746918513.1455889
+  },
+  {
+    "year": 2268,
+    "description": "Glorious Republic: Expanded territory to 300 tiles",
+    "type": "general",
+    "timestamp": 1746918513.3052108
+  },
+  {
+    "year": 2293,
+    "description": "United Zephyr: Expanded territory to 900 tiles",
+    "type": "general",
+    "timestamp": 1746918514.1388028
+  },
+  {
+    "year": 2298,
+    "description": "Glorious Republic: Expanded territory to 310 tiles",
+    "type": "general",
+    "timestamp": 1746918514.305502
+  },
+  {
+    "year": 2323,
+    "description": "United Zephyr: Expanded territory to 910 tiles",
+    "type": "general",
+    "timestamp": 1746918515.1719124
+  },
+  {
+    "year": 2328,
+    "description": "Glorious Republic: Expanded territory to 320 tiles",
+    "type": "general",
+    "timestamp": 1746918515.3375616
+  },
+  {
+    "year": 2353,
+    "description": "United Zephyr: Expanded territory to 920 tiles",
+    "type": "general",
+    "timestamp": 1746918516.2157142
+  },
+  {
+    "year": 2358,
+    "description": "Glorious Republic: Expanded territory to 330 tiles",
+    "type": "general",
+    "timestamp": 1746918516.3877225
+  },
+  {
+    "year": 2383,
+    "description": "United Zephyr: Expanded territory to 930 tiles",
+    "type": "general",
+    "timestamp": 1746918517.2908285
+  },
+  {
+    "year": 2385,
+    "description": "Glorious Republic: Established new city Fort Republic Camp at (12, 92)",
+    "type": "general",
+    "timestamp": 1746918517.3558538
+  },
+  {
+    "year": 2388,
+    "description": "Glorious Republic: Expanded territory to 340 tiles",
+    "type": "general",
+    "timestamp": 1746918517.4866877
+  },
+  {
+    "year": 2413,
+    "description": "United Zephyr: Expanded territory to 940 tiles",
+    "type": "general",
+    "timestamp": 1746918518.582041
+  },
+  {
+    "year": 2415,
+    "description": "Glorious Republic: Established new city Forest Heights at (17, 80)",
+    "type": "general",
+    "timestamp": 1746918518.6577458
+  },
+  {
+    "year": 2418,
+    "description": "Glorious Republic: Expanded territory to 350 tiles",
+    "type": "general",
+    "timestamp": 1746918518.785638
+  },
+  {
+    "year": 2436,
+    "description": "Glorious Republic: Established new city Mount Republic Village at (19, 91)",
+    "type": "general",
+    "timestamp": 1746918519.559339
+  },
+  {
+    "year": 2443,
+    "description": "United Zephyr: Expanded territory to 950 tiles",
+    "type": "general",
+    "timestamp": 1746918519.8808064
+  },
+  {
+    "year": 2448,
+    "description": "Glorious Republic: Expanded territory to 360 tiles",
+    "type": "general",
+    "timestamp": 1746918520.0915058
+  },
+  {
+    "year": 2473,
+    "description": "United Zephyr: Expanded territory to 960 tiles",
+    "type": "general",
+    "timestamp": 1746918521.075421
+  },
+  {
+    "year": 2475,
+    "description": "Glorious Republic: Established new city Peace Station at (19, 74)",
+    "type": "general",
+    "timestamp": 1746918521.1415956
+  },
+  {
+    "year": 2478,
+    "description": "Glorious Republic: Expanded territory to 370 tiles",
+    "type": "general",
+    "timestamp": 1746918521.2723892
+  },
+  {
+    "year": 2500,
+    "description": "Natural Disaster: Drought in region around (97, 74)",
+    "type": "general",
+    "timestamp": 1746918522.222726
+  },
+  {
+    "year": 2500,
+    "description": "United Zephyr lost 126612794.1 food to Drought",
+    "type": "general",
+    "timestamp": 1746918522.2228928
+  },
+  {
+    "year": 2503,
+    "description": "United Zephyr: Expanded territory to 970 tiles",
+    "type": "general",
+    "timestamp": 1746918522.372342
+  },
+  {
+    "year": 2508,
+    "description": "Glorious Republic: Expanded territory to 380 tiles",
+    "type": "general",
+    "timestamp": 1746918522.615978
+  },
+  {
+    "year": 2510,
+    "description": "Natural Disaster: Disease in region around (74, 44)",
+    "type": "general",
+    "timestamp": 1746918522.7021575
+  },
+  {
+    "year": 2510,
+    "description": "United Zephyr lost 7653 population to Disease",
+    "type": "general",
+    "timestamp": 1746918522.702267
+  },
+  {
+    "year": 2526,
+    "description": "Glorious Republic: Established new city Field Town at (6, 87)",
+    "type": "general",
+    "timestamp": 1746918523.4451432
+  },
+  {
+    "year": 2533,
+    "description": "United Zephyr: Expanded territory to 980 tiles",
+    "type": "general",
+    "timestamp": 1746918523.7694387
+  },
+  {
+    "year": 2538,
+    "description": "Glorious Republic: Expanded territory to 390 tiles",
+    "type": "general",
+    "timestamp": 1746918523.9818943
+  },
+  {
+    "year": 2541,
+    "description": "Glorious Republic: Established new city Desert Post at (19, 71)",
+    "type": "general",
+    "timestamp": 1746918524.116808
+  },
+  {
+    "year": 2563,
+    "description": "United Zephyr: Expanded territory to 990 tiles",
+    "type": "general",
+    "timestamp": 1746918525.016097
+  },
+  {
+    "year": 2568,
+    "description": "Glorious Republic: Expanded territory to 400 tiles",
+    "type": "general",
+    "timestamp": 1746918525.2018762
+  },
+  {
+    "year": 2593,
+    "description": "United Zephyr: Expanded territory to 1000 tiles",
+    "type": "general",
+    "timestamp": 1746918526.207575
+  },
+  {
+    "year": 2598,
+    "description": "Glorious Republic: Expanded territory to 410 tiles",
+    "type": "general",
+    "timestamp": 1746918526.4060736
+  },
+  {
+    "year": 2601,
+    "description": "Glorious Republic: Established new city Forest M-3 at (9, 86)",
+    "type": "general",
+    "timestamp": 1746918526.5472848
+  },
+  {
+    "year": 2623,
+    "description": "United Zephyr: Expanded territory to 1010 tiles",
+    "type": "general",
+    "timestamp": 1746918527.7288375
+  },
+  {
+    "year": 2628,
+    "description": "Glorious Republic: Expanded territory to 420 tiles",
+    "type": "general",
+    "timestamp": 1746918527.9674637
+  },
+  {
+    "year": 2653,
+    "description": "United Zephyr: Expanded territory to 1020 tiles",
+    "type": "general",
+    "timestamp": 1746918529.009644
+  },
+  {
+    "year": 2658,
+    "description": "Glorious Republic: Expanded territory to 430 tiles",
+    "type": "general",
+    "timestamp": 1746918529.2089381
+  },
+  {
+    "year": 2683,
+    "description": "United Zephyr: Expanded territory to 1030 tiles",
+    "type": "general",
+    "timestamp": 1746918530.2602634
+  },
+  {
+    "year": 2688,
+    "description": "Glorious Republic: Expanded territory to 440 tiles",
+    "type": "general",
+    "timestamp": 1746918530.466055
+  },
+  {
+    "year": 2706,
+    "description": "Glorious Republic: Established new city Forest Glorious Camp at (3, 61)",
+    "type": "general",
+    "timestamp": 1746918531.227694
+  },
+  {
+    "year": 2709,
+    "description": "Glorious Republic: Established new city Serene Post at (12, 91)",
+    "type": "general",
+    "timestamp": 1746918531.3802593
+  },
+  {
+    "year": 2713,
+    "description": "United Zephyr: Expanded territory to 1040 tiles",
+    "type": "general",
+    "timestamp": 1746918531.5841296
+  },
+  {
+    "year": 2715,
+    "description": "Glorious Republic: Established new city New Post at (4, 60)",
+    "type": "general",
+    "timestamp": 1746918531.673936
+  },
+  {
+    "year": 2718,
+    "description": "Glorious Republic: Expanded territory to 450 tiles",
+    "type": "general",
+    "timestamp": 1746918531.8258908
+  },
+  {
+    "year": 2743,
+    "description": "United Zephyr: Expanded territory to 1050 tiles",
+    "type": "general",
+    "timestamp": 1746918532.9336169
+  },
+  {
+    "year": 2748,
+    "description": "Glorious Republic: Expanded territory to 460 tiles",
+    "type": "general",
+    "timestamp": 1746918533.15449
+  },
+  {
+    "year": 2773,
+    "description": "United Zephyr: Expanded territory to 1060 tiles",
+    "type": "general",
+    "timestamp": 1746918534.2893126
+  },
+  {
+    "year": 2778,
+    "description": "Glorious Republic: Expanded territory to 470 tiles",
+    "type": "general",
+    "timestamp": 1746918534.5031266
+  },
+  {
+    "year": 2803,
+    "description": "United Zephyr: Expanded territory to 1070 tiles",
+    "type": "general",
+    "timestamp": 1746918535.6499085
+  },
+  {
+    "year": 2808,
+    "description": "Glorious Republic: Expanded territory to 480 tiles",
+    "type": "general",
+    "timestamp": 1746918535.8608544
+  },
+  {
+    "year": 2811,
+    "description": "Glorious Republic: Established new city Harmony Settlement at (14, 62)",
+    "type": "general",
+    "timestamp": 1746918536.001674
+  },
+  {
+    "year": 2815,
+    "description": "United Zephyr: Established new city Town at (79, 64)",
+    "type": "general",
+    "timestamp": 1746918536.2584448
+  },
+  {
+    "year": 2818,
+    "description": "United Zephyr: Population increased significantly: +12008",
+    "type": "general",
+    "timestamp": 1746918536.4425426
+  },
+  {
+    "year": 2821,
+    "description": "United Zephyr: Population increased significantly: +13798",
+    "type": "general",
+    "timestamp": 1746918536.6102724
+  },
+  {
+    "year": 2824,
+    "description": "United Zephyr: Population increased significantly: +17142",
+    "type": "general",
+    "timestamp": 1746918536.783133
+  },
+  {
+    "year": 2827,
+    "description": "United Zephyr: Population increased significantly: +16363",
+    "type": "general",
+    "timestamp": 1746918536.941334
+  },
+  {
+    "year": 2829,
+    "description": "Glorious Republic: Established new city Wood Heights at (18, 65)",
+    "type": "general",
+    "timestamp": 1746918537.0359995
+  },
+  {
+    "year": 2830,
+    "description": "United Zephyr: Population increased significantly: +15387",
+    "type": "general",
+    "timestamp": 1746918537.1050296
+  },
+  {
+    "year": 2833,
+    "description": "United Zephyr: Population increased significantly: +15270",
+    "type": "general",
+    "timestamp": 1746918537.272089
+  },
+  {
+    "year": 2833,
+    "description": "United Zephyr: Expanded territory to 1080 tiles",
+    "type": "general",
+    "timestamp": 1746918537.272104
+  },
+  {
+    "year": 2838,
+    "description": "Glorious Republic: Expanded territory to 490 tiles",
+    "type": "general",
+    "timestamp": 1746918537.5310016
+  }
+]

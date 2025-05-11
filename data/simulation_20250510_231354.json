@@ -1,0 +1,1224 @@
+{
+  "year": 543,
+  "tick_count": 543,
+  "world_size": [
+    100,
+    100
+  ],
+  "active_civilizations": [
+    {
+      "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+      "name": "Nova Confederation",
+      "age": 543,
+      "population": 39155,
+      "territory_size": 164,
+      "technology": 67.94465230186967,
+      "traits": [
+        "expansionist",
+        "peaceful",
+        "tech_savvy"
+      ],
+      "belief_system": {
+        "name": "Cult of Cosmic Balance",
+        "values": {
+          "peace": 0.25071266366682987,
+          "war": 0.085186081166234,
+          "knowledge": 0.1383463453985001,
+          "tradition": 0.23056575322563352,
+          "wealth": 0.1664032266487133,
+          "spirituality": 0.12878592989408919
+        },
+        "foreign_stance": "neutral"
+      },
+      "resources": {
+        "food": 622340.4873105581,
+        "metal": 1142910.5888738085,
+        "gold": 974700.6820357558,
+        "stone": 1128966.687347654
+      },
+      "relations": {}
+    }
+  ],
+  "event_history": [
+    {
+      "year": 0,
+      "description": "Civilization Nova Confederation founded",
+      "type": "general",
+      "timestamp": 1746915160.1778145
+    },
+    {
+      "year": 0,
+      "description": "Civilization Lyra founded",
+      "type": "general",
+      "timestamp": 1746915160.178939
+    },
+    {
+      "year": 0,
+      "description": "Civilization United Realm founded",
+      "type": "general",
+      "timestamp": 1746915160.1819718
+    },
+    {
+      "year": 0,
+      "description": "Civilization Aquila Federation founded",
+      "type": "general",
+      "timestamp": 1746915160.1851277
+    },
+    {
+      "year": 0,
+      "description": "Civilization Silver Republic founded",
+      "type": "general",
+      "timestamp": 1746915160.1902492
+    },
+    {
+      "year": 20,
+      "description": "Aquila Federation has collapsed due to starvation!",
+      "type": "general",
+      "timestamp": 1746915160.8248653
+    },
+    {
+      "year": 30,
+      "description": "Silver Republic has collapsed due to starvation!",
+      "type": "general",
+      "timestamp": 1746915174.106826
+    },
+    {
+      "year": 50,
+      "description": "United Realm has collapsed due to starvation!",
+      "type": "general",
+      "timestamp": 1746915178.6739666
+    },
+    {
+      "year": 60,
+      "description": "Lyra has collapsed due to starvation!",
+      "type": "general",
+      "timestamp": 1746915182.3838377
+    },
+    {
+      "year": 78,
+      "description": "Nova Confederation: Expanded territory to 90 tiles",
+      "type": "general",
+      "timestamp": 1746915187.2691355
+    },
+    {
+      "year": 186,
+      "description": "Nova Confederation: Expanded territory to 100 tiles",
+      "type": "general",
+      "timestamp": 1746915196.0851946
+    },
+    {
+      "year": 330,
+      "description": "Natural Disaster: Earthquake in region around (33, 3)",
+      "type": "general",
+      "timestamp": 1746915207.083821
+    },
+    {
+      "year": 330,
+      "description": "Nova Confederation lost 0 population to Earthquake",
+      "type": "general",
+      "timestamp": 1746915207.0838459
+    },
+    {
+      "year": 372,
+      "description": "Nova Confederation: Expanded territory to 110 tiles",
+      "type": "general",
+      "timestamp": 1746915210.8782463
+    },
+    {
+      "year": 381,
+      "description": "Nova Confederation: Established new city Garden Village at (20, 14)",
+      "type": "general",
+      "timestamp": 1746915211.4911091
+    },
+    {
+      "year": 411,
+      "description": "Nova Confederation: Established new city Wood Camp at (35, 2)",
+      "type": "general",
+      "timestamp": 1746915213.9469938
+    },
+    {
+      "year": 423,
+      "description": "Nova Confederation: Abandoned small settlement Garden Village",
+      "type": "general",
+      "timestamp": 1746915214.9666038
+    },
+    {
+      "year": 441,
+      "description": "Nova Confederation: Expanded territory to 130 tiles",
+      "type": "general",
+      "timestamp": 1746915216.191824
+    },
+    {
+      "year": 444,
+      "description": "Nova Confederation: Established new city Nova City at (26, 15)",
+      "type": "general",
+      "timestamp": 1746915216.3939037
+    },
+    {
+      "year": 465,
+      "description": "Nova Confederation: Established new city Fort City at (33, 3)",
+      "type": "general",
+      "timestamp": 1746915218.0760775
+    },
+    {
+      "year": 471,
+      "description": "Nova Confederation: Expanded territory to 140 tiles",
+      "type": "general",
+      "timestamp": 1746915218.6408315
+    },
+    {
+      "year": 501,
+      "description": "Nova Confederation: Expanded territory to 150 tiles",
+      "type": "general",
+      "timestamp": 1746915220.8448899
+    },
+    {
+      "year": 531,
+      "description": "Nova Confederation: Expanded territory to 160 tiles",
+      "type": "general",
+      "timestamp": 1746915223.2811046
+    }
+  ],
+  "civilization_history": [
+    {
+      "year": 0,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 94,
+          "age": 0,
+          "territory_size": 85,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 14,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        },
+        {
+          "id": "7a18b199-eb17-4a5e-9d43-4a429c172b82",
+          "name": "Lyra",
+          "population": 103,
+          "age": 0,
+          "territory_size": 31,
+          "traits": [
+            "tech_savvy",
+            "peaceful",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Followers of Blessed Harmony",
+            "values": {
+              "peace": 0.2817584278229713,
+              "war": 0.11083284454745444,
+              "knowledge": 0.13771865449257364,
+              "tradition": 0.026814811296072518,
+              "wealth": 0.24849562814150342,
+              "spirituality": 0.19437963369942465
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 27,
+          "resources": {
+            "food": 4.85123174468461,
+            "metal": 713.9546248792348,
+            "gold": 572.6418280107482,
+            "stone": 752.2954241837255
+          }
+        },
+        {
+          "id": "7976dd9f-7c17-4f61-9167-57fc054327e0",
+          "name": "United Realm",
+          "population": 56,
+          "age": 0,
+          "territory_size": 30,
+          "traits": [
+            "peaceful",
+            "expansionist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Church of Golden Sun",
+            "values": {
+              "peace": 0.18901868994651289,
+              "war": 0.08357742070305975,
+              "knowledge": 0.19006572262394533,
+              "tradition": 0.1974621838852757,
+              "wealth": 0.18748920958857737,
+              "spirituality": 0.152386773252629
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 28,
+          "resources": {
+            "food": 4.86041238813312,
+            "metal": 489.46387999796553,
+            "gold": 363.5442801763722,
+            "stone": 463.9959780826867
+          }
+        },
+        {
+          "id": "27dc5eec-0fcb-4283-a12e-cdc0b40fb638",
+          "name": "Aquila Federation",
+          "population": 62,
+          "age": 0,
+          "territory_size": 32,
+          "traits": [
+            "weird",
+            "isolationist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Sacred Knowledge",
+            "values": {
+              "peace": 0.24335248728154915,
+              "war": 0.22979342027571656,
+              "knowledge": 0.09371075035612232,
+              "tradition": 0.11936546569769955,
+              "wealth": 0.18001076879414907,
+              "spirituality": 0.1337671075947634
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 15,
+          "resources": {
+            "food": 3.9950122647891115,
+            "metal": 145.86823479144985,
+            "gold": 111.21228066135382,
+            "stone": 142.18553962355315
+          }
+        },
+        {
+          "id": "c54bfde5-92d3-4d3c-a61a-0f08034e69d7",
+          "name": "Silver Republic",
+          "population": 65,
+          "age": 0,
+          "territory_size": 42,
+          "traits": [
+            "religious",
+            "weird",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Church of Cosmic Balance",
+            "values": {
+              "peace": 0.3006327296711814,
+              "war": 0.02215459096832422,
+              "knowledge": 0.2218733260856044,
+              "tradition": 0.21938389702533106,
+              "wealth": 0.08507098428687683,
+              "spirituality": 0.15088447196268204
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 18,
+          "resources": {
+            "food": 4.252243580088261,
+            "metal": 220.22333390797465,
+            "gold": 305.09627164479406,
+            "stone": 229.29329212019522
+          }
+        }
+      ]
+    },
+    {
+      "year": 25,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 131,
+          "age": 25,
+          "territory_size": 89,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 16.39500212087643,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        },
+        {
+          "id": "7a18b199-eb17-4a5e-9d43-4a429c172b82",
+          "name": "Lyra",
+          "population": 129,
+          "age": 25,
+          "territory_size": 31,
+          "traits": [
+            "tech_savvy",
+            "peaceful",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Followers of Blessed Harmony",
+            "values": {
+              "peace": 0.2817584278229713,
+              "war": 0.11083284454745444,
+              "knowledge": 0.13771865449257364,
+              "tradition": 0.026814811296072518,
+              "wealth": 0.24849562814150342,
+              "spirituality": 0.19437963369942465
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 29.551697985906838,
+          "resources": {
+            "food": 4.85123174468461,
+            "metal": 713.9546248792348,
+            "gold": 572.6418280107482,
+            "stone": 752.2954241837255
+          }
+        },
+        {
+          "id": "7976dd9f-7c17-4f61-9167-57fc054327e0",
+          "name": "United Realm",
+          "population": 80,
+          "age": 25,
+          "territory_size": 33,
+          "traits": [
+            "peaceful",
+            "expansionist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Church of Golden Sun",
+            "values": {
+              "peace": 0.18901868994651289,
+              "war": 0.08357742070305975,
+              "knowledge": 0.19006572262394533,
+              "tradition": 0.1974621838852757,
+              "wealth": 0.18748920958857737,
+              "spirituality": 0.152386773252629
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 30.598915199695934,
+          "resources": {
+            "food": 4.86041238813312,
+            "metal": 489.46387999796553,
+            "gold": 363.5442801763722,
+            "stone": 463.9959780826867
+          }
+        },
+        {
+          "id": "c54bfde5-92d3-4d3c-a61a-0f08034e69d7",
+          "name": "Silver Republic",
+          "population": 86,
+          "age": 25,
+          "territory_size": 42,
+          "traits": [
+            "religious",
+            "weird",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Church of Cosmic Balance",
+            "values": {
+              "peace": 0.3006327296711814,
+              "war": 0.02215459096832422,
+              "knowledge": 0.2218733260856044,
+              "tradition": 0.21938389702533106,
+              "wealth": 0.08507098428687683,
+              "spirituality": 0.15088447196268204
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 18.740313498311068,
+          "resources": {
+            "food": 4.252243580088261,
+            "metal": 220.22333390797465,
+            "gold": 305.09627164479406,
+            "stone": 229.29329212019522
+          }
+        }
+      ]
+    },
+    {
+      "year": 50,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 63,
+          "age": 50,
+          "territory_size": 89,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 18.851675206548606,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        },
+        {
+          "id": "7a18b199-eb17-4a5e-9d43-4a429c172b82",
+          "name": "Lyra",
+          "population": 56,
+          "age": 50,
+          "territory_size": 31,
+          "traits": [
+            "tech_savvy",
+            "peaceful",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Followers of Blessed Harmony",
+            "values": {
+              "peace": 0.2817584278229713,
+              "war": 0.11083284454745444,
+              "knowledge": 0.13771865449257364,
+              "tradition": 0.026814811296072518,
+              "wealth": 0.24849562814150342,
+              "spirituality": 0.19437963369942465
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 32.09995330951891,
+          "resources": {
+            "food": 4.85123174468461,
+            "metal": 713.9546248792348,
+            "gold": 572.6418280107482,
+            "stone": 752.2954241837255
+          }
+        }
+      ]
+    },
+    {
+      "year": 75,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 75,
+          "territory_size": 89,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 21.114876970128094,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 100,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 100,
+          "territory_size": 91,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 23.658837652396183,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 125,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 125,
+          "territory_size": 92,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 26.187124283247247,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 150,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 150,
+          "territory_size": 95,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 28.67880684571431,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 175,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 175,
+          "territory_size": 97,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 31.166145633380708,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 200,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 200,
+          "territory_size": 100,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 33.601526741819114,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 225,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 225,
+          "territory_size": 102,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 36.25532049813535,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 250,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 250,
+          "territory_size": 103,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 38.48725099801155,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 275,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 275,
+          "territory_size": 104,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 40.982151543632185,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 300,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 300,
+          "territory_size": 106,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 43.29889072691215,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 325,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 50,
+          "age": 325,
+          "territory_size": 106,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 46.16304442651941,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 350,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 54,
+          "age": 350,
+          "territory_size": 106,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 48.82006062623743,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 375,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 107,
+          "age": 375,
+          "territory_size": 111,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 51.3970125480381,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 400,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 227,
+          "age": 400,
+          "territory_size": 116,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 53.63258030180477,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 425,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 512,
+          "age": 425,
+          "territory_size": 124,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 56.127547423480316,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 450,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 1187,
+          "age": 450,
+          "territory_size": 133,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 58.47581933492004,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 475,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 2710,
+          "age": 475,
+          "territory_size": 141,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 61.066517506566214,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 500,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 8238,
+          "age": 500,
+          "territory_size": 149,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 63.51648703213101,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    },
+    {
+      "year": 525,
+      "civilizations": [
+        {
+          "id": "e0f31631-0b7f-48af-a86a-52a329423808",
+          "name": "Nova Confederation",
+          "population": 21209,
+          "age": 525,
+          "territory_size": 158,
+          "traits": [
+            "expansionist",
+            "peaceful",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Cult of Cosmic Balance",
+            "values": {
+              "peace": 0.25071266366682987,
+              "war": 0.085186081166234,
+              "knowledge": 0.1383463453985001,
+              "tradition": 0.23056575322563352,
+              "wealth": 0.1664032266487133,
+              "spirituality": 0.12878592989408919
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 66.07984405112877,
+          "resources": {
+            "food": 622340.4873105581,
+            "metal": 1142910.5888738085,
+            "gold": 974700.6820357558,
+            "stone": 1128966.687347654
+          }
+        }
+      ]
+    }
+  ]
+}

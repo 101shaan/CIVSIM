@@ -1,0 +1,5089 @@
+{
+  "year": 736,
+  "tick_count": 736,
+  "world_size": [
+    100,
+    100
+  ],
+  "active_civilizations": [
+    {
+      "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+      "name": "Lumina",
+      "age": 736,
+      "population": 1520,
+      "territory_size": 140,
+      "technology": 46.50979857853956,
+      "traits": [
+        "trading",
+        "expansionist",
+        "aggressive"
+      ],
+      "belief_system": {
+        "name": "Cult of Unbounded Nature",
+        "values": {
+          "peace": 0.22167193420008627,
+          "war": 0.07736399919274967,
+          "knowledge": 0.15965314073834524,
+          "tradition": 0.12423086947953883,
+          "wealth": 0.3053429004862876,
+          "spirituality": 0.11173715590299242
+        },
+        "foreign_stance": "hostile"
+      },
+      "resources": {
+        "food": 8779.11656204457,
+        "metal": 32978.032574625395,
+        "gold": 38847.14816920857,
+        "stone": 33239.535112997124
+      },
+      "relations": {
+        "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690": -0.13861822027738074
+      }
+    },
+    {
+      "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+      "name": "Solara Alliance",
+      "age": 736,
+      "population": 321621335,
+      "territory_size": 244,
+      "technology": 91.6686208297709,
+      "traits": [
+        "tech_savvy",
+        "religious",
+        "peaceful"
+      ],
+      "belief_system": {
+        "name": "Cult of Mighty Mountains",
+        "values": {
+          "peace": 0.13113994753666608,
+          "war": 0.19392486962289318,
+          "knowledge": 0.21714638776965642,
+          "tradition": 0.030717173170651743,
+          "wealth": 0.15596734110655555,
+          "spirituality": 0.271104280793577
+        },
+        "foreign_stance": "neutral"
+      },
+      "resources": {
+        "food": 21901075334.71249,
+        "metal": 25768651219.718037,
+        "gold": 20883211010.67189,
+        "stone": 25079057278.46292
+      },
+      "relations": {
+        "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690": -0.9
+      }
+    },
+    {
+      "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+      "name": "Eternal States",
+      "age": 736,
+      "population": 340720,
+      "territory_size": 175,
+      "technology": 95.47199175888693,
+      "traits": [
+        "tech_savvy",
+        "expansionist",
+        "religious"
+      ],
+      "belief_system": {
+        "name": "Church of Eternal Light",
+        "values": {
+          "peace": 0.26339190481270897,
+          "war": 0.113186253652403,
+          "knowledge": 0.2680232220750759,
+          "tradition": 0.0904762068082604,
+          "wealth": 0.17035729091444543,
+          "spirituality": 0.09456512173710634
+        },
+        "foreign_stance": "hostile"
+      },
+      "resources": {
+        "food": 10085756.855629042,
+        "metal": 21379207.77659777,
+        "gold": 13862435.72332771,
+        "stone": 21864800.77315205
+      },
+      "relations": {
+        "1afeb959-1fcf-49d8-bef6-86dc21acfd74": -0.39102333934045236,
+        "e78f47bf-3582-47de-93b6-ccb09a72317f": -0.9
+      }
+    },
+    {
+      "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+      "name": "Silver Confederation",
+      "age": 736,
+      "population": 2696532,
+      "territory_size": 71,
+      "technology": 90.83815744616868,
+      "traits": [
+        "trading",
+        "isolationist",
+        "tech_savvy"
+      ],
+      "belief_system": {
+        "name": "Believers in Mighty Mountains",
+        "values": {
+          "peace": 0.015089221122627502,
+          "war": 0.30993686625392364,
+          "knowledge": 0.02730197773753568,
+          "tradition": 0.3126689565373648,
+          "wealth": 0.27638228069637844,
+          "spirituality": 0.05862069765216992
+        },
+        "foreign_stance": "hostile"
+      },
+      "resources": {
+        "food": 30699025.66903059,
+        "metal": 63289837.67173373,
+        "gold": 49619178.74004169,
+        "stone": 58054285.55870725
+      },
+      "relations": {}
+    }
+  ],
+  "event_history": [
+    {
+      "year": 0,
+      "description": "Civilization Lumina founded",
+      "type": "general",
+      "timestamp": 1746912343.507222
+    },
+    {
+      "year": 0,
+      "description": "Civilization Solara Alliance founded",
+      "type": "general",
+      "timestamp": 1746912343.5091512
+    },
+    {
+      "year": 0,
+      "description": "Civilization Orion Alliance founded",
+      "type": "general",
+      "timestamp": 1746912343.5097642
+    },
+    {
+      "year": 0,
+      "description": "Civilization Eternal States founded",
+      "type": "general",
+      "timestamp": 1746912343.5170374
+    },
+    {
+      "year": 0,
+      "description": "Civilization Silver Confederation founded",
+      "type": "general",
+      "timestamp": 1746912343.5245564
+    },
+    {
+      "year": 40,
+      "description": "Civilization Orion Alliance collapsed due to starvation after 40 years",
+      "type": "general",
+      "timestamp": 1746912345.081184
+    },
+    {
+      "year": 104,
+      "description": "Eternal States: Expanded territory to 60 tiles",
+      "type": "general",
+      "timestamp": 1746912377.9419165
+    },
+    {
+      "year": 118,
+      "description": "Solara Alliance: Expanded territory to 90 tiles",
+      "type": "general",
+      "timestamp": 1746912712.8691232
+    },
+    {
+      "year": 273,
+      "description": "Lumina: Expanded territory to 90 tiles",
+      "type": "general",
+      "timestamp": 1746912742.9691098
+    },
+    {
+      "year": 290,
+      "description": "Eternal States: Expanded territory to 70 tiles",
+      "type": "general",
+      "timestamp": 1746912743.4103882
+    },
+    {
+      "year": 298,
+      "description": "Solara Alliance: Expanded territory to 100 tiles",
+      "type": "general",
+      "timestamp": 1746912743.6145127
+    },
+    {
+      "year": 320,
+      "description": "Natural Disaster: Flood in region around (15, 47)",
+      "type": "general",
+      "timestamp": 1746912744.1593897
+    },
+    {
+      "year": 320,
+      "description": "Silver Confederation lost 1 population to Flood",
+      "type": "general",
+      "timestamp": 1746912744.1594443
+    },
+    {
+      "year": 334,
+      "description": "Solara Alliance: Expanded territory to 110 tiles",
+      "type": "general",
+      "timestamp": 1746912750.5949116
+    },
+    {
+      "year": 340,
+      "description": "Solara Alliance: Established new city Tech Post at (31, 13)",
+      "type": "general",
+      "timestamp": 1746912750.7365515
+    },
+    {
+      "year": 364,
+      "description": "Solara Alliance: Expanded territory to 120 tiles",
+      "type": "general",
+      "timestamp": 1746912753.2092474
+    },
+    {
+      "year": 390,
+      "description": "Lumina: Expanded territory to 100 tiles",
+      "type": "general",
+      "timestamp": 1746912753.887261
+    },
+    {
+      "year": 394,
+      "description": "Solara Alliance: Expanded territory to 130 tiles",
+      "type": "general",
+      "timestamp": 1746912753.9928074
+    },
+    {
+      "year": 400,
+      "description": "Solara Alliance: Established new city Port Point at (41, 10)",
+      "type": "general",
+      "timestamp": 1746912754.1556501
+    },
+    {
+      "year": 404,
+      "description": "Eternal States: Expanded territory to 80 tiles",
+      "type": "general",
+      "timestamp": 1746912755.6530273
+    },
+    {
+      "year": 424,
+      "description": "Solara Alliance: Expanded territory to 140 tiles",
+      "type": "general",
+      "timestamp": 1746912756.3234534
+    },
+    {
+      "year": 449,
+      "description": "Eternal States: First contact with Lumina",
+      "type": "general",
+      "timestamp": 1746912757.033621
+    },
+    {
+      "year": 454,
+      "description": "Solara Alliance: Population increased significantly: +2051",
+      "type": "general",
+      "timestamp": 1746912758.5212476
+    },
+    {
+      "year": 454,
+      "description": "Solara Alliance: Expanded territory to 150 tiles",
+      "type": "general",
+      "timestamp": 1746912758.5212786
+    },
+    {
+      "year": 460,
+      "description": "Solara Alliance: Population increased significantly: +2474",
+      "type": "general",
+      "timestamp": 1746912758.6881385
+    },
+    {
+      "year": 463,
+      "description": "Solara Alliance: Population increased significantly: +2498",
+      "type": "general",
+      "timestamp": 1746912758.7747273
+    },
+    {
+      "year": 466,
+      "description": "Solara Alliance: Population increased significantly: +2599",
+      "type": "general",
+      "timestamp": 1746912758.8583522
+    },
+    {
+      "year": 469,
+      "description": "Solara Alliance: Population increased significantly: +3091",
+      "type": "general",
+      "timestamp": 1746912758.9481268
+    },
+    {
+      "year": 472,
+      "description": "Solara Alliance: Population increased significantly: +3161",
+      "type": "general",
+      "timestamp": 1746912759.0395458
+    },
+    {
+      "year": 475,
+      "description": "Solara Alliance: Population increased significantly: +4721",
+      "type": "general",
+      "timestamp": 1746912759.1359396
+    },
+    {
+      "year": 478,
+      "description": "Solara Alliance: Population increased significantly: +4741",
+      "type": "general",
+      "timestamp": 1746912759.2359169
+    },
+    {
+      "year": 479,
+      "description": "Eternal States: Expanded territory to 90 tiles",
+      "type": "general",
+      "timestamp": 1746912759.2743325
+    },
+    {
+      "year": 481,
+      "description": "Solara Alliance: Population increased significantly: +5443",
+      "type": "general",
+      "timestamp": 1746912759.3374364
+    },
+    {
+      "year": 484,
+      "description": "Solara Alliance: Population increased significantly: +4471",
+      "type": "general",
+      "timestamp": 1746912759.4310071
+    },
+    {
+      "year": 484,
+      "description": "Solara Alliance: Expanded territory to 160 tiles",
+      "type": "general",
+      "timestamp": 1746912759.4310226
+    },
+    {
+      "year": 487,
+      "description": "Solara Alliance: Population increased significantly: +5043",
+      "type": "general",
+      "timestamp": 1746912759.5251331
+    },
+    {
+      "year": 490,
+      "description": "Solara Alliance: Population increased significantly: +6933",
+      "type": "general",
+      "timestamp": 1746912759.6176512
+    },
+    {
+      "year": 493,
+      "description": "Solara Alliance: Population increased significantly: +6712",
+      "type": "general",
+      "timestamp": 1746912759.7101433
+    },
+    {
+      "year": 496,
+      "description": "Solara Alliance: Population increased significantly: +7036",
+      "type": "general",
+      "timestamp": 1746912759.7915869
+    },
+    {
+      "year": 497,
+      "description": "Eternal States: Established new city Academy Station at (37, 44)",
+      "type": "general",
+      "timestamp": 1746912759.817297
+    },
+    {
+      "year": 499,
+      "description": "Solara Alliance: Population increased significantly: +7870",
+      "type": "general",
+      "timestamp": 1746912762.6024587
+    },
+    {
+      "year": 502,
+      "description": "Solara Alliance: Population increased significantly: +8103",
+      "type": "general",
+      "timestamp": 1746912762.7120152
+    },
+    {
+      "year": 505,
+      "description": "Solara Alliance: Population increased significantly: +12065",
+      "type": "general",
+      "timestamp": 1746912762.8022518
+    },
+    {
+      "year": 508,
+      "description": "Solara Alliance: Population increased significantly: +9997",
+      "type": "general",
+      "timestamp": 1746912762.8939793
+    },
+    {
+      "year": 509,
+      "description": "Eternal States: Expanded territory to 100 tiles",
+      "type": "general",
+      "timestamp": 1746912762.9198663
+    },
+    {
+      "year": 511,
+      "description": "Solara Alliance: Population increased significantly: +14295",
+      "type": "general",
+      "timestamp": 1746912762.9818861
+    },
+    {
+      "year": 514,
+      "description": "Solara Alliance: Population increased significantly: +12744",
+      "type": "general",
+      "timestamp": 1746912763.0707765
+    },
+    {
+      "year": 514,
+      "description": "Solara Alliance: Expanded territory to 170 tiles",
+      "type": "general",
+      "timestamp": 1746912763.070817
+    },
+    {
+      "year": 517,
+      "description": "Solara Alliance: Population increased significantly: +15115",
+      "type": "general",
+      "timestamp": 1746912763.1667747
+    },
+    {
+      "year": 520,
+      "description": "Solara Alliance: Population increased significantly: +21235",
+      "type": "general",
+      "timestamp": 1746912763.2728803
+    },
+    {
+      "year": 523,
+      "description": "Solara Alliance: Population increased significantly: +23780",
+      "type": "general",
+      "timestamp": 1746912763.3775835
+    },
+    {
+      "year": 526,
+      "description": "Solara Alliance: Population increased significantly: +23663",
+      "type": "general",
+      "timestamp": 1746912763.4813433
+    },
+    {
+      "year": 529,
+      "description": "Solara Alliance: Population increased significantly: +21650",
+      "type": "general",
+      "timestamp": 1746912763.582699
+    },
+    {
+      "year": 532,
+      "description": "Solara Alliance: Population increased significantly: +30305",
+      "type": "general",
+      "timestamp": 1746912763.6844554
+    },
+    {
+      "year": 535,
+      "description": "Solara Alliance: Population increased significantly: +24108",
+      "type": "general",
+      "timestamp": 1746912763.7882235
+    },
+    {
+      "year": 538,
+      "description": "Solara Alliance: Population increased significantly: +32135",
+      "type": "general",
+      "timestamp": 1746912763.895288
+    },
+    {
+      "year": 539,
+      "description": "Eternal States: Established new city New City at (53, 46)",
+      "type": "general",
+      "timestamp": 1746912763.925572
+    },
+    {
+      "year": 541,
+      "description": "Solara Alliance: Population increased significantly: +42923",
+      "type": "general",
+      "timestamp": 1746912766.106929
+    },
+    {
+      "year": 544,
+      "description": "Solara Alliance: Population increased significantly: +34773",
+      "type": "general",
+      "timestamp": 1746912766.192169
+    },
+    {
+      "year": 544,
+      "description": "Solara Alliance: Established new city Point at (22, 2)",
+      "type": "general",
+      "timestamp": 1746912766.1921766
+    },
+    {
+      "year": 547,
+      "description": "Solara Alliance: Population increased significantly: +32621",
+      "type": "general",
+      "timestamp": 1746912768.3334558
+    },
+    {
+      "year": 550,
+      "description": "Solara Alliance: Population increased significantly: +46356",
+      "type": "general",
+      "timestamp": 1746912768.4144828
+    },
+    {
+      "year": 553,
+      "description": "Solara Alliance: Population increased significantly: +37690",
+      "type": "general",
+      "timestamp": 1746912768.4904249
+    },
+    {
+      "year": 556,
+      "description": "Solara Alliance: Population increased significantly: +48003",
+      "type": "general",
+      "timestamp": 1746912768.5642543
+    },
+    {
+      "year": 559,
+      "description": "Solara Alliance: Population increased significantly: +60583",
+      "type": "general",
+      "timestamp": 1746912768.634732
+    },
+    {
+      "year": 562,
+      "description": "Solara Alliance: Population increased significantly: +48008",
+      "type": "general",
+      "timestamp": 1746912768.7065098
+    },
+    {
+      "year": 565,
+      "description": "Solara Alliance: Population increased significantly: +63643",
+      "type": "general",
+      "timestamp": 1746912768.7782567
+    },
+    {
+      "year": 565,
+      "description": "Solara Alliance: Established new city New Station at (28, 12)",
+      "type": "general",
+      "timestamp": 1746912768.7782648
+    },
+    {
+      "year": 568,
+      "description": "Solara Alliance: Population increased significantly: +59976",
+      "type": "general",
+      "timestamp": 1746912770.3312657
+    },
+    {
+      "year": 569,
+      "description": "Eternal States: Expanded territory to 120 tiles",
+      "type": "general",
+      "timestamp": 1746912770.3588297
+    },
+    {
+      "year": 571,
+      "description": "Solara Alliance: Population increased significantly: +55859",
+      "type": "general",
+      "timestamp": 1746912770.4111729
+    },
+    {
+      "year": 574,
+      "description": "Solara Alliance: Population increased significantly: +60251",
+      "type": "general",
+      "timestamp": 1746912770.4835725
+    },
+    {
+      "year": 574,
+      "description": "Solara Alliance: Expanded territory to 190 tiles",
+      "type": "general",
+      "timestamp": 1746912770.483579
+    },
+    {
+      "year": 577,
+      "description": "Solara Alliance: Population increased significantly: +62660",
+      "type": "general",
+      "timestamp": 1746912770.5582836
+    },
+    {
+      "year": 580,
+      "description": "Solara Alliance: Population increased significantly: +70720",
+      "type": "general",
+      "timestamp": 1746912770.6327941
+    },
+    {
+      "year": 583,
+      "description": "Solara Alliance: Population increased significantly: +109619",
+      "type": "general",
+      "timestamp": 1746912770.7049558
+    },
+    {
+      "year": 586,
+      "description": "Solara Alliance: Population increased significantly: +90272",
+      "type": "general",
+      "timestamp": 1746912770.779578
+    },
+    {
+      "year": 589,
+      "description": "Solara Alliance: Population increased significantly: +94557",
+      "type": "general",
+      "timestamp": 1746912770.8577328
+    },
+    {
+      "year": 591,
+      "description": "Lumina: Expanded territory to 110 tiles",
+      "type": "general",
+      "timestamp": 1746912770.909377
+    },
+    {
+      "year": 592,
+      "description": "Solara Alliance: Population increased significantly: +138518",
+      "type": "general",
+      "timestamp": 1746912770.937111
+    },
+    {
+      "year": 595,
+      "description": "Solara Alliance: Population increased significantly: +124887",
+      "type": "general",
+      "timestamp": 1746912771.0217042
+    },
+    {
+      "year": 598,
+      "description": "Solara Alliance: Population increased significantly: +165725",
+      "type": "general",
+      "timestamp": 1746912771.1041465
+    },
+    {
+      "year": 599,
+      "description": "Eternal States: Expanded territory to 130 tiles",
+      "type": "general",
+      "timestamp": 1746912771.1305034
+    },
+    {
+      "year": 601,
+      "description": "Solara Alliance: Population increased significantly: +183679",
+      "type": "general",
+      "timestamp": 1746912771.1890025
+    },
+    {
+      "year": 604,
+      "description": "Solara Alliance: Population increased significantly: +155193",
+      "type": "general",
+      "timestamp": 1746912771.2725139
+    },
+    {
+      "year": 604,
+      "description": "Solara Alliance: Expanded territory to 200 tiles",
+      "type": "general",
+      "timestamp": 1746912771.272541
+    },
+    {
+      "year": 605,
+      "description": "Eternal States: Established new city New Town at (40, 47)",
+      "type": "general",
+      "timestamp": 1746912771.2957232
+    },
+    {
+      "year": 607,
+      "description": "Solara Alliance: Population increased significantly: +215043",
+      "type": "general",
+      "timestamp": 1746912772.9120533
+    },
+    {
+      "year": 610,
+      "description": "Solara Alliance: Population increased significantly: +243870",
+      "type": "general",
+      "timestamp": 1746912772.9971876
+    },
+    {
+      "year": 613,
+      "description": "Solara Alliance: Population increased significantly: +233633",
+      "type": "general",
+      "timestamp": 1746912773.0732925
+    },
+    {
+      "year": 613,
+      "description": "Solara Alliance: Established new city Green Alliance Post at (39, 11)",
+      "type": "general",
+      "timestamp": 1746912773.0733016
+    },
+    {
+      "year": 616,
+      "description": "Solara Alliance: Population increased significantly: +188245",
+      "type": "general",
+      "timestamp": 1746912774.7032719
+    },
+    {
+      "year": 619,
+      "description": "Solara Alliance: Population increased significantly: +246975",
+      "type": "general",
+      "timestamp": 1746912774.7869434
+    },
+    {
+      "year": 622,
+      "description": "Solara Alliance: Population increased significantly: +286735",
+      "type": "general",
+      "timestamp": 1746912774.8638053
+    },
+    {
+      "year": 625,
+      "description": "Solara Alliance: Population increased significantly: +344792",
+      "type": "general",
+      "timestamp": 1746912774.9402916
+    },
+    {
+      "year": 626,
+      "description": "Eternal States: Established new city Camp at (42, 45)",
+      "type": "general",
+      "timestamp": 1746912774.9664657
+    },
+    {
+      "year": 628,
+      "description": "Solara Alliance: Population increased significantly: +381450",
+      "type": "general",
+      "timestamp": 1746912781.863765
+    },
+    {
+      "year": 629,
+      "description": "Eternal States: Expanded territory to 140 tiles",
+      "type": "general",
+      "timestamp": 1746912781.894569
+    },
+    {
+      "year": 631,
+      "description": "Solara Alliance: Population increased significantly: +405095",
+      "type": "general",
+      "timestamp": 1746912781.962801
+    },
+    {
+      "year": 634,
+      "description": "Solara Alliance: Population increased significantly: +396610",
+      "type": "general",
+      "timestamp": 1746912782.0571945
+    },
+    {
+      "year": 634,
+      "description": "Solara Alliance: Expanded territory to 210 tiles",
+      "type": "general",
+      "timestamp": 1746912782.0572107
+    },
+    {
+      "year": 637,
+      "description": "Solara Alliance: Population increased significantly: +470313",
+      "type": "general",
+      "timestamp": 1746912782.1443717
+    },
+    {
+      "year": 640,
+      "description": "Solara Alliance: Population increased significantly: +497370",
+      "type": "general",
+      "timestamp": 1746912782.2366254
+    },
+    {
+      "year": 643,
+      "description": "Solara Alliance: Population increased significantly: +478339",
+      "type": "general",
+      "timestamp": 1746912782.3286183
+    },
+    {
+      "year": 646,
+      "description": "Solara Alliance: Population increased significantly: +723234",
+      "type": "general",
+      "timestamp": 1746912782.4238665
+    },
+    {
+      "year": 649,
+      "description": "Solara Alliance: Population increased significantly: +592257",
+      "type": "general",
+      "timestamp": 1746912782.5258837
+    },
+    {
+      "year": 652,
+      "description": "Solara Alliance: Population increased significantly: +704731",
+      "type": "general",
+      "timestamp": 1746912782.6261225
+    },
+    {
+      "year": 655,
+      "description": "Solara Alliance: Population increased significantly: +1012031",
+      "type": "general",
+      "timestamp": 1746912782.7312467
+    },
+    {
+      "year": 658,
+      "description": "Solara Alliance: Population increased significantly: +1066503",
+      "type": "general",
+      "timestamp": 1746912782.8283646
+    },
+    {
+      "year": 659,
+      "description": "Eternal States: Expanded territory to 150 tiles",
+      "type": "general",
+      "timestamp": 1746912782.859261
+    },
+    {
+      "year": 661,
+      "description": "Solara Alliance: Population increased significantly: +1001041",
+      "type": "general",
+      "timestamp": 1746912782.9227638
+    },
+    {
+      "year": 664,
+      "description": "Solara Alliance: Population increased significantly: +956476",
+      "type": "general",
+      "timestamp": 1746912783.0170465
+    },
+    {
+      "year": 664,
+      "description": "Solara Alliance: Expanded territory to 220 tiles",
+      "type": "general",
+      "timestamp": 1746912783.0170722
+    },
+    {
+      "year": 667,
+      "description": "Solara Alliance: Population increased significantly: +1192140",
+      "type": "general",
+      "timestamp": 1746912783.1007688
+    },
+    {
+      "year": 670,
+      "description": "Solara Alliance: Population increased significantly: +1226630",
+      "type": "general",
+      "timestamp": 1746912783.1854203
+    },
+    {
+      "year": 673,
+      "description": "Solara Alliance: Population increased significantly: +1526742",
+      "type": "general",
+      "timestamp": 1746912783.273219
+    },
+    {
+      "year": 674,
+      "description": "Eternal States: Population increased significantly: +2016",
+      "type": "general",
+      "timestamp": 1746912783.3014312
+    },
+    {
+      "year": 675,
+      "description": "Lumina: Expanded territory to 120 tiles",
+      "type": "general",
+      "timestamp": 1746912783.3264909
+    },
+    {
+      "year": 676,
+      "description": "Solara Alliance: Population increased significantly: +1572492",
+      "type": "general",
+      "timestamp": 1746912783.359191
+    },
+    {
+      "year": 677,
+      "description": "Eternal States: Population increased significantly: +2067",
+      "type": "general",
+      "timestamp": 1746912783.3840618
+    },
+    {
+      "year": 679,
+      "description": "Solara Alliance: Population increased significantly: +1759221",
+      "type": "general",
+      "timestamp": 1746912783.441369
+    },
+    {
+      "year": 680,
+      "description": "Eternal States: Population increased significantly: +2231",
+      "type": "general",
+      "timestamp": 1746912783.4669738
+    },
+    {
+      "year": 682,
+      "description": "Solara Alliance: Population increased significantly: +2455048",
+      "type": "general",
+      "timestamp": 1746912783.5230837
+    },
+    {
+      "year": 683,
+      "description": "Eternal States: Population increased significantly: +2679",
+      "type": "general",
+      "timestamp": 1746912783.55266
+    },
+    {
+      "year": 685,
+      "description": "Solara Alliance: Population increased significantly: +1925339",
+      "type": "general",
+      "timestamp": 1746912783.6070707
+    },
+    {
+      "year": 686,
+      "description": "Eternal States: Population increased significantly: +3104",
+      "type": "general",
+      "timestamp": 1746912783.6320999
+    },
+    {
+      "year": 688,
+      "description": "Solara Alliance: Population increased significantly: +2671340",
+      "type": "general",
+      "timestamp": 1746912783.68896
+    },
+    {
+      "year": 689,
+      "description": "Eternal States: Population increased significantly: +2499",
+      "type": "general",
+      "timestamp": 1746912783.7163136
+    },
+    {
+      "year": 689,
+      "description": "Eternal States: Expanded territory to 160 tiles",
+      "type": "general",
+      "timestamp": 1746912783.716327
+    },
+    {
+      "year": 691,
+      "description": "Solara Alliance: Population increased significantly: +3380969",
+      "type": "general",
+      "timestamp": 1746912783.7747257
+    },
+    {
+      "year": 692,
+      "description": "Eternal States: Population increased significantly: +2991",
+      "type": "general",
+      "timestamp": 1746912783.8005688
+    },
+    {
+      "year": 694,
+      "description": "Solara Alliance: Population increased significantly: +3332280",
+      "type": "general",
+      "timestamp": 1746912783.8593085
+    },
+    {
+      "year": 694,
+      "description": "Solara Alliance: Expanded territory to 230 tiles",
+      "type": "general",
+      "timestamp": 1746912783.8593166
+    },
+    {
+      "year": 695,
+      "description": "Eternal States: Population increased significantly: +3547",
+      "type": "general",
+      "timestamp": 1746912783.8852193
+    },
+    {
+      "year": 697,
+      "description": "Solara Alliance: Population increased significantly: +3092308",
+      "type": "general",
+      "timestamp": 1746912783.942085
+    },
+    {
+      "year": 698,
+      "description": "Eternal States: Population increased significantly: +3574",
+      "type": "general",
+      "timestamp": 1746912783.9698355
+    },
+    {
+      "year": 700,
+      "description": "Solara Alliance: Population increased significantly: +3888894",
+      "type": "general",
+      "timestamp": 1746912784.024355
+    },
+    {
+      "year": 701,
+      "description": "Eternal States: Population increased significantly: +4913",
+      "type": "general",
+      "timestamp": 1746912784.0547767
+    },
+    {
+      "year": 703,
+      "description": "Solara Alliance: Population increased significantly: +5176115",
+      "type": "general",
+      "timestamp": 1746912784.112259
+    },
+    {
+      "year": 704,
+      "description": "Eternal States: Population increased significantly: +5197",
+      "type": "general",
+      "timestamp": 1746912784.1419723
+    },
+    {
+      "year": 704,
+      "description": "Eternal States: Established new city Peak Town at (38, 42)",
+      "type": "general",
+      "timestamp": 1746912784.141992
+    },
+    {
+      "year": 704,
+      "description": "GOD EVENT: War sentiment inflamed between Eternal States and Solara Alliance",
+      "type": "general",
+      "timestamp": 1746913056.1167955
+    },
+    {
+      "year": 705,
+      "description": "Lumina: Expanded territory to 130 tiles",
+      "type": "general",
+      "timestamp": 1746913061.56165
+    },
+    {
+      "year": 706,
+      "description": "Solara Alliance: Population increased significantly: +5618481",
+      "type": "general",
+      "timestamp": 1746913061.5929573
+    },
+    {
+      "year": 707,
+      "description": "Eternal States: Population increased significantly: +4453",
+      "type": "general",
+      "timestamp": 1746913061.621782
+    },
+    {
+      "year": 709,
+      "description": "Solara Alliance: Population increased significantly: +5874188",
+      "type": "general",
+      "timestamp": 1746913061.6824353
+    },
+    {
+      "year": 710,
+      "description": "Eternal States: Population increased significantly: +3925",
+      "type": "general",
+      "timestamp": 1746913061.7084234
+    },
+    {
+      "year": 712,
+      "description": "Solara Alliance: Population increased significantly: +5196376",
+      "type": "general",
+      "timestamp": 1746913061.765568
+    },
+    {
+      "year": 713,
+      "description": "Eternal States: Population increased significantly: +5226",
+      "type": "general",
+      "timestamp": 1746913061.7920017
+    },
+    {
+      "year": 715,
+      "description": "Solara Alliance: Population increased significantly: +7429719",
+      "type": "general",
+      "timestamp": 1746913061.8497493
+    },
+    {
+      "year": 716,
+      "description": "Eternal States: Population increased significantly: +5507",
+      "type": "general",
+      "timestamp": 1746913061.876402
+    },
+    {
+      "year": 718,
+      "description": "Solara Alliance: Population increased significantly: +7085185",
+      "type": "general",
+      "timestamp": 1746913061.9331937
+    },
+    {
+      "year": 719,
+      "description": "Eternal States: Population increased significantly: +6294",
+      "type": "general",
+      "timestamp": 1746913061.9611137
+    },
+    {
+      "year": 719,
+      "description": "Eternal States: Expanded territory to 170 tiles",
+      "type": "general",
+      "timestamp": 1746913061.9611254
+    },
+    {
+      "year": 721,
+      "description": "Solara Alliance: Population increased significantly: +6993425",
+      "type": "general",
+      "timestamp": 1746913062.0189204
+    },
+    {
+      "year": 722,
+      "description": "Eternal States: Population increased significantly: +7484",
+      "type": "general",
+      "timestamp": 1746913062.0470972
+    },
+    {
+      "year": 724,
+      "description": "Solara Alliance: Population increased significantly: +8990364",
+      "type": "general",
+      "timestamp": 1746913062.106163
+    },
+    {
+      "year": 724,
+      "description": "Solara Alliance: Expanded territory to 240 tiles",
+      "type": "general",
+      "timestamp": 1746913062.1061716
+    },
+    {
+      "year": 725,
+      "description": "Eternal States: Population increased significantly: +5737",
+      "type": "general",
+      "timestamp": 1746913062.1359768
+    },
+    {
+      "year": 727,
+      "description": "Solara Alliance: Population increased significantly: +9146143",
+      "type": "general",
+      "timestamp": 1746913062.204632
+    },
+    {
+      "year": 728,
+      "description": "Eternal States: Population increased significantly: +7966",
+      "type": "general",
+      "timestamp": 1746913062.2359962
+    },
+    {
+      "year": 730,
+      "description": "Solara Alliance: Population increased significantly: +12891620",
+      "type": "general",
+      "timestamp": 1746913062.303193
+    },
+    {
+      "year": 731,
+      "description": "Eternal States: Population increased significantly: +8719",
+      "type": "general",
+      "timestamp": 1746913062.333424
+    },
+    {
+      "year": 733,
+      "description": "Solara Alliance: Population increased significantly: +12814414",
+      "type": "general",
+      "timestamp": 1746913062.4054723
+    },
+    {
+      "year": 734,
+      "description": "Eternal States: Population increased significantly: +11006",
+      "type": "general",
+      "timestamp": 1746913062.4462755
+    },
+    {
+      "year": 735,
+      "description": "Lumina: Expanded territory to 140 tiles",
+      "type": "general",
+      "timestamp": 1746913062.4811702
+    },
+    {
+      "year": 736,
+      "description": "Solara Alliance: Population increased significantly: +12471914",
+      "type": "general",
+      "timestamp": 1746913062.5183563
+    },
+    {
+      "year": 736,
+      "description": "Solara Alliance: Established new city Plains Alliance City at (45, 11)",
+      "type": "general",
+      "timestamp": 1746913062.5183787
+    }
+  ],
+  "civilization_history": [
+    {
+      "year": 0,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 76,
+          "age": 0,
+          "territory_size": 84,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 24,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 78,
+          "age": 0,
+          "territory_size": 82,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 19,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "842f76b3-5d3e-46ab-bd7f-30cdf720a0af",
+          "name": "Orion Alliance",
+          "population": 62,
+          "age": 0,
+          "territory_size": 50,
+          "traits": [
+            "peaceful",
+            "religious",
+            "trading"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.22177056452862645,
+              "war": 0.22381585038372478,
+              "knowledge": 0.16738640328807405,
+              "tradition": 0.19606591572696064,
+              "wealth": 0.18082189952570488,
+              "spirituality": 0.010139366546909145
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 16,
+          "resources": {
+            "food": 4.562559400544828,
+            "metal": 323.0491159459512,
+            "gold": 301.9422433547137,
+            "stone": 317.30234119660855
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 59,
+          "age": 0,
+          "territory_size": 57,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 22,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 114,
+          "age": 0,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 17,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 25,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 116,
+          "age": 25,
+          "territory_size": 84,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 24.732386793744716,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 127,
+          "age": 25,
+          "territory_size": 82,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 21.623670498691677,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "842f76b3-5d3e-46ab-bd7f-30cdf720a0af",
+          "name": "Orion Alliance",
+          "population": 84,
+          "age": 25,
+          "territory_size": 50,
+          "traits": [
+            "peaceful",
+            "religious",
+            "trading"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.22177056452862645,
+              "war": 0.22381585038372478,
+              "knowledge": 0.16738640328807405,
+              "tradition": 0.19606591572696064,
+              "wealth": 0.18082189952570488,
+              "spirituality": 0.010139366546909145
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 16.759693196566896,
+          "resources": {
+            "food": 4.562559400544828,
+            "metal": 323.0491159459512,
+            "gold": 301.9422433547137,
+            "stone": 317.30234119660855
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 87,
+          "age": 25,
+          "territory_size": 57,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 24.675092908664567,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 149,
+          "age": 25,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 19.454848288851228,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 50,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 79,
+          "age": 50,
+          "territory_size": 84,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 25.561155632424168,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 68,
+          "age": 50,
+          "territory_size": 83,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 24.244421866220033,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 50,
+          "territory_size": 57,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 26.95542143619851,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 84,
+          "age": 50,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 21.753353050501236,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 75,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 53,
+          "age": 75,
+          "territory_size": 85,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 26.310976763580896,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50,
+          "age": 75,
+          "territory_size": 87,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 26.685996681117075,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 75,
+          "territory_size": 59,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 29.457944572615386,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 51,
+          "age": 75,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 24.12668936294674,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 100,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 100,
+          "territory_size": 85,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 27.10223080187389,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50,
+          "age": 100,
+          "territory_size": 88,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 28.990246492280598,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 100,
+          "territory_size": 59,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 31.81345312657016,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 100,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 26.68249518120319,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 125,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 125,
+          "territory_size": 85,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 27.90128484400678,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50,
+          "age": 125,
+          "territory_size": 90,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 31.55750092193633,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 125,
+          "territory_size": 61,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 34.39820158981039,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 125,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 29.02696157475675,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 150,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 150,
+          "territory_size": 86,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 28.67298385235645,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50,
+          "age": 150,
+          "territory_size": 92,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 34.090599375966846,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 150,
+          "territory_size": 62,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 36.85259327357803,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 150,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 31.497527297666892,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 175,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 175,
+          "territory_size": 87,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 29.468191122151843,
+          "resources": {
+            "food": 12.491816299615387,
+            "metal": 2433.6362231574562,
+            "gold": 2754.203717453538,
+            "stone": 2476.0000076331985
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50,
+          "age": 175,
+          "territory_size": 93,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 36.54369916907374,
+          "resources": {
+            "food": 19.162387964927603,
+            "metal": 3387.6711553204473,
+            "gold": 2684.2339696850486,
+            "stone": 3245.0715027839983
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 175,
+          "territory_size": 63,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 39.40421065343358,
+          "resources": {
+            "food": 11.279525198560043,
+            "metal": 2098.7940871459145,
+            "gold": 2021.0925687330048,
+            "stone": 2036.0897690449754
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 175,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 34.0513111720308,
+          "resources": {
+            "food": 14.738433460171228,
+            "metal": 2805.6390376631975,
+            "gold": 2180.4179660283503,
+            "stone": 2577.674984129477
+          }
+        }
+      ]
+    },
+    {
+      "year": 200,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 200,
+          "territory_size": 87,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 30.1521347905181,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50,
+          "age": 200,
+          "territory_size": 94,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 38.8875212277258,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 200,
+          "territory_size": 65,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 41.666556170498495,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 200,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 36.768470937123034,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 225,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 225,
+          "territory_size": 87,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 30.908249000131256,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50,
+          "age": 225,
+          "territory_size": 96,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 41.33939626050415,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 225,
+          "territory_size": 66,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 44.326049195957204,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 225,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 39.15220880536563,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 250,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 250,
+          "territory_size": 88,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 31.63267196751559,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 55,
+          "age": 250,
+          "territory_size": 96,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 44.034480265554066,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 250,
+          "territory_size": 67,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 47.099236987821115,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 250,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 41.69951006899395,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 275,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 275,
+          "territory_size": 90,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 32.37376369029749,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 102,
+          "age": 275,
+          "territory_size": 99,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 46.46543915155367,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 275,
+          "territory_size": 68,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 49.67120238286162,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 275,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 44.39088084777205,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 300,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 300,
+          "territory_size": 90,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 33.24099733169936,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 260,
+          "age": 300,
+          "territory_size": 100,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 48.89621203691407,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 300,
+          "territory_size": 70,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 52.08508251009768,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 300,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 46.99678372483431,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 325,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 325,
+          "territory_size": 93,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 34.00576951682377,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 705,
+          "age": 325,
+          "territory_size": 107,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 51.41272629600212,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 325,
+          "territory_size": 74,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 54.596037862720486,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 325,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 49.37902938781018,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 350,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 350,
+          "territory_size": 95,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 34.680990259739715,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 1640,
+          "age": 350,
+          "territory_size": 115,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 53.96628926540391,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 350,
+          "territory_size": 75,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 57.172664105544825,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 50,
+          "age": 350,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 52.13022146197944,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 375,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 375,
+          "territory_size": 98,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 35.49057865969673,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 4708,
+          "age": 375,
+          "territory_size": 123,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 56.187166725365515,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 375,
+          "territory_size": 76,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 59.6106027548631,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 57,
+          "age": 375,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 54.52477126422997,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 400,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 400,
+          "territory_size": 100,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 36.33322502087733,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 10172,
+          "age": 400,
+          "territory_size": 132,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 58.64378159380291,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 50,
+          "age": 400,
+          "territory_size": 78,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 62.06614854498183,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 102,
+          "age": 400,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 56.656429298583824,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 425,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 425,
+          "territory_size": 102,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 37.0130806353857,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 23817,
+          "age": 425,
+          "territory_size": 140,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 60.998449184923395,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 51,
+          "age": 425,
+          "territory_size": 81,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 64.40538568174782,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 222,
+          "age": 425,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 59.2727475108578,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 450,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 450,
+          "territory_size": 104,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 37.893731661625225,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 55240,
+          "age": 450,
+          "territory_size": 148,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 63.228919845980734,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 84,
+          "age": 450,
+          "territory_size": 83,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 66.91517704678719,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 493,
+          "age": 450,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 61.77018291848413,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 475,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 475,
+          "territory_size": 104,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 38.603403006075716,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 125920,
+          "age": 475,
+          "territory_size": 157,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 65.68358936829127,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 181,
+          "age": 475,
+          "territory_size": 88,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 69.53253682407778,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 1139,
+          "age": 475,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 64.44142086711138,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 500,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 500,
+          "territory_size": 104,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 39.4772339787671,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 285485,
+          "age": 500,
+          "territory_size": 165,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 68.1737118661374,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 344,
+          "age": 500,
+          "territory_size": 97,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 71.86160762889978,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 2583,
+          "age": 500,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 66.75734770303907,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 525,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 525,
+          "territory_size": 105,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 40.14133251954871,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 648827,
+          "age": 525,
+          "territory_size": 173,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 70.59583024229543,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 865,
+          "age": 525,
+          "territory_size": 105,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 74.23634947452022,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 6123,
+          "age": 525,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 69.1618520941079,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 550,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 550,
+          "territory_size": 107,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 40.87508896034239,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 1173915,
+          "age": 550,
+          "territory_size": 182,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 73.00769547757517,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 1728,
+          "age": 550,
+          "territory_size": 113,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 76.46775521232004,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 14182,
+          "age": 550,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 71.57797470388657,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 575,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 50,
+          "age": 575,
+          "territory_size": 109,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 41.618936471844535,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 2164486,
+          "age": 575,
+          "territory_size": 190,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 75.30926003969817,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 4332,
+          "age": 575,
+          "territory_size": 122,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 78.78802704594717,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 28640,
+          "age": 575,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 74.16448175063363,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 600,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 55,
+          "age": 600,
+          "territory_size": 110,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 42.401011021788044,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 5004619,
+          "age": 600,
+          "territory_size": 198,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 77.7157494649068,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 10939,
+          "age": 600,
+          "territory_size": 130,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 81.36091055952012,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 58508,
+          "age": 600,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 76.68068401636035,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 625,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 80,
+          "age": 625,
+          "territory_size": 110,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 43.168397750010335,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 9282458,
+          "age": 625,
+          "territory_size": 207,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 80.35124676332852,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 18336,
+          "age": 625,
+          "territory_size": 138,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 83.83477690277489,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 117397,
+          "age": 625,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 79.39800779393467,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 650,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 147,
+          "age": 650,
+          "territory_size": 112,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 43.81700899208302,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 22099082,
+          "age": 650,
+          "territory_size": 215,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 83.0570243607414,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 31618,
+          "age": 650,
+          "territory_size": 147,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 86.65874805838988,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 233839,
+          "age": 650,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 82.00902936097533,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 675,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 282,
+          "age": 675,
+          "territory_size": 120,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 44.57992320351993,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 50436880,
+          "age": 675,
+          "territory_size": 223,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 85.62217177778572,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 65986,
+          "age": 675,
+          "territory_size": 155,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 88.92478082302763,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 482831,
+          "age": 675,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 84.4676760915617,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 700,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 553,
+          "age": 700,
+          "territory_size": 128,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 45.391139768288575,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 116941963,
+          "age": 700,
+          "territory_size": 232,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 88.07044676122848,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 142296,
+          "age": 700,
+          "territory_size": 163,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 91.63091896312379,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 968892,
+          "age": 700,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 86.99373459734772,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    },
+    {
+      "year": 725,
+      "civilizations": [
+        {
+          "id": "1afeb959-1fcf-49d8-bef6-86dc21acfd74",
+          "name": "Lumina",
+          "population": 1113,
+          "age": 725,
+          "territory_size": 136,
+          "traits": [
+            "trading",
+            "expansionist",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.22167193420008627,
+              "war": 0.07736399919274967,
+              "knowledge": 0.15965314073834524,
+              "tradition": 0.12423086947953883,
+              "wealth": 0.3053429004862876,
+              "spirituality": 0.11173715590299242
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 46.152804852770664,
+          "resources": {
+            "food": 8779.11656204457,
+            "metal": 32978.032574625395,
+            "gold": 38847.14816920857,
+            "stone": 33239.535112997124
+          }
+        },
+        {
+          "id": "e78f47bf-3582-47de-93b6-ccb09a72317f",
+          "name": "Solara Alliance",
+          "population": 271162197,
+          "age": 725,
+          "territory_size": 240,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "peaceful"
+          ],
+          "belief_system": {
+            "name": "Cult of Mighty Mountains",
+            "values": {
+              "peace": 0.13113994753666608,
+              "war": 0.19392486962289318,
+              "knowledge": 0.21714638776965642,
+              "tradition": 0.030717173170651743,
+              "wealth": 0.15596734110655555,
+              "spirituality": 0.271104280793577
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 90.65175893356262,
+          "resources": {
+            "food": 21901075334.71249,
+            "metal": 25768651219.718037,
+            "gold": 20883211010.67189,
+            "stone": 25079057278.46292
+          }
+        },
+        {
+          "id": "c84bb9f6-dc4a-4be7-8268-7d1cbfe8a690",
+          "name": "Eternal States",
+          "population": 239878,
+          "age": 725,
+          "territory_size": 172,
+          "traits": [
+            "tech_savvy",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Church of Eternal Light",
+            "values": {
+              "peace": 0.26339190481270897,
+              "war": 0.113186253652403,
+              "knowledge": 0.2680232220750759,
+              "tradition": 0.0904762068082604,
+              "wealth": 0.17035729091444543,
+              "spirituality": 0.09456512173710634
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 94.32111103105834,
+          "resources": {
+            "food": 10085756.855629042,
+            "metal": 21379207.77659777,
+            "gold": 13862435.72332771,
+            "stone": 21864800.77315205
+          }
+        },
+        {
+          "id": "68daace0-d73c-49db-82a3-06ec88d40dae",
+          "name": "Silver Confederation",
+          "population": 1957765,
+          "age": 725,
+          "territory_size": 71,
+          "traits": [
+            "trading",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Mighty Mountains",
+            "values": {
+              "peace": 0.015089221122627502,
+              "war": 0.30993686625392364,
+              "knowledge": 0.02730197773753568,
+              "tradition": 0.3126689565373648,
+              "wealth": 0.27638228069637844,
+              "spirituality": 0.05862069765216992
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 89.68689074968573,
+          "resources": {
+            "food": 30699025.66903059,
+            "metal": 63289837.67173373,
+            "gold": 49619178.74004169,
+            "stone": 58054285.55870725
+          }
+        }
+      ]
+    }
+  ]
+}
