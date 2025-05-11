@@ -1,0 +1,6196 @@
+{
+  "year": 941,
+  "tick_count": 941,
+  "world_size": [
+    100,
+    100
+  ],
+  "active_civilizations": [
+    {
+      "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+      "name": "Lumina Kingdom",
+      "age": 941,
+      "population": 60,
+      "territory_size": 34,
+      "technology": 48.45056967555977,
+      "traits": [
+        "trading",
+        "peaceful",
+        "weird"
+      ],
+      "belief_system": {
+        "name": "Way of Silver Moon",
+        "values": {
+          "peace": 0.2502471722384225,
+          "war": 0.06898667358508699,
+          "knowledge": 0.2770748450713671,
+          "tradition": 0.11345162535692156,
+          "wealth": 0.1990295282060674,
+          "spirituality": 0.09121015554213442
+        },
+        "foreign_stance": "neutral"
+      },
+      "resources": {
+        "food": 12.341824754041001,
+        "metal": 5646.658898609126,
+        "gold": 6044.017913151065,
+        "stone": 5493.145814719117
+      },
+      "relations": {}
+    },
+    {
+      "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+      "name": "Glorious Alliance",
+      "age": 941,
+      "population": 69,
+      "territory_size": 45,
+      "technology": 111.7407939956699,
+      "traits": [
+        "tech_savvy",
+        "religious",
+        "weird"
+      ],
+      "belief_system": {
+        "name": "Followers of Mighty Mountains",
+        "values": {
+          "peace": 0.16989179388210363,
+          "war": 0.17880257080609413,
+          "knowledge": 0.07202625920188795,
+          "tradition": 0.27650467300239306,
+          "wealth": 0.17010410229098785,
+          "spirituality": 0.13267060081653348
+        },
+        "foreign_stance": "convert"
+      },
+      "resources": {
+        "food": 26.303845337218295,
+        "metal": 20635.915982170176,
+        "gold": 19538.402897705462,
+        "stone": 21776.692224767612
+      },
+      "relations": {}
+    },
+    {
+      "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+      "name": "Lyra",
+      "age": 941,
+      "population": 476,
+      "territory_size": 91,
+      "technology": 111.8878528197866,
+      "traits": [
+        "peaceful",
+        "tech_savvy",
+        "expansionist"
+      ],
+      "belief_system": {
+        "name": "Believers in Flowing Water",
+        "values": {
+          "peace": 0.21310627544198021,
+          "war": 0.03706782409391591,
+          "knowledge": 0.010080790728354562,
+          "tradition": 0.2648393111181114,
+          "wealth": 0.2295455856628092,
+          "spirituality": 0.2453602129548287
+        },
+        "foreign_stance": "neutral"
+      },
+      "resources": {
+        "food": 23747.449914010987,
+        "metal": 59021.973818110506,
+        "gold": 65040.03503233633,
+        "stone": 56369.0054825736
+      },
+      "relations": {}
+    }
+  ],
+  "event_history": [
+    {
+      "year": 0,
+      "description": "Civilization Zenith founded",
+      "type": "general",
+      "timestamp": 1746897453.569619
+    },
+    {
+      "year": 0,
+      "description": "Civilization Nova founded",
+      "type": "general",
+      "timestamp": 1746897453.5700154
+    },
+    {
+      "year": 0,
+      "description": "Civilization Lumina Kingdom founded",
+      "type": "general",
+      "timestamp": 1746897453.570694
+    },
+    {
+      "year": 0,
+      "description": "Civilization Glorious Alliance founded",
+      "type": "general",
+      "timestamp": 1746897453.5713396
+    },
+    {
+      "year": 0,
+      "description": "Civilization Lyra founded",
+      "type": "general",
+      "timestamp": 1746897453.5719833
+    },
+    {
+      "year": 2,
+      "description": "Lumina Kingdom: Expanded territory to (77, 86)",
+      "type": "general",
+      "timestamp": 1746897453.6340725
+    },
+    {
+      "year": 5,
+      "description": "Lumina Kingdom: Expanded territory to (82, 87)",
+      "type": "general",
+      "timestamp": 1746897453.7374325
+    },
+    {
+      "year": 8,
+      "description": "Lumina Kingdom: Expanded territory to (77, 88)",
+      "type": "general",
+      "timestamp": 1746897453.832479
+    },
+    {
+      "year": 11,
+      "description": "Lumina Kingdom: Expanded territory to (76, 88)",
+      "type": "general",
+      "timestamp": 1746897453.9249377
+    },
+    {
+      "year": 14,
+      "description": "Lumina Kingdom: Expanded territory to (75, 89)",
+      "type": "general",
+      "timestamp": 1746897454.0219207
+    },
+    {
+      "year": 17,
+      "description": "Lumina Kingdom: Expanded territory to (79, 89)",
+      "type": "general",
+      "timestamp": 1746897454.1248677
+    },
+    {
+      "year": 20,
+      "description": "Lumina Kingdom: Expanded territory to (78, 85)",
+      "type": "general",
+      "timestamp": 1746897454.2300026
+    },
+    {
+      "year": 23,
+      "description": "Lumina Kingdom: Expanded territory to (79, 88)",
+      "type": "general",
+      "timestamp": 1746897454.3344872
+    },
+    {
+      "year": 26,
+      "description": "Lumina Kingdom: Expanded territory to (82, 85)",
+      "type": "general",
+      "timestamp": 1746897454.4401298
+    },
+    {
+      "year": 29,
+      "description": "Lumina Kingdom: Expanded territory to (79, 90)",
+      "type": "general",
+      "timestamp": 1746897454.5421557
+    },
+    {
+      "year": 30,
+      "description": "Civilization Zenith collapsed due to starvation after 30 years",
+      "type": "general",
+      "timestamp": 1746897454.577221
+    },
+    {
+      "year": 30,
+      "description": "Civilization Nova collapsed due to starvation after 30 years",
+      "type": "general",
+      "timestamp": 1746897454.5775998
+    },
+    {
+      "year": 31,
+      "description": "Glorious Alliance: Expanded territory to (57, 44)",
+      "type": "general",
+      "timestamp": 1746897463.700556
+    },
+    {
+      "year": 32,
+      "description": "Lyra: Expanded territory to (16, 33)",
+      "type": "general",
+      "timestamp": 1746897463.7534382
+    },
+    {
+      "year": 33,
+      "description": "Lumina Kingdom: Expanded territory to (78, 85)",
+      "type": "general",
+      "timestamp": 1746897463.8037276
+    },
+    {
+      "year": 34,
+      "description": "Glorious Alliance: Expanded territory to (53, 39)",
+      "type": "general",
+      "timestamp": 1746897463.855526
+    },
+    {
+      "year": 35,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897463.90396
+    },
+    {
+      "year": 36,
+      "description": "Lumina Kingdom: Expanded territory to (79, 90)",
+      "type": "general",
+      "timestamp": 1746897463.9520335
+    },
+    {
+      "year": 37,
+      "description": "Glorious Alliance: Expanded territory to (56, 42)",
+      "type": "general",
+      "timestamp": 1746897463.9989371
+    },
+    {
+      "year": 38,
+      "description": "Lyra: Expanded territory to (24, 25)",
+      "type": "general",
+      "timestamp": 1746897464.0463424
+    },
+    {
+      "year": 39,
+      "description": "Lumina Kingdom: Expanded territory to (78, 88)",
+      "type": "general",
+      "timestamp": 1746897464.095332
+    },
+    {
+      "year": 40,
+      "description": "Glorious Alliance: Expanded territory to (59, 44)",
+      "type": "general",
+      "timestamp": 1746897464.1353822
+    },
+    {
+      "year": 41,
+      "description": "Lyra: Expanded territory to (20, 30)",
+      "type": "general",
+      "timestamp": 1746897464.1743007
+    },
+    {
+      "year": 42,
+      "description": "Lumina Kingdom: Expanded territory to (79, 85)",
+      "type": "general",
+      "timestamp": 1746897464.2099688
+    },
+    {
+      "year": 43,
+      "description": "Glorious Alliance: Expanded territory to (53, 45)",
+      "type": "general",
+      "timestamp": 1746897464.2531757
+    },
+    {
+      "year": 44,
+      "description": "Lyra: Expanded territory to (17, 31)",
+      "type": "general",
+      "timestamp": 1746897464.2987492
+    },
+    {
+      "year": 45,
+      "description": "Lumina Kingdom: Expanded territory to (78, 90)",
+      "type": "general",
+      "timestamp": 1746897464.3413284
+    },
+    {
+      "year": 46,
+      "description": "Glorious Alliance: Expanded territory to (54, 37)",
+      "type": "general",
+      "timestamp": 1746897464.3871214
+    },
+    {
+      "year": 47,
+      "description": "Lyra: Expanded territory to (17, 33)",
+      "type": "general",
+      "timestamp": 1746897464.431093
+    },
+    {
+      "year": 48,
+      "description": "Lumina Kingdom: Expanded territory to (79, 87)",
+      "type": "general",
+      "timestamp": 1746897464.4703877
+    },
+    {
+      "year": 49,
+      "description": "Glorious Alliance: Expanded territory to (55, 40)",
+      "type": "general",
+      "timestamp": 1746897464.5102847
+    },
+    {
+      "year": 50,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897464.5546222
+    },
+    {
+      "year": 51,
+      "description": "Lumina Kingdom: Expanded territory to (82, 92)",
+      "type": "general",
+      "timestamp": 1746897464.5961137
+    },
+    {
+      "year": 52,
+      "description": "Glorious Alliance: Expanded territory to (57, 44)",
+      "type": "general",
+      "timestamp": 1746897464.6371975
+    },
+    {
+      "year": 53,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897464.6750433
+    },
+    {
+      "year": 54,
+      "description": "Lumina Kingdom: Expanded territory to (76, 88)",
+      "type": "general",
+      "timestamp": 1746897464.711282
+    },
+    {
+      "year": 55,
+      "description": "Glorious Alliance: Expanded territory to (55, 44)",
+      "type": "general",
+      "timestamp": 1746897464.7513537
+    },
+    {
+      "year": 56,
+      "description": "Lyra: Expanded territory to (23, 24)",
+      "type": "general",
+      "timestamp": 1746897464.790466
+    },
+    {
+      "year": 57,
+      "description": "Lumina Kingdom: Expanded territory to (82, 87)",
+      "type": "general",
+      "timestamp": 1746897464.8281581
+    },
+    {
+      "year": 58,
+      "description": "Glorious Alliance: Expanded territory to (54, 39)",
+      "type": "general",
+      "timestamp": 1746897464.867203
+    },
+    {
+      "year": 59,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897464.903947
+    },
+    {
+      "year": 60,
+      "description": "Lumina Kingdom: Expanded territory to (77, 89)",
+      "type": "general",
+      "timestamp": 1746897464.9419754
+    },
+    {
+      "year": 61,
+      "description": "Glorious Alliance: Expanded territory to (56, 45)",
+      "type": "general",
+      "timestamp": 1746897464.9817257
+    },
+    {
+      "year": 62,
+      "description": "Lyra: Expanded territory to (17, 26)",
+      "type": "general",
+      "timestamp": 1746897465.0194895
+    },
+    {
+      "year": 63,
+      "description": "Lumina Kingdom: Expanded territory to (81, 88)",
+      "type": "general",
+      "timestamp": 1746897465.0922832
+    },
+    {
+      "year": 64,
+      "description": "Glorious Alliance: Expanded territory to (61, 43)",
+      "type": "general",
+      "timestamp": 1746897465.1775632
+    },
+    {
+      "year": 65,
+      "description": "Lyra: Expanded territory to (21, 27)",
+      "type": "general",
+      "timestamp": 1746897465.2612426
+    },
+    {
+      "year": 67,
+      "description": "Glorious Alliance: Expanded territory to (53, 39)",
+      "type": "general",
+      "timestamp": 1746897465.4222863
+    },
+    {
+      "year": 68,
+      "description": "Lyra: Expanded territory to (24, 32)",
+      "type": "general",
+      "timestamp": 1746897465.5040214
+    },
+    {
+      "year": 70,
+      "description": "Glorious Alliance: Expanded territory to (55, 43)",
+      "type": "general",
+      "timestamp": 1746897465.6737595
+    },
+    {
+      "year": 71,
+      "description": "Lyra: Expanded territory to (19, 27)",
+      "type": "general",
+      "timestamp": 1746897465.7554128
+    },
+    {
+      "year": 73,
+      "description": "Glorious Alliance: Expanded territory to (57, 39)",
+      "type": "general",
+      "timestamp": 1746897465.9138615
+    },
+    {
+      "year": 74,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897465.993907
+    },
+    {
+      "year": 76,
+      "description": "Glorious Alliance: Expanded territory to (59, 44)",
+      "type": "general",
+      "timestamp": 1746897466.1411028
+    },
+    {
+      "year": 77,
+      "description": "Lyra: Expanded territory to (26, 24)",
+      "type": "general",
+      "timestamp": 1746897466.2136767
+    },
+    {
+      "year": 79,
+      "description": "Glorious Alliance: Expanded territory to (58, 39)",
+      "type": "general",
+      "timestamp": 1746897466.3620799
+    },
+    {
+      "year": 80,
+      "description": "Lyra: Expanded territory to (17, 30)",
+      "type": "general",
+      "timestamp": 1746897466.4373906
+    },
+    {
+      "year": 82,
+      "description": "Glorious Alliance: Expanded territory to (57, 39)",
+      "type": "general",
+      "timestamp": 1746897466.590067
+    },
+    {
+      "year": 83,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897466.664118
+    },
+    {
+      "year": 85,
+      "description": "Glorious Alliance: Expanded territory to (58, 45)",
+      "type": "general",
+      "timestamp": 1746897466.8236358
+    },
+    {
+      "year": 86,
+      "description": "Lyra: Expanded territory to (27, 25)",
+      "type": "general",
+      "timestamp": 1746897466.9018867
+    },
+    {
+      "year": 88,
+      "description": "Glorious Alliance: Expanded territory to (58, 41)",
+      "type": "general",
+      "timestamp": 1746897467.0579333
+    },
+    {
+      "year": 89,
+      "description": "Lyra: Expanded territory to (16, 24)",
+      "type": "general",
+      "timestamp": 1746897467.141823
+    },
+    {
+      "year": 91,
+      "description": "Glorious Alliance: Expanded territory to (61, 44)",
+      "type": "general",
+      "timestamp": 1746897467.290069
+    },
+    {
+      "year": 92,
+      "description": "Lyra: Expanded territory to (20, 31)",
+      "type": "general",
+      "timestamp": 1746897467.362918
+    },
+    {
+      "year": 94,
+      "description": "Glorious Alliance: Expanded territory to (58, 39)",
+      "type": "general",
+      "timestamp": 1746897467.50906
+    },
+    {
+      "year": 95,
+      "description": "Lyra: Expanded territory to (16, 33)",
+      "type": "general",
+      "timestamp": 1746897467.583858
+    },
+    {
+      "year": 97,
+      "description": "Glorious Alliance: Expanded territory to (56, 43)",
+      "type": "general",
+      "timestamp": 1746897467.7274578
+    },
+    {
+      "year": 98,
+      "description": "Lyra: Expanded territory to (19, 31)",
+      "type": "general",
+      "timestamp": 1746897467.7996397
+    },
+    {
+      "year": 100,
+      "description": "Glorious Alliance: Expanded territory to (57, 39)",
+      "type": "general",
+      "timestamp": 1746897467.9479818
+    },
+    {
+      "year": 101,
+      "description": "Lyra: Expanded territory to (19, 26)",
+      "type": "general",
+      "timestamp": 1746897468.0308242
+    },
+    {
+      "year": 103,
+      "description": "Glorious Alliance: Expanded territory to (59, 44)",
+      "type": "general",
+      "timestamp": 1746897468.1932821
+    },
+    {
+      "year": 104,
+      "description": "Lyra: Expanded territory to (26, 32)",
+      "type": "general",
+      "timestamp": 1746897468.279176
+    },
+    {
+      "year": 106,
+      "description": "Glorious Alliance: Expanded territory to (57, 43)",
+      "type": "general",
+      "timestamp": 1746897468.4474573
+    },
+    {
+      "year": 107,
+      "description": "Lyra: Expanded territory to (15, 32)",
+      "type": "general",
+      "timestamp": 1746897468.5281265
+    },
+    {
+      "year": 109,
+      "description": "Glorious Alliance: Expanded territory to (62, 43)",
+      "type": "general",
+      "timestamp": 1746897468.6920736
+    },
+    {
+      "year": 110,
+      "description": "Lyra: Expanded territory to (17, 31)",
+      "type": "general",
+      "timestamp": 1746897468.7795072
+    },
+    {
+      "year": 112,
+      "description": "Glorious Alliance: Expanded territory to (57, 40)",
+      "type": "general",
+      "timestamp": 1746897468.9325516
+    },
+    {
+      "year": 113,
+      "description": "Lyra: Expanded territory to (21, 32)",
+      "type": "general",
+      "timestamp": 1746897469.0105903
+    },
+    {
+      "year": 115,
+      "description": "Glorious Alliance: Expanded territory to (56, 43)",
+      "type": "general",
+      "timestamp": 1746897469.1694264
+    },
+    {
+      "year": 116,
+      "description": "Lyra: Expanded territory to (17, 33)",
+      "type": "general",
+      "timestamp": 1746897469.247121
+    },
+    {
+      "year": 118,
+      "description": "Glorious Alliance: Expanded territory to (58, 39)",
+      "type": "general",
+      "timestamp": 1746897469.4010851
+    },
+    {
+      "year": 119,
+      "description": "Lyra: Expanded territory to (18, 32)",
+      "type": "general",
+      "timestamp": 1746897469.474595
+    },
+    {
+      "year": 121,
+      "description": "Glorious Alliance: Expanded territory to (56, 44)",
+      "type": "general",
+      "timestamp": 1746897469.621269
+    },
+    {
+      "year": 122,
+      "description": "Lyra: Expanded territory to (18, 32)",
+      "type": "general",
+      "timestamp": 1746897469.7021308
+    },
+    {
+      "year": 124,
+      "description": "Glorious Alliance: Expanded territory to (57, 43)",
+      "type": "general",
+      "timestamp": 1746897469.8607519
+    },
+    {
+      "year": 125,
+      "description": "Lyra: Expanded territory to (16, 31)",
+      "type": "general",
+      "timestamp": 1746897469.9400704
+    },
+    {
+      "year": 127,
+      "description": "Glorious Alliance: Expanded territory to (57, 45)",
+      "type": "general",
+      "timestamp": 1746897470.0942647
+    },
+    {
+      "year": 128,
+      "description": "Lyra: Expanded territory to (16, 33)",
+      "type": "general",
+      "timestamp": 1746897470.1755223
+    },
+    {
+      "year": 130,
+      "description": "Glorious Alliance: Expanded territory to (54, 37)",
+      "type": "general",
+      "timestamp": 1746897470.3287563
+    },
+    {
+      "year": 131,
+      "description": "Lyra: Expanded territory to (25, 25)",
+      "type": "general",
+      "timestamp": 1746897470.4003325
+    },
+    {
+      "year": 133,
+      "description": "Glorious Alliance: Expanded territory to (58, 40)",
+      "type": "general",
+      "timestamp": 1746897470.5446978
+    },
+    {
+      "year": 134,
+      "description": "Lyra: Expanded territory to (17, 33)",
+      "type": "general",
+      "timestamp": 1746897470.6172326
+    },
+    {
+      "year": 136,
+      "description": "Glorious Alliance: Expanded territory to (57, 46)",
+      "type": "general",
+      "timestamp": 1746897470.7618077
+    },
+    {
+      "year": 137,
+      "description": "Lyra: Expanded territory to (16, 32)",
+      "type": "general",
+      "timestamp": 1746897470.8318365
+    },
+    {
+      "year": 139,
+      "description": "Glorious Alliance: Established new city Innovation Post at (58, 39)",
+      "type": "general",
+      "timestamp": 1746897470.9759939
+    },
+    {
+      "year": 140,
+      "description": "Lyra: Expanded territory to (18, 28)",
+      "type": "general",
+      "timestamp": 1746897476.8269997
+    },
+    {
+      "year": 142,
+      "description": "Glorious Alliance: Expanded territory to (57, 40)",
+      "type": "general",
+      "timestamp": 1746897476.982609
+    },
+    {
+      "year": 143,
+      "description": "Lyra: Expanded territory to (19, 31)",
+      "type": "general",
+      "timestamp": 1746897477.055948
+    },
+    {
+      "year": 145,
+      "description": "Glorious Alliance: Abandoned small settlement Innovation Post",
+      "type": "general",
+      "timestamp": 1746897477.2024632
+    },
+    {
+      "year": 146,
+      "description": "Lyra: Expanded territory to (22, 31)",
+      "type": "general",
+      "timestamp": 1746897477.2824872
+    },
+    {
+      "year": 149,
+      "description": "Lyra: Expanded territory to (17, 27)",
+      "type": "general",
+      "timestamp": 1746897477.5355563
+    },
+    {
+      "year": 152,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897477.8046627
+    },
+    {
+      "year": 155,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897478.0546908
+    },
+    {
+      "year": 158,
+      "description": "Lyra: Expanded territory to (22, 26)",
+      "type": "general",
+      "timestamp": 1746897478.2953992
+    },
+    {
+      "year": 161,
+      "description": "Lyra: Expanded territory to (27, 31)",
+      "type": "general",
+      "timestamp": 1746897478.5460203
+    },
+    {
+      "year": 164,
+      "description": "Lyra: Expanded territory to (22, 29)",
+      "type": "general",
+      "timestamp": 1746897478.7930183
+    },
+    {
+      "year": 167,
+      "description": "Lyra: Expanded territory to (20, 27)",
+      "type": "general",
+      "timestamp": 1746897479.0406282
+    },
+    {
+      "year": 170,
+      "description": "Lyra: Expanded territory to (24, 25)",
+      "type": "general",
+      "timestamp": 1746897479.2609353
+    },
+    {
+      "year": 173,
+      "description": "Lyra: Expanded territory to (19, 26)",
+      "type": "general",
+      "timestamp": 1746897479.526427
+    },
+    {
+      "year": 176,
+      "description": "Lyra: Expanded territory to (22, 25)",
+      "type": "general",
+      "timestamp": 1746897479.7540894
+    },
+    {
+      "year": 179,
+      "description": "Lyra: Expanded territory to (23, 32)",
+      "type": "general",
+      "timestamp": 1746897479.9794579
+    },
+    {
+      "year": 182,
+      "description": "Lyra: Expanded territory to (18, 34)",
+      "type": "general",
+      "timestamp": 1746897480.211118
+    },
+    {
+      "year": 185,
+      "description": "Lyra: Expanded territory to (19, 27)",
+      "type": "general",
+      "timestamp": 1746897480.436608
+    },
+    {
+      "year": 188,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897480.650061
+    },
+    {
+      "year": 191,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897480.862403
+    },
+    {
+      "year": 194,
+      "description": "Lyra: Expanded territory to (19, 34)",
+      "type": "general",
+      "timestamp": 1746897481.0734692
+    },
+    {
+      "year": 197,
+      "description": "Lyra: Expanded territory to (20, 29)",
+      "type": "general",
+      "timestamp": 1746897481.2866
+    },
+    {
+      "year": 200,
+      "description": "Lyra: Expanded territory to (25, 32)",
+      "type": "general",
+      "timestamp": 1746897481.5401897
+    },
+    {
+      "year": 203,
+      "description": "Lyra: Expanded territory to (26, 33)",
+      "type": "general",
+      "timestamp": 1746897481.795093
+    },
+    {
+      "year": 206,
+      "description": "Lyra: Expanded territory to (25, 33)",
+      "type": "general",
+      "timestamp": 1746897482.0406737
+    },
+    {
+      "year": 209,
+      "description": "Lyra: Expanded territory to (19, 28)",
+      "type": "general",
+      "timestamp": 1746897482.3063362
+    },
+    {
+      "year": 212,
+      "description": "Lyra: Expanded territory to (20, 27)",
+      "type": "general",
+      "timestamp": 1746897482.5591152
+    },
+    {
+      "year": 215,
+      "description": "Lyra: Expanded territory to (20, 27)",
+      "type": "general",
+      "timestamp": 1746897482.794592
+    },
+    {
+      "year": 218,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897483.0168288
+    },
+    {
+      "year": 221,
+      "description": "Lyra: Expanded territory to (17, 24)",
+      "type": "general",
+      "timestamp": 1746897483.2303967
+    },
+    {
+      "year": 224,
+      "description": "Lyra: Expanded territory to (19, 30)",
+      "type": "general",
+      "timestamp": 1746897483.4463775
+    },
+    {
+      "year": 227,
+      "description": "Lyra: Expanded territory to (18, 28)",
+      "type": "general",
+      "timestamp": 1746897483.6599398
+    },
+    {
+      "year": 230,
+      "description": "Lyra: Expanded territory to (18, 27)",
+      "type": "general",
+      "timestamp": 1746897483.8708358
+    },
+    {
+      "year": 233,
+      "description": "Lyra: Expanded territory to (26, 32)",
+      "type": "general",
+      "timestamp": 1746897484.0836332
+    },
+    {
+      "year": 236,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897484.29809
+    },
+    {
+      "year": 239,
+      "description": "Lyra: Expanded territory to (20, 29)",
+      "type": "general",
+      "timestamp": 1746897484.5091808
+    },
+    {
+      "year": 242,
+      "description": "Lyra: Expanded territory to (17, 24)",
+      "type": "general",
+      "timestamp": 1746897484.7223928
+    },
+    {
+      "year": 245,
+      "description": "Lyra: Expanded territory to (19, 32)",
+      "type": "general",
+      "timestamp": 1746897484.9332454
+    },
+    {
+      "year": 248,
+      "description": "Lyra: Expanded territory to (25, 34)",
+      "type": "general",
+      "timestamp": 1746897485.1455822
+    },
+    {
+      "year": 251,
+      "description": "Lyra: Expanded territory to (23, 32)",
+      "type": "general",
+      "timestamp": 1746897485.36595
+    },
+    {
+      "year": 254,
+      "description": "Lyra: Expanded territory to (18, 33)",
+      "type": "general",
+      "timestamp": 1746897485.5867524
+    },
+    {
+      "year": 257,
+      "description": "Lyra: Expanded territory to (20, 27)",
+      "type": "general",
+      "timestamp": 1746897485.8003469
+    },
+    {
+      "year": 260,
+      "description": "Lyra: Expanded territory to (17, 24)",
+      "type": "general",
+      "timestamp": 1746897486.0358202
+    },
+    {
+      "year": 263,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897486.2669115
+    },
+    {
+      "year": 266,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897486.5095341
+    },
+    {
+      "year": 269,
+      "description": "Lyra: Expanded territory to (25, 25)",
+      "type": "general",
+      "timestamp": 1746897486.7345657
+    },
+    {
+      "year": 272,
+      "description": "Lyra: Expanded territory to (23, 31)",
+      "type": "general",
+      "timestamp": 1746897486.9517987
+    },
+    {
+      "year": 275,
+      "description": "Lyra: Expanded territory to (27, 31)",
+      "type": "general",
+      "timestamp": 1746897487.1651287
+    },
+    {
+      "year": 278,
+      "description": "Lyra: Expanded territory to (23, 24)",
+      "type": "general",
+      "timestamp": 1746897487.3800924
+    },
+    {
+      "year": 281,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897487.5910826
+    },
+    {
+      "year": 284,
+      "description": "Lyra: Expanded territory to (22, 25)",
+      "type": "general",
+      "timestamp": 1746897487.8029168
+    },
+    {
+      "year": 287,
+      "description": "Lyra: Expanded territory to (21, 31)",
+      "type": "general",
+      "timestamp": 1746897488.0153828
+    },
+    {
+      "year": 290,
+      "description": "Lyra: Expanded territory to (23, 32)",
+      "type": "general",
+      "timestamp": 1746897488.2313325
+    },
+    {
+      "year": 293,
+      "description": "Lyra: Expanded territory to (26, 35)",
+      "type": "general",
+      "timestamp": 1746897488.4449375
+    },
+    {
+      "year": 296,
+      "description": "Lyra: Expanded territory to (16, 31)",
+      "type": "general",
+      "timestamp": 1746897488.6563597
+    },
+    {
+      "year": 299,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897488.8711593
+    },
+    {
+      "year": 302,
+      "description": "Lyra: Expanded territory to (16, 32)",
+      "type": "general",
+      "timestamp": 1746897489.1013772
+    },
+    {
+      "year": 305,
+      "description": "Lyra: Expanded territory to (24, 32)",
+      "type": "general",
+      "timestamp": 1746897489.3134208
+    },
+    {
+      "year": 308,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897489.5264845
+    },
+    {
+      "year": 311,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897489.7603807
+    },
+    {
+      "year": 314,
+      "description": "Lyra: Expanded territory to (20, 30)",
+      "type": "general",
+      "timestamp": 1746897489.9938052
+    },
+    {
+      "year": 317,
+      "description": "Lyra: Expanded territory to (26, 25)",
+      "type": "general",
+      "timestamp": 1746897490.2247264
+    },
+    {
+      "year": 320,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897490.4509997
+    },
+    {
+      "year": 323,
+      "description": "Lyra: Expanded territory to (21, 33)",
+      "type": "general",
+      "timestamp": 1746897490.671125
+    },
+    {
+      "year": 326,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897490.8845186
+    },
+    {
+      "year": 329,
+      "description": "Lyra: Expanded territory to (16, 28)",
+      "type": "general",
+      "timestamp": 1746897491.0921047
+    },
+    {
+      "year": 332,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897491.3067076
+    },
+    {
+      "year": 335,
+      "description": "Lyra: Expanded territory to (16, 33)",
+      "type": "general",
+      "timestamp": 1746897491.51953
+    },
+    {
+      "year": 338,
+      "description": "Lyra: Expanded territory to (17, 31)",
+      "type": "general",
+      "timestamp": 1746897491.7299757
+    },
+    {
+      "year": 341,
+      "description": "Lyra: Expanded territory to (21, 32)",
+      "type": "general",
+      "timestamp": 1746897491.9455729
+    },
+    {
+      "year": 344,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897492.1597905
+    },
+    {
+      "year": 347,
+      "description": "Lyra: Expanded territory to (19, 26)",
+      "type": "general",
+      "timestamp": 1746897492.369566
+    },
+    {
+      "year": 350,
+      "description": "Lyra: Expanded territory to (18, 31)",
+      "type": "general",
+      "timestamp": 1746897492.5840685
+    },
+    {
+      "year": 353,
+      "description": "Lyra: Expanded territory to (21, 32)",
+      "type": "general",
+      "timestamp": 1746897492.8182588
+    },
+    {
+      "year": 356,
+      "description": "Lyra: Expanded territory to (15, 31)",
+      "type": "general",
+      "timestamp": 1746897493.0292325
+    },
+    {
+      "year": 359,
+      "description": "Lyra: Expanded territory to (26, 25)",
+      "type": "general",
+      "timestamp": 1746897493.2572293
+    },
+    {
+      "year": 362,
+      "description": "Lyra: Expanded territory to (17, 31)",
+      "type": "general",
+      "timestamp": 1746897493.494039
+    },
+    {
+      "year": 365,
+      "description": "Lyra: Expanded territory to (27, 31)",
+      "type": "general",
+      "timestamp": 1746897493.7270591
+    },
+    {
+      "year": 368,
+      "description": "Lyra: Expanded territory to (18, 33)",
+      "type": "general",
+      "timestamp": 1746897493.9605772
+    },
+    {
+      "year": 371,
+      "description": "Lyra: Expanded territory to (17, 33)",
+      "type": "general",
+      "timestamp": 1746897494.1737716
+    },
+    {
+      "year": 374,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897494.384485
+    },
+    {
+      "year": 377,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897494.5967033
+    },
+    {
+      "year": 380,
+      "description": "Lyra: Expanded territory to (23, 33)",
+      "type": "general",
+      "timestamp": 1746897494.8139114
+    },
+    {
+      "year": 383,
+      "description": "Lyra: Expanded territory to (16, 30)",
+      "type": "general",
+      "timestamp": 1746897495.0317838
+    },
+    {
+      "year": 386,
+      "description": "Lyra: Expanded territory to (16, 31)",
+      "type": "general",
+      "timestamp": 1746897495.243514
+    },
+    {
+      "year": 389,
+      "description": "Lyra: Expanded territory to (18, 33)",
+      "type": "general",
+      "timestamp": 1746897495.4548032
+    },
+    {
+      "year": 392,
+      "description": "Lyra: Expanded territory to (22, 24)",
+      "type": "general",
+      "timestamp": 1746897495.669292
+    },
+    {
+      "year": 395,
+      "description": "Lyra: Expanded territory to (23, 33)",
+      "type": "general",
+      "timestamp": 1746897495.882032
+    },
+    {
+      "year": 398,
+      "description": "Lyra: Expanded territory to (19, 32)",
+      "type": "general",
+      "timestamp": 1746897496.0930455
+    },
+    {
+      "year": 401,
+      "description": "Lyra: Expanded territory to (22, 24)",
+      "type": "general",
+      "timestamp": 1746897496.3124638
+    },
+    {
+      "year": 404,
+      "description": "Lyra: Expanded territory to (15, 28)",
+      "type": "general",
+      "timestamp": 1746897496.5302248
+    },
+    {
+      "year": 407,
+      "description": "Lyra: Expanded territory to (16, 30)",
+      "type": "general",
+      "timestamp": 1746897496.7440176
+    },
+    {
+      "year": 410,
+      "description": "Lyra: Expanded territory to (25, 34)",
+      "type": "general",
+      "timestamp": 1746897496.9694467
+    },
+    {
+      "year": 413,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897497.1999185
+    },
+    {
+      "year": 416,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897497.433209
+    },
+    {
+      "year": 419,
+      "description": "Lyra: Expanded territory to (21, 32)",
+      "type": "general",
+      "timestamp": 1746897497.665169
+    },
+    {
+      "year": 422,
+      "description": "Lyra: Expanded territory to (26, 24)",
+      "type": "general",
+      "timestamp": 1746897497.878021
+    },
+    {
+      "year": 425,
+      "description": "Lyra: Expanded territory to (24, 24)",
+      "type": "general",
+      "timestamp": 1746897498.089601
+    },
+    {
+      "year": 428,
+      "description": "Lyra: Expanded territory to (18, 29)",
+      "type": "general",
+      "timestamp": 1746897498.3003187
+    },
+    {
+      "year": 431,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897498.5116677
+    },
+    {
+      "year": 434,
+      "description": "Lyra: Expanded territory to (27, 32)",
+      "type": "general",
+      "timestamp": 1746897498.7205744
+    },
+    {
+      "year": 437,
+      "description": "Lyra: Expanded territory to (27, 24)",
+      "type": "general",
+      "timestamp": 1746897498.9328103
+    },
+    {
+      "year": 440,
+      "description": "Lyra: Expanded territory to (27, 32)",
+      "type": "general",
+      "timestamp": 1746897499.1470447
+    },
+    {
+      "year": 443,
+      "description": "Lyra: Expanded territory to (25, 32)",
+      "type": "general",
+      "timestamp": 1746897499.3567796
+    },
+    {
+      "year": 446,
+      "description": "Lyra: Expanded territory to (20, 31)",
+      "type": "general",
+      "timestamp": 1746897499.5679116
+    },
+    {
+      "year": 449,
+      "description": "Lyra: Expanded territory to (21, 31)",
+      "type": "general",
+      "timestamp": 1746897499.7765117
+    },
+    {
+      "year": 452,
+      "description": "Lyra: Expanded territory to (18, 26)",
+      "type": "general",
+      "timestamp": 1746897500.005214
+    },
+    {
+      "year": 455,
+      "description": "Lyra: Expanded territory to (27, 32)",
+      "type": "general",
+      "timestamp": 1746897500.2131107
+    },
+    {
+      "year": 458,
+      "description": "Lyra: Expanded territory to (19, 34)",
+      "type": "general",
+      "timestamp": 1746897500.4303653
+    },
+    {
+      "year": 461,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897500.666291
+    },
+    {
+      "year": 464,
+      "description": "Lyra: Expanded territory to (16, 33)",
+      "type": "general",
+      "timestamp": 1746897500.9036481
+    },
+    {
+      "year": 467,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897501.1400855
+    },
+    {
+      "year": 470,
+      "description": "Lyra: Expanded territory to (16, 32)",
+      "type": "general",
+      "timestamp": 1746897501.3636081
+    },
+    {
+      "year": 473,
+      "description": "Lyra: Expanded territory to (23, 31)",
+      "type": "general",
+      "timestamp": 1746897501.5769167
+    },
+    {
+      "year": 476,
+      "description": "Lyra: Expanded territory to (18, 27)",
+      "type": "general",
+      "timestamp": 1746897501.78642
+    },
+    {
+      "year": 479,
+      "description": "Lyra: Expanded territory to (19, 28)",
+      "type": "general",
+      "timestamp": 1746897501.9985013
+    },
+    {
+      "year": 482,
+      "description": "Lyra: Expanded territory to (21, 27)",
+      "type": "general",
+      "timestamp": 1746897502.2068925
+    },
+    {
+      "year": 485,
+      "description": "Lyra: Expanded territory to (18, 35)",
+      "type": "general",
+      "timestamp": 1746897502.4191127
+    },
+    {
+      "year": 488,
+      "description": "Lyra: Expanded territory to (27, 24)",
+      "type": "general",
+      "timestamp": 1746897502.6315677
+    },
+    {
+      "year": 491,
+      "description": "Lyra: Expanded territory to (26, 31)",
+      "type": "general",
+      "timestamp": 1746897502.8417025
+    },
+    {
+      "year": 494,
+      "description": "Lyra: Expanded territory to (19, 34)",
+      "type": "general",
+      "timestamp": 1746897503.052569
+    },
+    {
+      "year": 497,
+      "description": "Lyra: Expanded territory to (19, 28)",
+      "type": "general",
+      "timestamp": 1746897503.2615938
+    },
+    {
+      "year": 500,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897503.4767692
+    },
+    {
+      "year": 503,
+      "description": "Lyra: Expanded territory to (27, 33)",
+      "type": "general",
+      "timestamp": 1746897503.7015553
+    },
+    {
+      "year": 506,
+      "description": "Lyra: Expanded territory to (19, 31)",
+      "type": "general",
+      "timestamp": 1746897503.9141607
+    },
+    {
+      "year": 509,
+      "description": "Lyra: Expanded territory to (27, 31)",
+      "type": "general",
+      "timestamp": 1746897504.1402118
+    },
+    {
+      "year": 512,
+      "description": "Lyra: Expanded territory to (18, 34)",
+      "type": "general",
+      "timestamp": 1746897504.3783946
+    },
+    {
+      "year": 515,
+      "description": "Lyra: Expanded territory to (14, 28)",
+      "type": "general",
+      "timestamp": 1746897504.6110923
+    },
+    {
+      "year": 518,
+      "description": "Lyra: Expanded territory to (19, 27)",
+      "type": "general",
+      "timestamp": 1746897504.8492005
+    },
+    {
+      "year": 521,
+      "description": "Lyra: Expanded territory to (26, 25)",
+      "type": "general",
+      "timestamp": 1746897505.0657635
+    },
+    {
+      "year": 524,
+      "description": "Lyra: Expanded territory to (25, 25)",
+      "type": "general",
+      "timestamp": 1746897505.2779403
+    },
+    {
+      "year": 527,
+      "description": "Lyra: Expanded territory to (15, 31)",
+      "type": "general",
+      "timestamp": 1746897505.494387
+    },
+    {
+      "year": 530,
+      "description": "Lyra: Expanded territory to (20, 30)",
+      "type": "general",
+      "timestamp": 1746897505.70508
+    },
+    {
+      "year": 533,
+      "description": "Lyra: Expanded territory to (27, 24)",
+      "type": "general",
+      "timestamp": 1746897505.9166074
+    },
+    {
+      "year": 536,
+      "description": "Lyra: Expanded territory to (18, 33)",
+      "type": "general",
+      "timestamp": 1746897506.13044
+    },
+    {
+      "year": 539,
+      "description": "Lyra: Expanded territory to (20, 29)",
+      "type": "general",
+      "timestamp": 1746897506.342753
+    },
+    {
+      "year": 542,
+      "description": "Lyra: Expanded territory to (25, 33)",
+      "type": "general",
+      "timestamp": 1746897506.5592682
+    },
+    {
+      "year": 545,
+      "description": "Lyra: Expanded territory to (18, 34)",
+      "type": "general",
+      "timestamp": 1746897506.7708886
+    },
+    {
+      "year": 548,
+      "description": "Lyra: Expanded territory to (27, 24)",
+      "type": "general",
+      "timestamp": 1746897506.9872305
+    },
+    {
+      "year": 551,
+      "description": "Lyra: Expanded territory to (25, 23)",
+      "type": "general",
+      "timestamp": 1746897507.209014
+    },
+    {
+      "year": 554,
+      "description": "Lyra: Expanded territory to (27, 24)",
+      "type": "general",
+      "timestamp": 1746897507.4253793
+    },
+    {
+      "year": 557,
+      "description": "Lyra: Expanded territory to (16, 33)",
+      "type": "general",
+      "timestamp": 1746897507.6361697
+    },
+    {
+      "year": 560,
+      "description": "Lyra: Expanded territory to (17, 26)",
+      "type": "general",
+      "timestamp": 1746897507.8580878
+    },
+    {
+      "year": 563,
+      "description": "Lyra: Expanded territory to (24, 32)",
+      "type": "general",
+      "timestamp": 1746897508.0917645
+    },
+    {
+      "year": 566,
+      "description": "Lyra: Expanded territory to (23, 31)",
+      "type": "general",
+      "timestamp": 1746897508.3228292
+    },
+    {
+      "year": 569,
+      "description": "Lyra: Expanded territory to (23, 33)",
+      "type": "general",
+      "timestamp": 1746897508.5505862
+    },
+    {
+      "year": 572,
+      "description": "Lyra: Expanded territory to (22, 24)",
+      "type": "general",
+      "timestamp": 1746897508.7631092
+    },
+    {
+      "year": 575,
+      "description": "Lyra: Expanded territory to (22, 31)",
+      "type": "general",
+      "timestamp": 1746897508.9782653
+    },
+    {
+      "year": 578,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897509.189498
+    },
+    {
+      "year": 581,
+      "description": "Lyra: Expanded territory to (24, 25)",
+      "type": "general",
+      "timestamp": 1746897509.4037032
+    },
+    {
+      "year": 584,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897509.6145756
+    },
+    {
+      "year": 587,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897509.8287868
+    },
+    {
+      "year": 590,
+      "description": "Lyra: Expanded territory to (19, 27)",
+      "type": "general",
+      "timestamp": 1746897510.0382435
+    },
+    {
+      "year": 593,
+      "description": "Lyra: Expanded territory to (24, 34)",
+      "type": "general",
+      "timestamp": 1746897510.249923
+    },
+    {
+      "year": 596,
+      "description": "Lyra: Expanded territory to (21, 32)",
+      "type": "general",
+      "timestamp": 1746897510.461115
+    },
+    {
+      "year": 599,
+      "description": "Lyra: Expanded territory to (23, 24)",
+      "type": "general",
+      "timestamp": 1746897510.6706758
+    },
+    {
+      "year": 602,
+      "description": "Lyra: Expanded territory to (24, 24)",
+      "type": "general",
+      "timestamp": 1746897510.897569
+    },
+    {
+      "year": 605,
+      "description": "Lyra: Expanded territory to (18, 28)",
+      "type": "general",
+      "timestamp": 1746897511.1131945
+    },
+    {
+      "year": 608,
+      "description": "Lyra: Expanded territory to (18, 32)",
+      "type": "general",
+      "timestamp": 1746897511.3362966
+    },
+    {
+      "year": 611,
+      "description": "Lyra: Expanded territory to (19, 25)",
+      "type": "general",
+      "timestamp": 1746897511.56771
+    },
+    {
+      "year": 614,
+      "description": "Lyra: Expanded territory to (19, 26)",
+      "type": "general",
+      "timestamp": 1746897511.7997737
+    },
+    {
+      "year": 617,
+      "description": "Lyra: Expanded territory to (17, 30)",
+      "type": "general",
+      "timestamp": 1746897512.0270169
+    },
+    {
+      "year": 620,
+      "description": "Lyra: Expanded territory to (17, 30)",
+      "type": "general",
+      "timestamp": 1746897512.2456238
+    },
+    {
+      "year": 623,
+      "description": "Lyra: Expanded territory to (18, 27)",
+      "type": "general",
+      "timestamp": 1746897512.4579313
+    },
+    {
+      "year": 626,
+      "description": "Lyra: Expanded territory to (27, 25)",
+      "type": "general",
+      "timestamp": 1746897512.6687384
+    },
+    {
+      "year": 629,
+      "description": "Lyra: Expanded territory to (18, 27)",
+      "type": "general",
+      "timestamp": 1746897512.8909247
+    },
+    {
+      "year": 632,
+      "description": "Lyra: Expanded territory to (21, 30)",
+      "type": "general",
+      "timestamp": 1746897513.1004584
+    },
+    {
+      "year": 635,
+      "description": "Lyra: Expanded territory to (20, 30)",
+      "type": "general",
+      "timestamp": 1746897513.316238
+    },
+    {
+      "year": 638,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897513.5325167
+    },
+    {
+      "year": 641,
+      "description": "Lyra: Expanded territory to (22, 25)",
+      "type": "general",
+      "timestamp": 1746897513.7434022
+    },
+    {
+      "year": 644,
+      "description": "Lyra: Expanded territory to (27, 31)",
+      "type": "general",
+      "timestamp": 1746897513.9577425
+    },
+    {
+      "year": 647,
+      "description": "Lyra: Expanded territory to (19, 30)",
+      "type": "general",
+      "timestamp": 1746897514.1725872
+    },
+    {
+      "year": 650,
+      "description": "Lyra: Expanded territory to (17, 26)",
+      "type": "general",
+      "timestamp": 1746897514.384736
+    },
+    {
+      "year": 653,
+      "description": "Lyra: Expanded territory to (18, 32)",
+      "type": "general",
+      "timestamp": 1746897514.6120803
+    },
+    {
+      "year": 656,
+      "description": "Lyra: Expanded territory to (15, 30)",
+      "type": "general",
+      "timestamp": 1746897514.8279462
+    },
+    {
+      "year": 659,
+      "description": "Lyra: Expanded territory to (26, 34)",
+      "type": "general",
+      "timestamp": 1746897515.0561929
+    },
+    {
+      "year": 662,
+      "description": "Lyra: Expanded territory to (21, 31)",
+      "type": "general",
+      "timestamp": 1746897515.2926562
+    },
+    {
+      "year": 665,
+      "description": "Lyra: Expanded territory to (16, 24)",
+      "type": "general",
+      "timestamp": 1746897515.5276868
+    },
+    {
+      "year": 668,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897515.767345
+    },
+    {
+      "year": 671,
+      "description": "Lyra: Expanded territory to (15, 28)",
+      "type": "general",
+      "timestamp": 1746897515.9841948
+    },
+    {
+      "year": 674,
+      "description": "Lyra: Expanded territory to (17, 24)",
+      "type": "general",
+      "timestamp": 1746897516.1923778
+    },
+    {
+      "year": 677,
+      "description": "Lyra: Expanded territory to (18, 27)",
+      "type": "general",
+      "timestamp": 1746897516.4076264
+    },
+    {
+      "year": 680,
+      "description": "Lyra: Expanded territory to (23, 33)",
+      "type": "general",
+      "timestamp": 1746897516.6196666
+    },
+    {
+      "year": 683,
+      "description": "Lyra: Expanded territory to (25, 25)",
+      "type": "general",
+      "timestamp": 1746897516.8304465
+    },
+    {
+      "year": 686,
+      "description": "Lyra: Expanded territory to (18, 28)",
+      "type": "general",
+      "timestamp": 1746897517.0443885
+    },
+    {
+      "year": 689,
+      "description": "Lyra: Expanded territory to (26, 32)",
+      "type": "general",
+      "timestamp": 1746897517.267145
+    },
+    {
+      "year": 692,
+      "description": "Lyra: Expanded territory to (27, 24)",
+      "type": "general",
+      "timestamp": 1746897517.486281
+    },
+    {
+      "year": 695,
+      "description": "Lyra: Expanded territory to (16, 32)",
+      "type": "general",
+      "timestamp": 1746897517.6964982
+    },
+    {
+      "year": 698,
+      "description": "Lyra: Expanded territory to (19, 27)",
+      "type": "general",
+      "timestamp": 1746897517.9130583
+    },
+    {
+      "year": 701,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897518.1354563
+    },
+    {
+      "year": 704,
+      "description": "Lyra: Expanded territory to (17, 31)",
+      "type": "general",
+      "timestamp": 1746897518.3597667
+    },
+    {
+      "year": 707,
+      "description": "Lyra: Expanded territory to (25, 33)",
+      "type": "general",
+      "timestamp": 1746897518.572904
+    },
+    {
+      "year": 710,
+      "description": "Lyra: Expanded territory to (21, 31)",
+      "type": "general",
+      "timestamp": 1746897518.809539
+    },
+    {
+      "year": 713,
+      "description": "Lyra: Expanded territory to (16, 23)",
+      "type": "general",
+      "timestamp": 1746897519.051279
+    },
+    {
+      "year": 716,
+      "description": "Lyra: Expanded territory to (17, 24)",
+      "type": "general",
+      "timestamp": 1746897519.2899675
+    },
+    {
+      "year": 719,
+      "description": "Lyra: Expanded territory to (18, 27)",
+      "type": "general",
+      "timestamp": 1746897519.51497
+    },
+    {
+      "year": 722,
+      "description": "Lyra: Expanded territory to (19, 28)",
+      "type": "general",
+      "timestamp": 1746897519.7287328
+    },
+    {
+      "year": 725,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897519.9463773
+    },
+    {
+      "year": 728,
+      "description": "Lyra: Expanded territory to (15, 32)",
+      "type": "general",
+      "timestamp": 1746897520.156291
+    },
+    {
+      "year": 731,
+      "description": "Lyra: Expanded territory to (19, 30)",
+      "type": "general",
+      "timestamp": 1746897520.3706272
+    },
+    {
+      "year": 734,
+      "description": "Lyra: Expanded territory to (21, 26)",
+      "type": "general",
+      "timestamp": 1746897520.5829668
+    },
+    {
+      "year": 737,
+      "description": "Lyra: Expanded territory to (16, 27)",
+      "type": "general",
+      "timestamp": 1746897520.7928362
+    },
+    {
+      "year": 740,
+      "description": "Lyra: Expanded territory to (22, 25)",
+      "type": "general",
+      "timestamp": 1746897521.0078678
+    },
+    {
+      "year": 743,
+      "description": "Lyra: Expanded territory to (19, 33)",
+      "type": "general",
+      "timestamp": 1746897521.2191339
+    },
+    {
+      "year": 746,
+      "description": "Lyra: Expanded territory to (27, 32)",
+      "type": "general",
+      "timestamp": 1746897521.4331443
+    },
+    {
+      "year": 749,
+      "description": "Lyra: Expanded territory to (26, 33)",
+      "type": "general",
+      "timestamp": 1746897521.6475487
+    },
+    {
+      "year": 752,
+      "description": "Lyra: Expanded territory to (22, 24)",
+      "type": "general",
+      "timestamp": 1746897521.8776917
+    },
+    {
+      "year": 755,
+      "description": "Lyra: Expanded territory to (24, 33)",
+      "type": "general",
+      "timestamp": 1746897522.0956175
+    },
+    {
+      "year": 758,
+      "description": "Lyra: Expanded territory to (24, 24)",
+      "type": "general",
+      "timestamp": 1746897522.3138008
+    },
+    {
+      "year": 761,
+      "description": "Lyra: Expanded territory to (18, 34)",
+      "type": "general",
+      "timestamp": 1746897522.596297
+    },
+    {
+      "year": 764,
+      "description": "Lyra: Expanded territory to (25, 32)",
+      "type": "general",
+      "timestamp": 1746897522.8615332
+    },
+    {
+      "year": 767,
+      "description": "Lyra: Expanded territory to (16, 24)",
+      "type": "general",
+      "timestamp": 1746897523.1452634
+    },
+    {
+      "year": 770,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897523.4109588
+    },
+    {
+      "year": 773,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897523.6831582
+    },
+    {
+      "year": 776,
+      "description": "Lyra: Expanded territory to (17, 27)",
+      "type": "general",
+      "timestamp": 1746897523.92143
+    },
+    {
+      "year": 779,
+      "description": "Lyra: Expanded territory to (26, 35)",
+      "type": "general",
+      "timestamp": 1746897524.1335754
+    },
+    {
+      "year": 782,
+      "description": "Lyra: Expanded territory to (19, 32)",
+      "type": "general",
+      "timestamp": 1746897524.3508813
+    },
+    {
+      "year": 785,
+      "description": "Lyra: Expanded territory to (22, 31)",
+      "type": "general",
+      "timestamp": 1746897524.56352
+    },
+    {
+      "year": 788,
+      "description": "Lyra: Established new city Peace Village at (27, 31)",
+      "type": "general",
+      "timestamp": 1746897524.7757013
+    },
+    {
+      "year": 791,
+      "description": "Lyra: Expanded territory to (14, 29)",
+      "type": "general",
+      "timestamp": 1746897525.0634253
+    },
+    {
+      "year": 794,
+      "description": "Lyra: Expanded territory to (19, 31)",
+      "type": "general",
+      "timestamp": 1746897525.3369002
+    },
+    {
+      "year": 794,
+      "description": "Lyra: Abandoned small settlement Peace Village",
+      "type": "general",
+      "timestamp": 1746897525.3369033
+    },
+    {
+      "year": 797,
+      "description": "Lyra: Expanded territory to (24, 32)",
+      "type": "general",
+      "timestamp": 1746897525.6113846
+    },
+    {
+      "year": 800,
+      "description": "Lyra: Expanded territory to (24, 34)",
+      "type": "general",
+      "timestamp": 1746897525.8926542
+    },
+    {
+      "year": 803,
+      "description": "Lyra: Expanded territory to (19, 26)",
+      "type": "general",
+      "timestamp": 1746897526.1831052
+    },
+    {
+      "year": 806,
+      "description": "Lyra: Expanded territory to (19, 28)",
+      "type": "general",
+      "timestamp": 1746897526.4671566
+    },
+    {
+      "year": 809,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897526.7736177
+    },
+    {
+      "year": 812,
+      "description": "Lyra: Expanded territory to (19, 30)",
+      "type": "general",
+      "timestamp": 1746897527.0823073
+    },
+    {
+      "year": 815,
+      "description": "Lyra: Expanded territory to (21, 31)",
+      "type": "general",
+      "timestamp": 1746897527.3819993
+    },
+    {
+      "year": 818,
+      "description": "Lyra: Expanded territory to (13, 29)",
+      "type": "general",
+      "timestamp": 1746897527.6590157
+    },
+    {
+      "year": 821,
+      "description": "Lyra: Expanded territory to (24, 34)",
+      "type": "general",
+      "timestamp": 1746897527.9401097
+    },
+    {
+      "year": 824,
+      "description": "Lyra: Established new city New Point at (25, 25)",
+      "type": "general",
+      "timestamp": 1746897528.216157
+    },
+    {
+      "year": 827,
+      "description": "Lyra: Expanded territory to (16, 32)",
+      "type": "general",
+      "timestamp": 1746897528.5112724
+    },
+    {
+      "year": 830,
+      "description": "Lyra: Expanded territory to (24, 32)",
+      "type": "general",
+      "timestamp": 1746897528.8021917
+    },
+    {
+      "year": 833,
+      "description": "Lyra: Expanded territory to (15, 27)",
+      "type": "general",
+      "timestamp": 1746897529.014319
+    },
+    {
+      "year": 836,
+      "description": "Lyra: Expanded territory to (20, 27)",
+      "type": "general",
+      "timestamp": 1746897529.2279267
+    },
+    {
+      "year": 839,
+      "description": "Lyra: Expanded territory to (24, 32)",
+      "type": "general",
+      "timestamp": 1746897529.4440942
+    },
+    {
+      "year": 842,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897529.6601768
+    },
+    {
+      "year": 845,
+      "description": "Lyra: Expanded territory to (22, 23)",
+      "type": "general",
+      "timestamp": 1746897529.8776264
+    },
+    {
+      "year": 848,
+      "description": "Lyra: Expanded territory to (26, 25)",
+      "type": "general",
+      "timestamp": 1746897530.095377
+    },
+    {
+      "year": 848,
+      "description": "Lyra: Abandoned small settlement New Point",
+      "type": "general",
+      "timestamp": 1746897530.095381
+    },
+    {
+      "year": 851,
+      "description": "Lyra: Expanded territory to (16, 31)",
+      "type": "general",
+      "timestamp": 1746897530.3173773
+    },
+    {
+      "year": 854,
+      "description": "Lyra: Expanded territory to (26, 25)",
+      "type": "general",
+      "timestamp": 1746897530.5350153
+    },
+    {
+      "year": 857,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897530.7490015
+    },
+    {
+      "year": 860,
+      "description": "Lyra: Expanded territory to (18, 32)",
+      "type": "general",
+      "timestamp": 1746897530.987074
+    },
+    {
+      "year": 863,
+      "description": "Lyra: Expanded territory to (18, 31)",
+      "type": "general",
+      "timestamp": 1746897531.2182994
+    },
+    {
+      "year": 866,
+      "description": "Lyra: Expanded territory to (19, 26)",
+      "type": "general",
+      "timestamp": 1746897531.460054
+    },
+    {
+      "year": 869,
+      "description": "Lyra: Expanded territory to (27, 33)",
+      "type": "general",
+      "timestamp": 1746897531.6815953
+    },
+    {
+      "year": 872,
+      "description": "Lyra: Expanded territory to (16, 28)",
+      "type": "general",
+      "timestamp": 1746897531.8959749
+    },
+    {
+      "year": 875,
+      "description": "Lyra: Expanded territory to (18, 33)",
+      "type": "general",
+      "timestamp": 1746897532.110339
+    },
+    {
+      "year": 878,
+      "description": "Lyra: Expanded territory to (18, 34)",
+      "type": "general",
+      "timestamp": 1746897532.3233292
+    },
+    {
+      "year": 881,
+      "description": "Lyra: Expanded territory to (22, 35)",
+      "type": "general",
+      "timestamp": 1746897532.5379503
+    },
+    {
+      "year": 884,
+      "description": "Lyra: Expanded territory to (26, 34)",
+      "type": "general",
+      "timestamp": 1746897532.75564
+    },
+    {
+      "year": 887,
+      "description": "Lyra: Expanded territory to (19, 31)",
+      "type": "general",
+      "timestamp": 1746897532.9786913
+    },
+    {
+      "year": 890,
+      "description": "Lyra: Established new city Peace Post at (14, 27)",
+      "type": "general",
+      "timestamp": 1746897533.1919029
+    },
+    {
+      "year": 893,
+      "description": "Lyra: Expanded territory to (18, 33)",
+      "type": "general",
+      "timestamp": 1746897533.4741845
+    },
+    {
+      "year": 896,
+      "description": "Lyra: Expanded territory to (25, 34)",
+      "type": "general",
+      "timestamp": 1746897533.752962
+    },
+    {
+      "year": 899,
+      "description": "Lyra: Expanded territory to (24, 24)",
+      "type": "general",
+      "timestamp": 1746897534.031092
+    },
+    {
+      "year": 902,
+      "description": "Lyra: Established new city Serene Heights at (20, 30)",
+      "type": "general",
+      "timestamp": 1746897534.3209543
+    },
+    {
+      "year": 905,
+      "description": "Lyra: Expanded territory to (26, 32)",
+      "type": "general",
+      "timestamp": 1746897534.6131134
+    },
+    {
+      "year": 908,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897534.9111562
+    },
+    {
+      "year": 911,
+      "description": "Lyra: Expanded territory to (16, 31)",
+      "type": "general",
+      "timestamp": 1746897535.1970823
+    },
+    {
+      "year": 914,
+      "description": "Lyra: Expanded territory to (21, 29)",
+      "type": "general",
+      "timestamp": 1746897535.489216
+    },
+    {
+      "year": 917,
+      "description": "Lyra: Expanded territory to (18, 26)",
+      "type": "general",
+      "timestamp": 1746897535.7700183
+    },
+    {
+      "year": 920,
+      "description": "Lyra: Expanded territory to (25, 25)",
+      "type": "general",
+      "timestamp": 1746897535.9922562
+    },
+    {
+      "year": 923,
+      "description": "Lyra: Expanded territory to (18, 34)",
+      "type": "general",
+      "timestamp": 1746897536.2387927
+    },
+    {
+      "year": 926,
+      "description": "Lyra: Expanded territory to (25, 32)",
+      "type": "general",
+      "timestamp": 1746897536.4794931
+    },
+    {
+      "year": 929,
+      "description": "Lyra: Expanded territory to (25, 24)",
+      "type": "general",
+      "timestamp": 1746897536.7247846
+    },
+    {
+      "year": 932,
+      "description": "Lyra: Expanded territory to (25, 25)",
+      "type": "general",
+      "timestamp": 1746897536.9626265
+    },
+    {
+      "year": 935,
+      "description": "Lyra: Expanded territory to (18, 34)",
+      "type": "general",
+      "timestamp": 1746897537.1893034
+    },
+    {
+      "year": 938,
+      "description": "Lyra: Expanded territory to (26, 34)",
+      "type": "general",
+      "timestamp": 1746897537.4107058
+    },
+    {
+      "year": 941,
+      "description": "Lyra: Expanded territory to (20, 31)",
+      "type": "general",
+      "timestamp": 1746897537.6462438
+    }
+  ],
+  "civilization_history": [
+    {
+      "year": 0,
+      "civilizations": [
+        {
+          "id": "813efc32-7a0d-4651-a934-a4b7d34793a8",
+          "name": "Zenith",
+          "population": 70,
+          "age": 0,
+          "territory_size": 33,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Order of Mighty Mountains",
+            "values": {
+              "peace": 0.015766893397067275,
+              "war": 0.32314275534289655,
+              "knowledge": 0.23853406467493782,
+              "tradition": 0.15360309381886525,
+              "wealth": 0.08386049130193418,
+              "spirituality": 0.185092701464299
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 13,
+          "resources": {
+            "food": 3.1809757286830886,
+            "metal": 184.01816593905227,
+            "gold": 131.92372472543113,
+            "stone": 194.0357502137801
+          }
+        },
+        {
+          "id": "65b3ecdb-07df-49a1-814f-fdcb7101a8ad",
+          "name": "Nova",
+          "population": 51,
+          "age": 0,
+          "territory_size": 32,
+          "traits": [
+            "weird",
+            "isolationist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Ideology of Blessed Harmony",
+            "values": {
+              "peace": 0.1909700267165422,
+              "war": 0.1692295982786468,
+              "knowledge": 0.09696694576727896,
+              "tradition": 0.19410132696479876,
+              "wealth": 0.1933308894724342,
+              "spirituality": 0.15540121280029906
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 21,
+          "resources": {
+            "food": 3.651242601823951,
+            "metal": 166.79298918791758,
+            "gold": 136.42360839858537,
+            "stone": 166.52913561243844
+          }
+        },
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 114,
+          "age": 0,
+          "territory_size": 30,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 20,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 186,
+          "age": 0,
+          "territory_size": 40,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 18,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 64,
+          "age": 0,
+          "territory_size": 66,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 19,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 25,
+      "civilizations": [
+        {
+          "id": "813efc32-7a0d-4651-a934-a4b7d34793a8",
+          "name": "Zenith",
+          "population": 71,
+          "age": 25,
+          "territory_size": 33,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Order of Mighty Mountains",
+            "values": {
+              "peace": 0.015766893397067275,
+              "war": 0.32314275534289655,
+              "knowledge": 0.23853406467493782,
+              "tradition": 0.15360309381886525,
+              "wealth": 0.08386049130193418,
+              "spirituality": 0.185092701464299
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 15.576793739767465,
+          "resources": {
+            "food": 3.1809757286830886,
+            "metal": 184.01816593905227,
+            "gold": 131.92372472543113,
+            "stone": 194.0357502137801
+          }
+        },
+        {
+          "id": "65b3ecdb-07df-49a1-814f-fdcb7101a8ad",
+          "name": "Nova",
+          "population": 51,
+          "age": 25,
+          "territory_size": 32,
+          "traits": [
+            "weird",
+            "isolationist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Ideology of Blessed Harmony",
+            "values": {
+              "peace": 0.1909700267165422,
+              "war": 0.1692295982786468,
+              "knowledge": 0.09696694576727896,
+              "tradition": 0.19410132696479876,
+              "wealth": 0.1933308894724342,
+              "spirituality": 0.15540121280029906
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 21.780423674640723,
+          "resources": {
+            "food": 3.651242601823951,
+            "metal": 166.79298918791758,
+            "gold": 136.42360839858537,
+            "stone": 166.52913561243844
+          }
+        },
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 123,
+          "age": 25,
+          "territory_size": 32,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 20.80515420158647,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 193,
+          "age": 25,
+          "territory_size": 40,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 20.41348219821048,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 66,
+          "age": 25,
+          "territory_size": 66,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 21.513828667182256,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 50,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 106,
+          "age": 50,
+          "territory_size": 33,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 21.674173191729246,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 172,
+          "age": 50,
+          "territory_size": 41,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 22.75827736114754,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 65,
+          "age": 50,
+          "territory_size": 67,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 23.889578181719024,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 75,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 97,
+          "age": 75,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 22.340506519059986,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 154,
+          "age": 75,
+          "territory_size": 42,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 25.273836365188934,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 62,
+          "age": 75,
+          "territory_size": 67,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 26.377139160632325,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 100,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 89,
+          "age": 100,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 23.004641167073697,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 139,
+          "age": 100,
+          "territory_size": 43,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 27.626418010792726,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 62,
+          "age": 100,
+          "territory_size": 69,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 28.78273248256084,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 125,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 80,
+          "age": 125,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 23.76718359454119,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 130,
+          "age": 125,
+          "territory_size": 44,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 30.0409023247966,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 62,
+          "age": 125,
+          "territory_size": 71,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 31.324934803653235,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 150,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 75,
+          "age": 150,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 24.47766464568345,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 96,
+          "age": 150,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 32.59866769069309,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 60,
+          "age": 150,
+          "territory_size": 71,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 33.817049633638526,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 175,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 69,
+          "age": 175,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 25.135922112234578,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 93,
+          "age": 175,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 35.31524668002517,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 60,
+          "age": 175,
+          "territory_size": 72,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 36.38555339865443,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 200,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 67,
+          "age": 200,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 25.958322352781995,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 88,
+          "age": 200,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 37.889689273525306,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 59,
+          "age": 200,
+          "territory_size": 73,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 38.6996002230409,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 225,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 65,
+          "age": 225,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 26.759757944086076,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 84,
+          "age": 225,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 40.4353332010079,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 59,
+          "age": 225,
+          "territory_size": 74,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 41.05667116258857,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 250,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 64,
+          "age": 250,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 27.405637903756265,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 81,
+          "age": 250,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 42.76491929917921,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 57,
+          "age": 250,
+          "territory_size": 74,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 43.322157516203454,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 275,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 63,
+          "age": 275,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 28.092257007267822,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 78,
+          "age": 275,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 45.21047856187387,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 57,
+          "age": 275,
+          "territory_size": 74,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 45.569169754260564,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 300,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 63,
+          "age": 300,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 28.792056022031257,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 72,
+          "age": 300,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 47.712702798929534,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 57,
+          "age": 300,
+          "territory_size": 75,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 47.9054907804771,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 325,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 62,
+          "age": 325,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 29.435117446142446,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 71,
+          "age": 325,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 50.117291343919426,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 57,
+          "age": 325,
+          "territory_size": 75,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 50.744810807329095,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 350,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 62,
+          "age": 350,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 30.1527129530727,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 71,
+          "age": 350,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 52.60695982225051,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 57,
+          "age": 350,
+          "territory_size": 75,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 53.0695232015759,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 375,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 62,
+          "age": 375,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 30.829492772536486,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 71,
+          "age": 375,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 54.94960253175347,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 57,
+          "age": 375,
+          "territory_size": 76,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 55.658270796083116,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 400,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 400,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 31.701517257702722,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 71,
+          "age": 400,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 57.47064854258558,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 400,
+          "territory_size": 76,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 58.022742502869356,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 425,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 425,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 32.53669051801284,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 71,
+          "age": 425,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 59.89406219682479,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 425,
+          "territory_size": 77,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 60.57302019494536,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 450,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 450,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 33.35506557806675,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 71,
+          "age": 450,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 62.50666142248271,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 450,
+          "territory_size": 79,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 63.156800967207964,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 475,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 475,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 34.11794521049319,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 71,
+          "age": 475,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 65.28340226960783,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 475,
+          "territory_size": 79,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 65.78843014270939,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 500,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 500,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 34.91929869834473,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 70,
+          "age": 500,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 67.84958135826604,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 500,
+          "territory_size": 80,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 68.44171509522644,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 525,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 525,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 35.69559003776049,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 70,
+          "age": 525,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 70.30465790792599,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 525,
+          "territory_size": 82,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 70.93148194374275,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 550,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 550,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 36.55331328249833,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 70,
+          "age": 550,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 72.767764307264,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 550,
+          "territory_size": 82,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 73.38556639660737,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 575,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 575,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 37.415237729698845,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 70,
+          "age": 575,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 75.43980075854769,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 575,
+          "territory_size": 83,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 75.70681677515998,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 600,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 600,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 38.172767528262284,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 600,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 78.08013891409995,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 600,
+          "territory_size": 83,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 77.9649951523509,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 625,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 625,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 38.86423965058758,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 625,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 80.70898101788787,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 56,
+          "age": 625,
+          "territory_size": 83,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 80.4572930766057,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 650,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 650,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 39.60263313280981,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 650,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 83.27233341368657,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 59,
+          "age": 650,
+          "territory_size": 83,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 82.84613625076955,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 675,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 61,
+          "age": 675,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 40.40289037641309,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 675,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 85.65285994090758,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 68,
+          "age": 675,
+          "territory_size": 84,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 85.36632767912148,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 700,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 700,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 41.17088136700781,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 700,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 87.9097672571138,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 80,
+          "age": 700,
+          "territory_size": 84,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 87.96677670171238,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 725,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 725,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 41.93335252558509,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 725,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 90.3975317986345,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 98,
+          "age": 725,
+          "territory_size": 85,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 90.31325777753,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 750,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 750,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 42.777663560057604,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 750,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 92.98494494223685,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 122,
+          "age": 750,
+          "territory_size": 85,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 92.93428199892823,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 775,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 775,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 43.531767348486724,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 775,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 95.40510274204931,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 155,
+          "age": 775,
+          "territory_size": 85,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 95.27041450217436,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 800,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 800,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 44.2730076396542,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 800,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 97.96721199998306,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 163,
+          "age": 800,
+          "territory_size": 86,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 97.88820981446202,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 825,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 825,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 45.03385612087571,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 825,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 100.49513284655785,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 176,
+          "age": 825,
+          "territory_size": 87,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 100.31479479687087,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 850,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 850,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 45.82243284909237,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 850,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 102.76339513579643,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 240,
+          "age": 850,
+          "territory_size": 89,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 102.84823640137316,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 875,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 875,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 46.574443399386006,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 875,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 105.27913018329858,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 324,
+          "age": 875,
+          "territory_size": 89,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 105.06240860052789,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 900,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 900,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 47.26099805435471,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 900,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 107.97797467010056,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 356,
+          "age": 900,
+          "territory_size": 91,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 107.70109836760048,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    },
+    {
+      "year": 925,
+      "civilizations": [
+        {
+          "id": "5319e3d7-a05f-41c8-bf52-238b71b716a2",
+          "name": "Lumina Kingdom",
+          "population": 60,
+          "age": 925,
+          "territory_size": 34,
+          "traits": [
+            "trading",
+            "peaceful",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Way of Silver Moon",
+            "values": {
+              "peace": 0.2502471722384225,
+              "war": 0.06898667358508699,
+              "knowledge": 0.2770748450713671,
+              "tradition": 0.11345162535692156,
+              "wealth": 0.1990295282060674,
+              "spirituality": 0.09121015554213442
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 47.952350829777195,
+          "resources": {
+            "food": 12.341824754041001,
+            "metal": 5646.658898609126,
+            "gold": 6044.017913151065,
+            "stone": 5493.145814719117
+          }
+        },
+        {
+          "id": "63337af3-c7da-4d16-9254-a81f6713d23f",
+          "name": "Glorious Alliance",
+          "population": 69,
+          "age": 925,
+          "territory_size": 45,
+          "traits": [
+            "tech_savvy",
+            "religious",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Followers of Mighty Mountains",
+            "values": {
+              "peace": 0.16989179388210363,
+              "war": 0.17880257080609413,
+              "knowledge": 0.07202625920188795,
+              "tradition": 0.27650467300239306,
+              "wealth": 0.17010410229098785,
+              "spirituality": 0.13267060081653348
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 110.33578938771397,
+          "resources": {
+            "food": 26.303845337218295,
+            "metal": 20635.915982170176,
+            "gold": 19538.402897705462,
+            "stone": 21776.692224767612
+          }
+        },
+        {
+          "id": "1b0d1524-b52b-4f5e-a2a1-61063b8561cf",
+          "name": "Lyra",
+          "population": 384,
+          "age": 925,
+          "territory_size": 91,
+          "traits": [
+            "peaceful",
+            "tech_savvy",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Believers in Flowing Water",
+            "values": {
+              "peace": 0.21310627544198021,
+              "war": 0.03706782409391591,
+              "knowledge": 0.010080790728354562,
+              "tradition": 0.2648393111181114,
+              "wealth": 0.2295455856628092,
+              "spirituality": 0.2453602129548287
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 110.26007257716427,
+          "resources": {
+            "food": 23747.449914010987,
+            "metal": 59021.973818110506,
+            "gold": 65040.03503233633,
+            "stone": 56369.0054825736
+          }
+        }
+      ]
+    }
+  ]
+}

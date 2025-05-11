@@ -1,0 +1,370 @@
+{
+  "year": 4,
+  "tick_count": 4,
+  "world_size": [
+    100,
+    100
+  ],
+  "active_civilizations": [
+    {
+      "id": "243aaabc-71d2-479a-9208-73fe41823687",
+      "name": "Solara States",
+      "age": 4,
+      "population": 136,
+      "territory_size": 55,
+      "technology": 26.148591865945903,
+      "traits": [
+        "aggressive",
+        "trading",
+        "expansionist"
+      ],
+      "belief_system": {
+        "name": "Church of Golden Sun",
+        "values": {
+          "peace": 0.21119463538996686,
+          "war": 0.118492771383714,
+          "knowledge": 0.2088710629500359,
+          "tradition": 0.24138146809244468,
+          "wealth": 0.11194341897910336,
+          "spirituality": 0.10811664320473521
+        },
+        "foreign_stance": "open"
+      },
+      "resources": {
+        "food": 241.2249062532602,
+        "metal": 214.67532939450518,
+        "gold": 191.06950685886005,
+        "stone": 205.99168481477258
+      },
+      "relations": {}
+    },
+    {
+      "id": "a03df363-966b-4ab3-b795-49b26828da40",
+      "name": "Nexus States",
+      "age": 4,
+      "population": 150,
+      "territory_size": 68,
+      "technology": 11.1117530820528,
+      "traits": [
+        "peaceful",
+        "expansionist",
+        "religious"
+      ],
+      "belief_system": {
+        "name": "Way of Divine Wisdom",
+        "values": {
+          "peace": 0.2154365098351787,
+          "war": 0.19444058499571232,
+          "knowledge": 0.1983806198830309,
+          "tradition": 0.21572440956521086,
+          "wealth": 0.062398453003476496,
+          "spirituality": 0.11361942271739073
+        },
+        "foreign_stance": "hostile"
+      },
+      "resources": {
+        "food": 281.3213067927525,
+        "metal": 165.5818524547792,
+        "gold": 131.18508733126825,
+        "stone": 167.022533055554
+      },
+      "relations": {}
+    },
+    {
+      "id": "52dc4d84-0406-48ff-9612-015a6808eb7e",
+      "name": "Rising Federation",
+      "age": 4,
+      "population": 85,
+      "territory_size": 76,
+      "technology": 13.39708823284615,
+      "traits": [
+        "aggressive",
+        "tech_savvy",
+        "trading"
+      ],
+      "belief_system": {
+        "name": "Church of Endless Cycles",
+        "values": {
+          "peace": 0.09676338628636878,
+          "war": 0.3078536269483291,
+          "knowledge": 0.28157243662360343,
+          "tradition": 0.17086644790087002,
+          "wealth": 0.08305369215691313,
+          "spirituality": 0.059890410083915546
+        },
+        "foreign_stance": "open"
+      },
+      "resources": {
+        "food": 182.97696447486697,
+        "metal": 131.19261139019477,
+        "gold": 91.95953221473965,
+        "stone": 134.41683947885411
+      },
+      "relations": {}
+    },
+    {
+      "id": "772c1f29-404b-421a-94e9-2802d4549a4c",
+      "name": "Zephyr Federation",
+      "age": 4,
+      "population": 131,
+      "territory_size": 67,
+      "technology": 17.50394745491629,
+      "traits": [
+        "aggressive",
+        "isolationist",
+        "tech_savvy"
+      ],
+      "belief_system": {
+        "name": "Believers in Eternal Light",
+        "values": {
+          "peace": 0.06516762436214041,
+          "war": 0.19345684640425884,
+          "knowledge": 0.28474036231479966,
+          "tradition": 0.2513664298821137,
+          "wealth": 0.10398954758292969,
+          "spirituality": 0.1012791894537576
+        },
+        "foreign_stance": "hostile"
+      },
+      "resources": {
+        "food": 231.5777947387582,
+        "metal": 207.33568464566918,
+        "gold": 149.84083279529798,
+        "stone": 201.61674177250964
+      },
+      "relations": {}
+    },
+    {
+      "id": "d6e0dab5-43ea-46aa-8075-b57a854d0056",
+      "name": "Drakon",
+      "age": 4,
+      "population": 106,
+      "territory_size": 53,
+      "technology": 17.49844625342997,
+      "traits": [
+        "weird",
+        "tech_savvy",
+        "aggressive"
+      ],
+      "belief_system": {
+        "name": "Followers of Silver Moon",
+        "values": {
+          "peace": 0.19192871050045152,
+          "war": 0.0416127305461419,
+          "knowledge": 0.22446349240986066,
+          "tradition": 0.1278762763514238,
+          "wealth": 0.24415207230664532,
+          "spirituality": 0.16996671788547674
+        },
+        "foreign_stance": "hostile"
+      },
+      "resources": {
+        "food": 206.29272571209572,
+        "metal": 143.30418388989247,
+        "gold": 91.02234727006316,
+        "stone": 137.99983448863145
+      },
+      "relations": {}
+    }
+  ],
+  "event_history": [
+    {
+      "year": 0,
+      "description": "Civilization Solara States founded",
+      "type": "general",
+      "timestamp": 1746912158.4300265
+    },
+    {
+      "year": 0,
+      "description": "Civilization Nexus States founded",
+      "type": "general",
+      "timestamp": 1746912158.4308052
+    },
+    {
+      "year": 0,
+      "description": "Civilization Rising Federation founded",
+      "type": "general",
+      "timestamp": 1746912158.4325614
+    },
+    {
+      "year": 0,
+      "description": "Civilization Zephyr Federation founded",
+      "type": "general",
+      "timestamp": 1746912158.433856
+    },
+    {
+      "year": 0,
+      "description": "Civilization Drakon founded",
+      "type": "general",
+      "timestamp": 1746912158.4411125
+    },
+    {
+      "year": 4,
+      "description": "Nexus States: Established new city New Camp at (63, 87)",
+      "type": "general",
+      "timestamp": 1746912158.563336
+    }
+  ],
+  "civilization_history": [
+    {
+      "year": 0,
+      "civilizations": [
+        {
+          "id": "243aaabc-71d2-479a-9208-73fe41823687",
+          "name": "Solara States",
+          "population": 129,
+          "age": 0,
+          "territory_size": 54,
+          "traits": [
+            "aggressive",
+            "trading",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Church of Golden Sun",
+            "values": {
+              "peace": 0.21119463538996686,
+              "war": 0.118492771383714,
+              "knowledge": 0.2088710629500359,
+              "tradition": 0.24138146809244468,
+              "wealth": 0.11194341897910336,
+              "spirituality": 0.10811664320473521
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 26,
+          "resources": {
+            "food": 241.2249062532602,
+            "metal": 214.67532939450518,
+            "gold": 191.06950685886005,
+            "stone": 205.99168481477258
+          }
+        },
+        {
+          "id": "a03df363-966b-4ab3-b795-49b26828da40",
+          "name": "Nexus States",
+          "population": 178,
+          "age": 0,
+          "territory_size": 66,
+          "traits": [
+            "peaceful",
+            "expansionist",
+            "religious"
+          ],
+          "belief_system": {
+            "name": "Way of Divine Wisdom",
+            "values": {
+              "peace": 0.2154365098351787,
+              "war": 0.19444058499571232,
+              "knowledge": 0.1983806198830309,
+              "tradition": 0.21572440956521086,
+              "wealth": 0.062398453003476496,
+              "spirituality": 0.11361942271739073
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 11,
+          "resources": {
+            "food": 281.3213067927525,
+            "metal": 165.5818524547792,
+            "gold": 131.18508733126825,
+            "stone": 167.022533055554
+          }
+        },
+        {
+          "id": "52dc4d84-0406-48ff-9612-015a6808eb7e",
+          "name": "Rising Federation",
+          "population": 78,
+          "age": 0,
+          "territory_size": 76,
+          "traits": [
+            "aggressive",
+            "tech_savvy",
+            "trading"
+          ],
+          "belief_system": {
+            "name": "Church of Endless Cycles",
+            "values": {
+              "peace": 0.09676338628636878,
+              "war": 0.3078536269483291,
+              "knowledge": 0.28157243662360343,
+              "tradition": 0.17086644790087002,
+              "wealth": 0.08305369215691313,
+              "spirituality": 0.059890410083915546
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 13,
+          "resources": {
+            "food": 182.97696447486697,
+            "metal": 131.19261139019477,
+            "gold": 91.95953221473965,
+            "stone": 134.41683947885411
+          }
+        },
+        {
+          "id": "772c1f29-404b-421a-94e9-2802d4549a4c",
+          "name": "Zephyr Federation",
+          "population": 124,
+          "age": 0,
+          "territory_size": 67,
+          "traits": [
+            "aggressive",
+            "isolationist",
+            "tech_savvy"
+          ],
+          "belief_system": {
+            "name": "Believers in Eternal Light",
+            "values": {
+              "peace": 0.06516762436214041,
+              "war": 0.19345684640425884,
+              "knowledge": 0.28474036231479966,
+              "tradition": 0.2513664298821137,
+              "wealth": 0.10398954758292969,
+              "spirituality": 0.1012791894537576
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 17,
+          "resources": {
+            "food": 231.5777947387582,
+            "metal": 207.33568464566918,
+            "gold": 149.84083279529798,
+            "stone": 201.61674177250964
+          }
+        },
+        {
+          "id": "d6e0dab5-43ea-46aa-8075-b57a854d0056",
+          "name": "Drakon",
+          "population": 101,
+          "age": 0,
+          "territory_size": 53,
+          "traits": [
+            "weird",
+            "tech_savvy",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Followers of Silver Moon",
+            "values": {
+              "peace": 0.19192871050045152,
+              "war": 0.0416127305461419,
+              "knowledge": 0.22446349240986066,
+              "tradition": 0.1278762763514238,
+              "wealth": 0.24415207230664532,
+              "spirituality": 0.16996671788547674
+            },
+            "foreign_stance": "hostile"
+          },
+          "technology": 17,
+          "resources": {
+            "food": 206.29272571209572,
+            "metal": 143.30418388989247,
+            "gold": 91.02234727006316,
+            "stone": 137.99983448863145
+          }
+        }
+      ]
+    }
+  ]
+}

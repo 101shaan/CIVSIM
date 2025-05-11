@@ -1,0 +1,315 @@
+{
+  "year": 30,
+  "tick_count": 30,
+  "world_size": [
+    100,
+    100
+  ],
+  "active_civilizations": [],
+  "event_history": [
+    {
+      "year": 0,
+      "description": "Civilization Rising Federation founded",
+      "type": "general",
+      "timestamp": 1746880633.4779584
+    },
+    {
+      "year": 0,
+      "description": "Civilization Kingdom founded",
+      "type": "general",
+      "timestamp": 1746880633.4783585
+    },
+    {
+      "year": 0,
+      "description": "Civilization Aquila founded",
+      "type": "general",
+      "timestamp": 1746880633.4788427
+    },
+    {
+      "year": 0,
+      "description": "Civilization United Republic founded",
+      "type": "general",
+      "timestamp": 1746880633.4790547
+    },
+    {
+      "year": 0,
+      "description": "Civilization Nexus Confederation founded",
+      "type": "general",
+      "timestamp": 1746880633.4792168
+    },
+    {
+      "year": 1,
+      "description": "Rising Federation: Expanded territory to (94, 96)",
+      "type": "general",
+      "timestamp": 1746880648.1818342
+    },
+    {
+      "year": 1,
+      "description": "Kingdom: Established new city Kingdom B at (4, 19)",
+      "type": "general",
+      "timestamp": 1746880648.1818638
+    },
+    {
+      "year": 2,
+      "description": "Rising Federation: Expanded territory to (94, 96)",
+      "type": "general",
+      "timestamp": 1746880649.6379507
+    },
+    {
+      "year": 3,
+      "description": "Rising Federation: Expanded territory to (94, 95)",
+      "type": "general",
+      "timestamp": 1746880650.3669975
+    },
+    {
+      "year": 4,
+      "description": "Rising Federation: Expanded territory to (94, 95)",
+      "type": "general",
+      "timestamp": 1746880651.1257882
+    },
+    {
+      "year": 5,
+      "description": "Rising Federation: Expanded territory to (94, 97)",
+      "type": "general",
+      "timestamp": 1746880651.915074
+    },
+    {
+      "year": 6,
+      "description": "Rising Federation: Expanded territory to (94, 97)",
+      "type": "general",
+      "timestamp": 1746880652.707493
+    },
+    {
+      "year": 7,
+      "description": "Rising Federation: Expanded territory to (94, 97)",
+      "type": "general",
+      "timestamp": 1746880653.5664663
+    },
+    {
+      "year": 8,
+      "description": "Rising Federation: Established new city Rising Federation B at (94, 95)",
+      "type": "general",
+      "timestamp": 1746880654.3903697
+    },
+    {
+      "year": 9,
+      "description": "Rising Federation: Expanded territory to (93, 97)",
+      "type": "general",
+      "timestamp": 1746880655.149369
+    },
+    {
+      "year": 10,
+      "description": "Rising Federation: Expanded territory to (93, 97)",
+      "type": "general",
+      "timestamp": 1746880655.8625953
+    },
+    {
+      "year": 10,
+      "description": "Civilization Rising Federation collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746880655.8626328
+    },
+    {
+      "year": 10,
+      "description": "Civilization Kingdom collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746880655.8626359
+    },
+    {
+      "year": 10,
+      "description": "Civilization Aquila collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746880655.8626368
+    },
+    {
+      "year": 10,
+      "description": "Civilization United Republic collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746880655.8626373
+    },
+    {
+      "year": 10,
+      "description": "Civilization Nexus Confederation collapsed due to starvation after 10 years",
+      "type": "general",
+      "timestamp": 1746880655.8626378
+    },
+    {
+      "year": 25,
+      "description": "New civilization Lumina Tribes appeared",
+      "type": "general",
+      "timestamp": 1746880688.656743
+    },
+    {
+      "year": 30,
+      "description": "Civilization Lumina Tribes collapsed due to starvation after 5 years",
+      "type": "general",
+      "timestamp": 1746880786.2412558
+    }
+  ],
+  "civilization_history": [
+    {
+      "year": 0,
+      "civilizations": [
+        {
+          "id": "b48be81b-ced2-4fcd-ba8d-b924e512d9dc",
+          "name": "Rising Federation",
+          "population": 96,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "peaceful",
+            "weird",
+            "expansionist"
+          ],
+          "belief_system": {
+            "name": "Way of Whispered Secrets",
+            "values": {
+              "peace": 0.18379221824449965,
+              "war": 0.22003080485015358,
+              "knowledge": 0.04902504679135303,
+              "tradition": 0.0893824961833209,
+              "wealth": 0.22235017321262243,
+              "spirituality": 0.23541926071805036
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 22,
+          "resources": {
+            "food": 0.6708653220906354,
+            "metal": 54.31929726215087,
+            "gold": 24.970347763021365,
+            "stone": 55.09187238482912
+          }
+        },
+        {
+          "id": "ce5241c9-af11-47d9-a397-2e3a1a9f3c2a",
+          "name": "Kingdom",
+          "population": 200,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "peaceful",
+            "isolationist",
+            "weird"
+          ],
+          "belief_system": {
+            "name": "Ideology of Golden Sun",
+            "values": {
+              "peace": 0.3020425566746017,
+              "war": 0.19350604590692022,
+              "knowledge": 0.06878593985051956,
+              "tradition": 0.1920859400854681,
+              "wealth": 0.18048150312129882,
+              "spirituality": 0.06309801436119152
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 11,
+          "resources": {
+            "food": 0.3501675380012805,
+            "metal": 53.99557653368257,
+            "gold": 22.29490529306712,
+            "stone": 52.972491566004436
+          }
+        },
+        {
+          "id": "435bedc8-79f7-482e-9684-d39d239495bf",
+          "name": "Aquila",
+          "population": 67,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "isolationist",
+            "tech_savvy",
+            "aggressive"
+          ],
+          "belief_system": {
+            "name": "Followers of Sacred Knowledge",
+            "values": {
+              "peace": 0.09714928018047275,
+              "war": 0.05755591460862411,
+              "knowledge": 0.2021597661939405,
+              "tradition": 0.26228796456626646,
+              "wealth": 0.2641195239021897,
+              "spirituality": 0.11672755054850645
+            },
+            "foreign_stance": "open"
+          },
+          "technology": 17,
+          "resources": {
+            "food": 0.09521436355151801,
+            "metal": 50.89745317601258,
+            "gold": 20.842279323414704,
+            "stone": 51.606424180837394
+          }
+        },
+        {
+          "id": "98d8b3a3-66f4-440e-af4d-ec499d3a9546",
+          "name": "United Republic",
+          "population": 157,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "weird",
+            "trading",
+            "isolationist"
+          ],
+          "belief_system": {
+            "name": "Believers in Silver Moon",
+            "values": {
+              "peace": 0.06587435654307493,
+              "war": 0.03991472727415223,
+              "knowledge": 0.024153382452855532,
+              "tradition": 0.2531953932865079,
+              "wealth": 0.3310224332885052,
+              "spirituality": 0.2858397071549042
+            },
+            "foreign_stance": "convert"
+          },
+          "technology": 13,
+          "resources": {
+            "food": 0.2136045676640995,
+            "metal": 52.033720462966016,
+            "gold": 21.580203655156485,
+            "stone": 51.19597119994304
+          }
+        },
+        {
+          "id": "0b81ae87-2121-449e-9cfd-3ab812591fe1",
+          "name": "Nexus Confederation",
+          "population": 167,
+          "age": 0,
+          "territory_size": 1,
+          "traits": [
+            "weird",
+            "aggressive",
+            "isolationist"
+          ],
+          "belief_system": {
+            "name": "Cult of Unbounded Nature",
+            "values": {
+              "peace": 0.12603321295347006,
+              "war": 0.017327906109245495,
+              "knowledge": 0.06645867153660037,
+              "tradition": 0.3234992474655751,
+              "wealth": 0.39146301165104536,
+              "spirituality": 0.07521795028406367
+            },
+            "foreign_stance": "neutral"
+          },
+          "technology": 24,
+          "resources": {
+            "food": 0.30143566955466394,
+            "metal": 52.565104812372695,
+            "gold": 24.074918343696456,
+            "stone": 52.56933039392188
+          }
+        }
+      ]
+    },
+    {
+      "year": 25,
+      "civilizations": []
+    }
+  ]
+}
