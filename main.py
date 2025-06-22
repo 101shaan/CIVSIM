@@ -22,57 +22,46 @@ def ensure_directories():
 class MainMenu:
     def __init__(self, screen):
         self.screen = screen
-        self.font_large = pygame.freetype.SysFont("Arial", 36)
-        self.font = pygame.freetype.SysFont("Arial", 22)
-        self.font_small = pygame.freetype.SysFont("Arial", 16)
-        
-        width, height = screen.get_size()
-        button_width = 300
-        button_height = 50
+        width, height = screen.get_width(), screen.get_height()
+        self.font_large = pygame.freetype.SysFont("Arial", max(28, width // 40))
+        self.font = pygame.freetype.SysFont("Arial", max(16, width // 60))
+        self.font_small = pygame.freetype.SysFont("Arial", max(12, width // 90))
+
+        button_width = max(200, width // 4)
+        button_height = max(40, height // 18)
         button_x = (width - button_width) // 2
-        
+        button_gap = button_height + (height // 40)
+        button_y_start = height // 2 - button_gap
+
         # Load background image
         try:
-            # First try the direct path, then try with CIVSIM/ prefix
             bg_path = "assets/backgrounds/main_menu_bg.png"
             if not os.path.exists(bg_path):
                 bg_path = os.path.join("CIVSIM", "assets/backgrounds/main_menu_bg.png")
-            
             self.background = pygame.image.load(bg_path)
-            # Scale to match screen size if needed
             if self.background.get_size() != (width, height):
                 self.background = pygame.transform.scale(self.background, (width, height))
         except:
-            # Fallback - create a simple gradient background if image not found
             self.background = pygame.Surface((width, height))
             for y in range(height):
                 r = int(10 + (y / height) * 15)
                 g = int(20 + (y / height) * 20)
                 b = int(50 + (y / height) * 30)
                 pygame.draw.line(self.background, (r, g, b), (0, y), (width, y))
-        
-        # Create custom menu buttons for the main menu
-        # These are different from the regular Button class used in Controls
+
         class MenuButton:
             def __init__(self, rect, text, action=None):
                 self.rect = pygame.Rect(rect)
                 self.text = text
                 self.action = action
                 self.is_hovered = False
-                self.font = pygame.freetype.SysFont("Arial", 20)
-                
-                # Button animation state
-                self.animation_state = 0  # 0-100 for glow effect
-                self.animation_direction = 1  # 1 = increasing, -1 = decreasing
-            
+                self.font = pygame.freetype.SysFont("Arial", max(16, width // 60))
+                self.animation_state = 0
+                self.animation_direction = 1
             def draw(self, screen):
-                # Create a surface with per-pixel alpha
                 button_surface = pygame.Surface((self.rect.width, self.rect.height), pygame.SRCALPHA)
-                
-                # Calculate base color and glow color based on hover state
-                base_alpha = 180  # Semi-transparent
+                base_alpha = 180
                 if self.is_hovered:
-                    # Update animation state
                     self.animation_state += self.animation_direction * 5
                     if self.animation_state > 100:
                         self.animation_state = 100
@@ -80,8 +69,6 @@ class MainMenu:
                     elif self.animation_state < 0:
                         self.animation_state = 0
                         self.animation_direction = 1
-                        
-                    # Enhanced glow when hovered
                     glow_strength = self.animation_state / 100
                     base_color = (40, 80, 120, base_alpha)
                     glow_color = (60, 120, 180, base_alpha)
@@ -90,84 +77,42 @@ class MainMenu:
                     b = int(base_color[2] + (glow_color[2] - base_color[2]) * glow_strength)
                     color = (r, g, b, base_alpha)
                 else:
-                    # Reset animation when not hovered
                     self.animation_state = 0
                     color = (30, 60, 100, base_alpha)
-                
-                # Draw button background with rounded corners
-                pygame.draw.rect(button_surface, color, (0, 0, self.rect.width, self.rect.height), 
-                                border_radius=10)
-                
-                # Add subtle gradient effect
+                pygame.draw.rect(button_surface, color, (0, 0, self.rect.width, self.rect.height), border_radius=10)
                 for y in range(0, self.rect.height//2):
                     highlight_alpha = 40 - y
                     if highlight_alpha > 0:
                         highlight_color = (255, 255, 255, highlight_alpha)
-                        pygame.draw.rect(button_surface, highlight_color, 
-                                        (2, 2 + y, self.rect.width - 4, 1), 
-                                        border_radius=8)
-                
-                # Add button border with subtle glow
+                        pygame.draw.rect(button_surface, highlight_color, (2, 2 + y, self.rect.width - 4, 1), border_radius=8)
                 if self.is_hovered:
-                    # Glowing border when hovered
                     border_color = (100, 180, 255, 200)
-                    pygame.draw.rect(button_surface, border_color, 
-                                    (0, 0, self.rect.width, self.rect.height), 
-                                    2, border_radius=10)
+                    pygame.draw.rect(button_surface, border_color, (0, 0, self.rect.width, self.rect.height), 2, border_radius=10)
                 else:
-                    # Subtle border when not hovered
                     border_color = (100, 140, 200, 150)
-                    pygame.draw.rect(button_surface, border_color, 
-                                    (0, 0, self.rect.width, self.rect.height), 
-                                    1, border_radius=10)
-                
-                # Draw text with shadow for better visibility
+                    pygame.draw.rect(button_surface, border_color, (0, 0, self.rect.width, self.rect.height), 1, border_radius=10)
                 text_color = (240, 240, 255)
                 shadow_color = (0, 0, 0, 100)
-                
-                # Draw text shadow
                 text_surf, text_rect = self.font.render(self.text, shadow_color)
                 text_rect.center = (self.rect.width // 2 + 1, self.rect.height // 2 + 1)
                 button_surface.blit(text_surf, text_rect)
-                
-                # Draw main text
                 text_surf, text_rect = self.font.render(self.text, text_color)
                 text_rect.center = (self.rect.width // 2, self.rect.height // 2)
                 button_surface.blit(text_surf, text_rect)
-                
-                # Draw the button surface to the screen
                 screen.blit(button_surface, self.rect)
-            
             def is_over(self, pos):
                 return self.rect.collidepoint(pos)
-        
-        # Store custom button class for use in other methods
         self.MenuButton = MenuButton
-        
-        # Create menu buttons using the custom class
         self.buttons = [
-            MenuButton(
-                (button_x, height // 2 - 30, button_width, button_height),
-                "New Simulation",
-                self._new_simulation
-            ),
-            MenuButton(
-                (button_x, height // 2 + 40, button_width, button_height),
-                "Load Simulation",
-                self._load_simulation
-            ),
-            MenuButton(
-                (button_x, height // 2 + 110, button_width, button_height),
-                "Exit",
-                self._exit_game
-            )
+            MenuButton((button_x, button_y_start, button_width, button_height), "New Simulation", self._new_simulation),
+            MenuButton((button_x, button_y_start + button_gap, button_width, button_height), "Load Simulation", self._load_simulation),
+            MenuButton((button_x, button_y_start + 2 * button_gap, button_width, button_height), "Exit", self._exit_game)
         ]
-        
         self.result = None
         self.input_active = False
-        self.input_purpose = None  # 'new' or 'load'
+        self.input_purpose = None
         self.input_text = ""
-        self.input_rect = pygame.Rect(width // 2 - 200, height // 2 + 180, 400, 50)
+        self.input_rect = pygame.Rect(width // 2 - button_width // 2, button_y_start + 3 * button_gap, button_width, button_height)
         self.input_error = None
         self.input_warning = None
         
@@ -466,8 +411,12 @@ def main():
     # fire up pygame
     pygame.init()
     
-    # set up display with larger dimensions
-    width, height = 1400, 900  # increased from 1200x800
+    # get user's screen size and set window size accordingly
+    display_info = pygame.display.Info()
+    width, height = display_info.current_w, display_info.current_h
+    # Use 90% of the screen size to avoid fullscreen overlap
+    width = int(width * 0.9)
+    height = int(height * 0.9)
     screen = pygame.display.set_mode((width, height))
     pygame.display.set_caption("CIVSIM")
     try:
@@ -900,4 +849,4 @@ def toggle_god_mode(controls, renderer):
     controls._show_feedback("God Mode " + ("ENABLED" if controls.showing_god_mode else "DISABLED"))
 
 if __name__ == "__main__":
-    main() 
+    main()

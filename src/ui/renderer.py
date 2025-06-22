@@ -1541,15 +1541,16 @@ class Renderer:
                 wrapped_text = self._wrap_text(content, text_font, self.detail_surface.get_width() - 60)
                 for line in wrapped_text:
                     # Only render if would be visible
+                    rendered = False
                     if section_y - self.detail_scroll_y > -text_font.get_sized_height() and section_y - self.detail_scroll_y < self.detail_surface.get_height():
                         shadow_surf, _ = text_font.render(line, (0, 0, 0, 60))
                         text_surf, _ = text_font.render(line, (220, 240, 255))
-                        
                         self.detail_surface.blit(shadow_surf, (42, section_y - self.detail_scroll_y + 1))
                         self.detail_surface.blit(text_surf, (40, section_y - self.detail_scroll_y))
-                    
-                    section_y += text_surf.get_height() + 2
-                
+                        section_y += text_surf.get_height() + 2
+                        rendered = True
+                    if not rendered:
+                        section_y += text_font.get_sized_height() + 2
                 return section_y + 20  # Return updated y position with spacing
             
             # Draw general lore
@@ -1600,6 +1601,7 @@ class Renderer:
                             city_name_shadow, _ = text_font.render(f"{city_name}:", (0, 0, 0, 60))
                             city_name_text, _ = text_font.render(f"{city_name}:", (240, 250, 190))
                             
+
                             self.detail_surface.blit(city_name_shadow, (52, y_pos - self.detail_scroll_y + 1))
                             self.detail_surface.blit(city_name_text, (50, y_pos - self.detail_scroll_y))
                             y_pos += city_name_text.get_height() + 5
@@ -1781,4 +1783,4 @@ class Renderer:
 
     def set_simulation(self, simulation):
         """Set the simulation reference for lore generation"""
-        self.simulation = simulation 
+        self.simulation = simulation
